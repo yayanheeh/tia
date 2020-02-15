@@ -36,8 +36,7 @@ class Budget extends Component {
         <div className={classes.content}>
        
           <div className={classes.iconWrapper}>
-            <img src="https://cdn.pixabay.com/photo/2019/07/30/08/44/the-pilgrims-guide-4372296__480.jpg"/>
-          </div>
+            <div class="banner"></div>   </div>
         </div>
         
       </Paper>
