@@ -55,17 +55,9 @@ class Dashboard extends Component {
               xs={12}
             >
               <Budget className={classes.item} />
-              <div id="disqus_thread"></div>
+              
             </Grid>
-            <Grid
-              item
-              lg={3}
-              sm={6}
-              xl={3}
-              xs={12}
-            >
-              <Users className={classes.item} />
-            </Grid>
+            
             <Grid
               item
               lg={3}
