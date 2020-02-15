@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-import Paper from '@material-ui/core/Paper';
-
 // Externals
 import PropTypes from 'prop-types';
 
@@ -44,12 +42,6 @@ class Dashboard extends Component {
       <DashboardLayout title="Dashboard">
         <div className={classes.root}>
          
-<Grid item xs={8}>
-          <Paper className={classes.paper}>xs=8</Paper>
-        </Grid>
-        <Grid item xs={4}>
-          <Paper className={classes.paper}>xs=4</Paper>
-        </Grid>
 
  <Grid
             container
