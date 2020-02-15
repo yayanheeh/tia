@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
-import Rating from '@material-ui/lab/Rating';
-import Box from '@material-ui/core/Box';
+
 
 // Externals
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
+// Tess
+
+import { BoxFrom } from '@material-ui/core/Box';
+// Tse
+
+import { RatingFrom } from '@material-ui/lab/Rating';
 
 // Material helpers
 import { withStyles } from '@material-ui/core';
@@ -53,8 +58,7 @@ class Progress extends Component {
         </div>
         <div className={classes.footer}>
           <Box component="fieldset" mb={3} borderColor="transparent">
-        <Typography component="legend">Controlled</Typography>
-        <Rating
+            <Rating
           name="simple-controlled"
           value={value}
           onChange={(event, newValue) => {
