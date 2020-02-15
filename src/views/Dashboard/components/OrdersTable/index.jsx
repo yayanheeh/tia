@@ -100,9 +100,10 @@ class OrdersTable extends Component {
       <Portlet className={rootClassName}>
         <PortletHeader noDivider>
           <PortletLabel
-            subtitle={`${ordersTotal} update February`}
+            subtitle={`${ordersTotal}`}
             title="Paket Umroh Murah"
           />
+<hr/>
           
         </PortletHeader>
         <PerfectScrollbar>
