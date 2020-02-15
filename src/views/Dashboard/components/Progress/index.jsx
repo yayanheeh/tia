@@ -8,10 +8,6 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
-
-// Component styles
-import styles from './styles';
-
 const useStyles = makeStyles({
   root: {
     maxWidth: 345,
@@ -21,16 +17,11 @@ const useStyles = makeStyles({
   },
 });
 
+export default function MediaCard() {
+  const classes = useStyles();
 
-
-class Progress extends Component {
-  render() {
-    const { classes, className, ...rest } = this.props;
-
-    const rootClassName = classNames(classes.root, className);
-
-    return (
-      <Card className={classes.root}>
+  return (
+    <Card className={classes.root}>
       <CardActionArea>
         <CardMedia
           className={classes.media}
@@ -56,13 +47,5 @@ class Progress extends Component {
         </Button>
       </CardActions>
     </Card>
-    );
-  }
+  );
 }
-
-Progress.propTypes = {
-  className: PropTypes.string,
-  classes: PropTypes.object.isRequired
-};
-
-export default withStyles(styles)(Progress);
