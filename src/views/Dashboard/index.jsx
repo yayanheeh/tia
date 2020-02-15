@@ -41,7 +41,15 @@ class Dashboard extends Component {
     return (
       <DashboardLayout title="Dashboard">
         <div className={classes.root}>
-          <Grid
+         
+<Grid item xs={8}>
+          <Paper className={classes.paper}>xs=8</Paper>
+        </Grid>
+        <Grid item xs={4}>
+          <Paper className={classes.paper}>xs=4</Paper>
+        </Grid>
+
+ <Grid
             container
             spacing={4}
           >
