@@ -1,62 +1,51 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import Card from '@material-ui/core/Card';
+import CardActionArea from '@material-ui/core/CardActionArea';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
+import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
 
-// Externals
-import classNames from 'classnames';
-import PropTypes from 'prop-types';
+const useStyles = makeStyles({
+  root: {
+    maxWidth: 345,
+  },
+  media: {
+    height: 140,
+  },
+});
 
-// Material helpers
-import { withStyles } from '@material-ui/core';
+export default function MediaCard() {
+  const classes = useStyles();
 
-// Material components
-import { Typography } from '@material-ui/core';
-
-// Material icons
-import { AttachMoney as AttachMoneyIcon } from '@material-ui/icons';
-
-// Shared components
-import { Paper } from 'components';
-
-// Component styles
-import styles from './styles';
-
-class Profit extends Component {
-  render() {
-    const { classes, className, ...rest } = this.props;
-
-    const rootClassName = classNames(classes.root, className);
-
-    return (
-      <Paper
-        {...rest}
-        className={rootClassName}
-      >
-        <div className={classes.content}>
-          <div className={classes.details}>
-            <Typography
-              className={classes.title}
-              variant="body2"
-            >
-              TOTAL PROFIT
-            </Typography>
-            <Typography
-              className={classes.value}
-              variant="h3"
-            >
-              $23,200
-            </Typography>
-          </div>
-          <div className={classes.iconWrapper}>
-            <AttachMoneyIcon className={classes.icon} />
-          </div>
-        </div>
-      </Paper>
-    );
-  }
+  return (
+    <Card className={classes.root}>
+      <CardActionArea>
+        <CardMedia
+          className={classes.media}
+          image="https://cdn.pixabay.com/photo/2015/12/05/06/20/kid-1077793__480.jpg"
+          title="Contemplative Reptile"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+            Lizard
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
+            across all continents except Antarctica
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions>
+        <Button size="small" color="primary">
+          Share
+        </Button>
+        <Button size="small" color="primary">
+          Learn More
+        </Button>
+      </CardActions>
+    </Card>
+  );
 }
-
-Profit.propTypes = {
-  className: PropTypes.string,
-  classes: PropTypes.object.isRequired
-};
-
-export default withStyles(styles)(Profit);
