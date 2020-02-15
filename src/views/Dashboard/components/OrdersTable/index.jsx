@@ -100,19 +100,10 @@ class OrdersTable extends Component {
       <Portlet className={rootClassName}>
         <PortletHeader noDivider>
           <PortletLabel
-            subtitle={`${ordersTotal} in total`}
-            title="Latest orders"
+            subtitle={`${ordersTotal} update February`}
+            title="Paket Umroh Murah"
           />
-          <PortletToolbar>
-            <Button
-              className={classes.newEntryButton}
-              color="primary"
-              size="small"
-              variant="outlined"
-            >
-              New entry
-            </Button>
-          </PortletToolbar>
+          
         </PortletHeader>
         <PerfectScrollbar>
           <PortletContent
@@ -128,25 +119,25 @@ class OrdersTable extends Component {
               <Table>
                 <TableHead>
                   <TableRow>
-                    <TableCell>Order ID</TableCell>
-                    <TableCell align="left">Customer</TableCell>
+                    <TableCell>Nama paket</TableCell>
+                    <TableCell align="left">Waktu keberangkatan</TableCell>
                     <TableCell
                       align="left"
                       sortDirection="desc"
                     >
                       <Tooltip
                         enterDelay={300}
-                        title="Sort"
+                        title="Berangkat dari"
                       >
                         <TableSortLabel
                           active
                           direction="desc"
                         >
-                          Date
+                          Waktu perjalan
                         </TableSortLabel>
                       </Tooltip>
                     </TableCell>
-                    <TableCell align="left">Status</TableCell>
+                    <TableCell align="left">Pesawat</TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>
