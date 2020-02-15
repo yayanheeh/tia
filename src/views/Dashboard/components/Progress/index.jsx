@@ -4,12 +4,10 @@ import React, { Component } from 'react';
 // Externals
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
-// Tess
-
-import { BoxFrom } from '@material-ui/core/Box';
+// Tesa
+import { boxFrom } from '@material-ui/core/Box';
 // Tse
-
-import { RatingFrom } from '@material-ui/lab/Rating';
+import { ratingFrom } from '@material-ui/lab/Rating';
 
 // Material helpers
 import { withStyles } from '@material-ui/core';
