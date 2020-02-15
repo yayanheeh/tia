@@ -25,7 +25,7 @@ export default function MediaCard() {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="/static/images/cards/contemplative-reptile.jpg"
+          image="https://cdn.pixabay.com/photo/2015/12/05/06/20/kid-1077793__480.jpg"
           title="Contemplative Reptile"
         />
         <CardContent>
