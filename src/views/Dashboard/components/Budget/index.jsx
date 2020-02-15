@@ -39,21 +39,7 @@ class Budget extends Component {
             <img src="https://cdn.pixabay.com/photo/2019/07/30/08/44/the-pilgrims-guide-4372296__480.jpg"/>
           </div>
         </div>
-        <div className={classes.footer}>
-          <Typography
-            className={classes.difference}
-            variant="body2"
-          >
-            <ArrowDownwardIcon />
-            12%
-          </Typography>
-          <Typography
-            className={classes.caption}
-            variant="caption"
-          >
-            Since last month
-          </Typography>
-        </div>
+        
       </Paper>
     );
   }
