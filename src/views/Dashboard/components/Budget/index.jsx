@@ -34,20 +34,7 @@ class Budget extends Component {
         className={rootClassName}
       >
         <div className={classes.content}>
-          <div className={classes.details}>
-            <Typography
-              className={classes.title}
-              variant="body2"
-            >
-              BUDGET
-            </Typography>
-            <Typography
-              className={classes.value}
-              variant="h3"
-            >
-              $24,000
-            </Typography>
-          </div>
+       
           <div className={classes.iconWrapper}>
             <img src="https://cdn.pixabay.com/photo/2019/07/30/08/44/the-pilgrims-guide-4372296__480.jpg"/>
           </div>
