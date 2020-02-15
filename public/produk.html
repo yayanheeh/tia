@@ -1,51 +1,24 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hello, world!</title>
+    
+    <!-- Garangan CSS -->
+    <link rel="icon"href="https://yayanheeh.github.io/garangan-v1/img/favicons/favicon.png">    
+    <link rel="shortcut icon"href="https://yayanheeh.github.io/garangan-v1/img/favicons/favicon.ico">
+    <link rel="stylesheet"href="https://yayanheeh.github.io/garangan-v1/dist/docs.min.css">
+    <link rel="stylesheet"href="https://yayanheeh.github.io/garangan-v1/dist/garangan.min.css">
+    <link rel="stylesheet"href="https://yayanheeh.github.io/garangan-v1/dist/garangan-icons.min.css">
+    <link rel="stylesheet"href="https://yayanheeh.github.io/garangan-v1/dist/garangan-exp.min.css">
+    </head>
+  
+ <body>
+    
+<div class="docs-sidebar off-canvas-sidebar" id="sidebar">
+        <div class="docs-brand"><a class="docs-logo" href="../index.html"><img src="https://yayanheeh.github.io/garangan-v1/img/logo.png" alt="garangan CSS Framework">
+            <h2>GARANGAN</h2><small class="label label-secondary text-bold">V1</small></a></div></div>
+ </body>
+</html>
 
-const useStyles = makeStyles({
-  root: {
-    maxWidth: 345,
-  },
-  media: {
-    height: 140,
-  },
-});
-
-export default function MediaCard() {
-  const classes = useStyles();
-
-  return (
-    <Card className={classes.root}>
-      <CardActionArea>
-        <CardMedia
-          className={classes.media}
-          image="https://cdn.pixabay.com/photo/2015/12/05/06/20/kid-1077793__480.jpg"
-          title="Contemplative Reptile"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            Lizard
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
-        </Button>
-      </CardActions>
-    </Card>
-  );
-}
