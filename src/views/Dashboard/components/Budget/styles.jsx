@@ -44,17 +44,17 @@ export default theme => ({
     marginLeft: theme.spacing.unit
   },
 banner {
-  width: 100%;
-  height:banner {
-  width: 100%;
-  height: 400px;
-  background-image: url(https://i.ytimg.com/vi/9DuyQVZWSMo/maxresdefault.jpg);
+  width: '100%',
+  height: .banner {
+  width: '100%',
+  height: '400px',
+  background-image: 'url(https://i.ytimg.com/vi/9DuyQVZWSMo/maxresdefault.jpg)',
   background-position: center center;
   background-size: cover;
-} 400px;
-  background-image: url(https://i.ytimg.com/vi/9DuyQVZWSMo/maxresdefault.jpg);
-  background-position: center center;
-  background-size: cover;
+} '400px',
+  background-image: 'url(https://i.ytimg.com/vi/9DuyQVZWSMo/maxresdefault.jpg)',
+  background-position: center.center,
+  background-size: 'cover'
 }
 
 });
