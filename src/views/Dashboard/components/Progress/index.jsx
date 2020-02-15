@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Rating from '@material-ui/lab/Rating';
+import Box from '@material-ui/core/Box';
 
 // Externals
 import classNames from 'classnames';
@@ -50,10 +52,16 @@ class Progress extends Component {
           </div>
         </div>
         <div className={classes.footer}>
-          <LinearProgress
-            value={75.5}
-            variant="determinate"
-          />
+          <Box component="fieldset" mb={3} borderColor="transparent">
+        <Typography component="legend">Controlled</Typography>
+        <Rating
+          name="simple-controlled"
+          value={value}
+          onChange={(event, newValue) => {
+            setValue(newValue);
+          }}
+        />
+      </Box>
         </div>
       </Paper>
     );
