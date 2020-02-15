@@ -39,15 +39,14 @@ class Budget extends Component {
         {...rest}
         className={rootClassName}
       >
-        <div className={classes.content}>
-       
+           
               <Card className={classes.root}>
       <CardActionArea>
         <CardMedia
           component="img"
           alt="Contemplative Reptile"
           height="140"
-          image="/static/images/cards/contemplative-reptile.jpg"
+          image="https://cdn.pixabay.com/photo/2019/06/22/18/26/woman-4292185_1280.jpg"
           title="Contemplative Reptile"
         />
         <CardContent>
@@ -63,7 +62,7 @@ class Budget extends Component {
       <CardActions>
         Tes
       </CardActions>
-    </Card>  </div>
+    </Card> 
         
       </Paper>
     );
