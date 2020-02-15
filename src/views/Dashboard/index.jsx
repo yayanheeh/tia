@@ -49,9 +49,9 @@ class Dashboard extends Component {
           >
             <Grid
               item
-              lg={3}
-              sm={6}
-              xl={3}
+              lg={8}
+              md={12}
+              xl={9}
               xs={12}
             >
               <Budget className={classes.item} />
