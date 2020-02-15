@@ -49,7 +49,7 @@ class Budget extends Component {
             </Typography>
           </div>
           <div className={classes.iconWrapper}>
-            <MoneyIcon className={classes.icon} />
+            <img src="https://cdn.pixabay.com/photo/2019/07/30/08/44/the-pilgrims-guide-4372296__480.jpg"/>
           </div>
         </div>
         <div className={classes.footer}>
