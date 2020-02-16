@@ -124,34 +124,25 @@ class Topbar extends Component {
             </Typography>
             
             
-            <Button
-                  color="primary"
-                  component={Link}
-                  size="small"
-                  to="#"
-                  variant="contained"
-                >
-                  See all
-                </Button>
-            <Button
-                  color="primary"
-                  component={Link}
-                  size="small"
-                  to="#"
-                  variant="contained"
-                >
-                  See all
-                </Button>
             
-            <Button
-                  color="primary"
-                  component={Link}
-                  size="small"
-                  to="#"
-                  variant="contained"
-                >
-                  See all
-                </Button>
+            <Typography
+              className={classes.title}
+              variant="h4"
+            >
+              HOME
+            </Typography>
+            <Typography
+              className={classes.title}
+              variant="h4"
+            >
+              tENTANG
+            </Typography>
+            <Typography
+              className={classes.title}
+              variant="h4"
+            >
+              aLAMAT
+            </Typography>
             
             <IconButton
               className={classes.notificationsButton}
