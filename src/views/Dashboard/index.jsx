@@ -57,6 +57,25 @@ class Dashboard extends Component {
               <Budget className={classes.item} />
               
             </Grid>
+   
+   <!--tes==>
+
+            <Grid
+              item
+              md={7}
+              xs={12}
+            >
+              <OrdersTable className={classes.item} />
+            </Grid>
+            <Grid
+              item
+              md={5}
+              xs={12}
+            >
+              <ProductList className={classes.item} />
+            </Grid>
+          
+<!--a-->
              <Grid
               item
               lg={8}
