@@ -1,5 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import { withRouter } from 'react-router-dom';
+import Hidden from '@material-ui/core/Hidden';
+
 
 // Externals
 import classNames from 'classnames';
@@ -124,7 +126,8 @@ class Topbar extends Component {
             </Typography>
             
             
-            
+            <Hidden
+              smDown>
             <Typography
               className={classes.title}
               variant="h6"
@@ -143,7 +146,7 @@ class Topbar extends Component {
             >
               Hubungi kami
             </Typography>
-            
+            </Hidden>
             <IconButton
               className={classes.notificationsButton}
               onClick={this.handleShowNotifications}
