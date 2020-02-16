@@ -41,8 +41,9 @@ class Budget extends Component {
         <CardMedia
           component="img"
           alt="Contemplative Reptile"
-          height="140"
-          image="https://cdn.pixabay.com/photo/2019/06/22/18/26/woman-4292185_1280.jpg"
+          height="300"
+          width="990"
+          image="https://cdn.pixabay.com/photo/2018/05/07/04/41/ramadan-3380068_960_720.jpg"
           title="Contemplative Reptile"
         />
         
