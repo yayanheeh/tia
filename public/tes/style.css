@@ -1,0 +1,52 @@
+/*     Fonts
+******************************************/
+/*    Colors
+*****************************************/
+* {
+  margin: 0;
+  paddin: 0;
+}
+
+html {
+  font-size: 100%;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  vertical-align: middle;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  height: 100px !important;
+}
+.navbar .navbar-inner {
+  background: #0C213D;
+  width: 100%;
+  text-align: center;
+}
+.navbar .navbar-inner img {
+  width: 85%;
+  margin: 0 1rem 0 3rem;
+}
+
+.pages {
+  margin-top: 2rem;
+}
+
+.toolbar {
+  text-align: center !important;
+}
+.toolbar a.link {
+  margin: 0 1rem 0 1rem;
+}
