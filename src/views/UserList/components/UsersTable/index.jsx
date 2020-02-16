@@ -111,9 +111,9 @@ class UsersTable extends Component {
                       }
                       onChange={this.handleSelectAll}
                     />
-                    <small>Jadwal Berangkat</small>
+                   <small>Jadwal Berangkat</small>
                   </TableCell>
-                  <TableCell align="left"><small>Berangkat dari</TableCell>
+                  <TableCell align="left"><small>Berangkat dari</smaal></TableCell>
                   <TableCell align="left"><small>Durasi perjalanan</smaal></TableCell>
                 <TableCell align="left"><small>Maskapai</small></TableCell>
               <TableCell align="left"><small>Hotel bintang</small></TableCell>
