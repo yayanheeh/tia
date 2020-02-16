@@ -127,21 +127,21 @@ class Topbar extends Component {
             
             <Typography
               className={classes.title}
-              variant="h4"
+              variant="h6"
             >
-              HOME
+              Tentang kami
             </Typography>
             <Typography
               className={classes.title}
-              variant="h4"
+              variant="h6"
             >
-              tENTANG
+              Pembelian
             </Typography>
             <Typography
               className={classes.title}
-              variant="h4"
+              variant="h6"
             >
-              aLAMAT
+              Hubungi kami
             </Typography>
             
             <IconButton
