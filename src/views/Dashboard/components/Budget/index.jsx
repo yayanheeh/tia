@@ -36,7 +36,7 @@ class Budget extends Component {
 
     return (
       
-              <Card className={classes.root}>
+              <div className={classes.root}>
       
         <CardMedia
           component="img"
@@ -46,7 +46,7 @@ class Budget extends Component {
           title="Contemplative Reptile"
         />
         
-    </Card> 
+    </div> 
         
       
     );
