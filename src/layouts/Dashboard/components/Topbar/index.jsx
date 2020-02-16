@@ -122,6 +122,37 @@ class Topbar extends Component {
             >
               {title}
             </Typography>
+            
+            
+            <Button
+                  color="primary"
+                  component={Link}
+                  size="small"
+                  to="#"
+                  variant="contained"
+                >
+                  See all
+                </Button>
+            <Button
+                  color="primary"
+                  component={Link}
+                  size="small"
+                  to="#"
+                  variant="contained"
+                >
+                  See all
+                </Button>
+            
+            <Button
+                  color="primary"
+                  component={Link}
+                  size="small"
+                  to="#"
+                  variant="contained"
+                >
+                  See all
+                </Button>
+            
             <IconButton
               className={classes.notificationsButton}
               onClick={this.handleShowNotifications}
