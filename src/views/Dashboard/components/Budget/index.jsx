@@ -41,9 +41,9 @@ class Budget extends Component {
         <CardMedia
           component="img"
           alt="Contemplative Reptile"
-          height="300"
+          height="320"
           width="990"
-          image="https://cdn.pixabay.com/photo/2018/05/07/04/41/ramadan-3380068_960_720.jpg"
+          image="https://kiblatq.com/wp-content/uploads/2019/07/cropped-KiblatQ-Masjidil-Haram-Header-1024x315.jpg"
           title="Contemplative Reptile"
         />
         
