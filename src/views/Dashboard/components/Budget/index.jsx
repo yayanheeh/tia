@@ -35,11 +35,7 @@ class Budget extends Component {
     const rootClassName = classNames(classes.root, className);
 
     return (
-      <Paper
-        {...rest}
-        className={rootClassName}
-      >
-           
+      
               <Card className={classes.root}>
       
         <CardMedia
@@ -52,7 +48,7 @@ class Budget extends Component {
         
     </Card> 
         
-      </Paper>
+      
     );
   }
 }
