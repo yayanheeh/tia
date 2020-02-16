@@ -111,12 +111,12 @@ class UsersTable extends Component {
                       }
                       onChange={this.handleSelectAll}
                     />
-                    Name
+                    <small>Jadwal Berangkat</small>
                   </TableCell>
-                  <TableCell align="left">ID</TableCell>
-                  <TableCell align="left">State</TableCell>
-                  <TableCell align="left">Phone</TableCell>
-                  <TableCell align="left">Registration date</TableCell>
+                  <TableCell align="left"><small>Berangkat dari</TableCell>
+                  <TableCell align="left"><small>Durasi perjalanan</smaal></TableCell>
+                <TableCell align="left"><small>Maskapai</small></TableCell>
+              <TableCell align="left"><small>Hotel bintang</small></TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
