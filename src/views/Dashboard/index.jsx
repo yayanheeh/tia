@@ -41,7 +41,7 @@ class Dashboard extends Component {
     return (
       <DashboardLayout title="Dashboard">
         <div className={classes.root}>
-         
+         <Budget className={classes.item} />
 
  <Grid
             container
