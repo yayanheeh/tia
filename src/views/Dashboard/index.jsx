@@ -47,21 +47,8 @@ class Dashboard extends Component {
 
  <Grid
             container
-            spacing={4}
+            spacing={2}
           >
-            <Grid
-              item
-              lg={8}
-              md={12}
-              xl={9}
-              xs={12}
-            >
-              <Budget className={classes.item} />
-              
-            </Grid>
-   
-   
-   
 
             <Grid
               item
