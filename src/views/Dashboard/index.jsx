@@ -47,12 +47,12 @@ class Dashboard extends Component {
 
  <Grid
             container
-            spacing={2}
+            spacing={3}
           >
 
             <Grid
               item
-              md={3}
+              md={4}
               xs={12}
             >
               <ProductList className={classes.item} />
@@ -61,7 +61,7 @@ class Dashboard extends Component {
    </Grid>
             <Grid
               item
-              md={8}
+              md={10}
               xs={12}
             >
                   <OrdersTable className={classes.item} />
