@@ -52,18 +52,22 @@ class Dashboard extends Component {
 
             <Grid
               item
-              md={7}
-              xs={12}
-            >
-              <OrdersTable className={classes.item} />
-            </Grid>
-            <Grid
-              item
-              md={5}
+              md={3}
               xs={12}
             >
               <ProductList className={classes.item} />
-            </Grid>
+       
+
+   </Grid>
+            <Grid
+              item
+              md={8}
+              xs={12}
+            >
+                  <OrdersTable className={classes.item} />
+         
+
+ </Grid>
           
 
 
