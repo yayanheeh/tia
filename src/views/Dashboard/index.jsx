@@ -61,7 +61,7 @@ class Dashboard extends Component {
    </Grid>
             <Grid
               item
-              md={10}
+              md={9}
               xs={12}
             >
                   <OrdersTable className={classes.item} />
