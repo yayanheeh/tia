@@ -80,7 +80,7 @@ export default function RecipeReviewCard() {
                   <ListItemText
                     primary="Jadwal berangkat" />
         <ListItemText
-                    primary={<Typography type="body2" style={{ color: '#0000FF' }}>12 Mei 2020</Typography>}
+                    primary={<Typography type="left" style={{ color: '#0000FF' }}>12 Mei 2020</Typography>}
       />
                             
                 </ListItem>
@@ -91,7 +91,7 @@ export default function RecipeReviewCard() {
                   <ListItemText
                     primary="Durasi perjalanan" />
         <ListItemText
-                    primary={<Typography type="body2" style={{ color: '#0000FF' }}>20 Hari</Typography>}
+                    primary={<Typography type="left" style={{ color: '#0000FF' }}>20 Hari</Typography>}
       />
                             
                 </ListItem>
@@ -102,7 +102,7 @@ export default function RecipeReviewCard() {
                   <ListItemText
                     primary="Kelas hotel" />
         <ListItemText
-                    primary={<Typography type="body2" style={{ color: '#0000FF' }}>Bintang 3</Typography>}
+                    primary={<Typography type="left" style={{ color: '#0000FF' }}>Bintang 3</Typography>}
       />
                             
                 </ListItem>
@@ -113,7 +113,7 @@ export default function RecipeReviewCard() {
                   <ListItemText
                     primary="Bearangkat dari" />
         <ListItemText
-                    primary={<Typography type="body2" style={{ color: '#0000FF' }}>jakarta</Typography>}
+                    primary={<Typography type="left" style={{ color: '#0000FF' }}>jakarta</Typography>}
       />
                             
                 </ListItem>
@@ -124,7 +124,7 @@ export default function RecipeReviewCard() {
                   <ListItemText
                     primary="Maskapai" />
         <ListItemText
-                    primary={<Typography type="body2" style={{ color: '#0000FF' }}>Saudi airlines</Typography>}
+                    primary={<Typography type="left" style={{ color: '#0000FF' }}>Saudi airlines</Typography>}
       />
                             
                 </ListItem>
