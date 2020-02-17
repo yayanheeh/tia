@@ -50,7 +50,7 @@ export default function MediaCard() {
         </Button>
       </CardActions>
       
-      <Grid container spacing={1}>
+     
         <Grid item xs>tes
             </Grid>
         <Grid item xs>
