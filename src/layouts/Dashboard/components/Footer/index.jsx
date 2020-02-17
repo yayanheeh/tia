@@ -1,53 +1,33 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import BottomNavigation from '@material-ui/core/BottomNavigation';
+import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
+import RestoreIcon from '@material-ui/icons/Restore';
+import FavoriteIcon from '@material-ui/icons/Favorite';
+import LocationOnIcon from '@material-ui/icons/LocationOn';
 
-// Externals
-import PropTypes from 'prop-types';
-import classNames from 'classnames';
-
-// Material helpers
-import { withStyles } from '@material-ui/core';
-
-// Material components
-import { Divider, Typography } from '@material-ui/core';
-
-// Component styles
-const styles = theme => ({
+const useStyles = makeStyles({
   root: {
-    padding: theme.spacing.unit * 4
+    width: 500,
   },
-  company: {
-    marginTop: theme.spacing.unit * 2,
-    marginBottom: theme.spacing.unit * 0.5
-  }
 });
 
-class Footer extends Component {
-  render() {
-    const { classes, className } = this.props;
+export default function SimpleBottomNavigation() {
+  const classes = useStyles();
+  const [value, setValue] = React.useState(0);
 
-    const rootClassName = classNames(classes.root, className);
-
-    return (
-      <div className={rootClassName}>
-        <Divider />
-        <Typography
-          className={classes.company}
-          variant="body1"
-        >
-          &copy; Devias Io. 2019
-        </Typography>
-        <Typography variant="caption">
-          Created with love for the environment. By designers and developers who
-          love to work together in offices!
-        </Typography>
-      </div>
-    );
-  }
+  return (
+    <BottomNavigation
+      value={value}
+      onChange={(event, newValue) => {
+        setValue(newValue);
+      }}
+      showLabels
+      className={classes.root}
+    >
+      <BottomNavigationAction label="Recents" icon={<RestoreIcon />} />
+      <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
+      <BottomNavigationAction label="Nearby" icon={<LocationOnIcon />} />
+    </BottomNavigation>
+  );
 }
-
-Footer.propTypes = {
-  className: PropTypes.string,
-  classes: PropTypes.object.isRequired
-};
-
-export default withStyles(styles)(Footer);
