@@ -60,22 +60,22 @@ class Sidebar extends Component {
         <div className={classes.profile}>
           <Link to="/account">
             <Avatar
-              alt="Roman Kutepov"
+              alt=""
               className={classes.avatar}
-              src="/images/avatars/avatar_1.png"
+              src="https://cdn.pixabay.com/photo/2017/05/11/04/01/question-2302705_1280.jpg"
             />
           </Link>
           <Typography
             className={classes.nameText}
             variant="h6"
           >
-            Roman Kutepov
+            Chat penjual
           </Typography>
           <Typography
             className={classes.bioText}
             variant="caption"
           >
-            Brain Director
+            083851070xxx
           </Typography>
         </div>
         <Divider className={classes.profileDivider} />
