@@ -26,7 +26,7 @@ export default function SimpleBottomNavigation() {
         setValue(newValue);
       }}
       showLabels
-      className={classes.root.stickToBottom}
+      className={classes.root.stickToBottom}>
     
       <BottomNavigationAction label="Recents" icon={<RestoreIcon />} />
       <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
