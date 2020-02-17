@@ -64,7 +64,7 @@ export default function RecipeReviewCard() {
  <Grid container spacing={3}>
 
   
-            <Grid itemmd={8} xs={12} >
+            <Grid itemmd={4} xs={12} >
                   Tes1
          </Grid>
            <Grid
