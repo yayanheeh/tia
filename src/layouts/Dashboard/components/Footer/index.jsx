@@ -27,9 +27,12 @@ export default function SimpleBottomNavigation() {
       showLabels
       className={classes.root}
     >
+
+<BottomNavigation className={classes.stickToBottom}>
+
       <BottomNavigationAction label="Recents" icon={<RestoreIcon />} />
       <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
       <BottomNavigationAction label="Nearby" icon={<LocationOnIcon />} />
-    </BottomNavigation>
+    </BottomNavigation></BottomNavigation>
   );
 }
