@@ -57,14 +57,13 @@ export default function MediaCard() {
       </CardActions>
       
       <Grid container spacing={1}>
+        <Grid item xs>tes
+            </Grid>
         <Grid item xs>
-          <Paper className={classes.paper}>xs</Paper>
+         tes1
         </Grid>
         <Grid item xs>
-          <Paper className={classes.paper}>xs</Paper>
-        </Grid>
-        <Grid item xs>
-          <Paper className={classes.paper}>xs</Paper>
+          tes2
         </Grid>
     </Card>
           
