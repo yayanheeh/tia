@@ -1,8 +1,5 @@
 import React from 'react';
 
-// Material components
-import { Grid } from '@material-ui/core';
-
 import { makeStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
 import Card from '@material-ui/core/Card';
@@ -19,6 +16,8 @@ import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
+import Paper from '@material-ui/core/Paper';
+import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -55,27 +54,9 @@ export default function RecipeReviewCard() {
 
           
 
-<div className={classes.root}>
 
 
-
-         
-
- <Grid container spacing={3}>
-
-  
-            <Grid itemmd={4} xs={12} >
-                  Tes1
-         </Grid>
-           <Grid
-              item
-            md={4}
-              xs={12}
-            >
-              Tes2
-              
-            </Grid>
-</Grid></div>
+ 
 
       <CardHeader
         avatar={
@@ -118,6 +99,25 @@ export default function RecipeReviewCard() {
       </CardActions>
       
       </Card>
+    
+    
+   
+
+
+<div className={classes.root}>
+      <Grid container spacing={1}>
+        <Grid container item xs={12} spacing={3}>
+          tes
+        </Grid>
+        <Grid container item xs={12} spacing={3}>
+          dddd
+        </Grid>
+        <Grid container item xs={12} spacing={3}>
+          dddd
+         </Grid>
+      </Grid>
+    </div></div>
+         
     
   );
 }
