@@ -11,7 +11,7 @@ const useStyles = makeStyles({
   root: {
     flexGrow: 1,
     maxWidth: 100,
-    position: fixed,
+    
   },
 });
 
