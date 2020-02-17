@@ -80,7 +80,7 @@ export default function RecipeReviewCard() {
                   <ListItemText
                     primary="Jadwal berangkat" />
         <ListItemText
-                    primary={<Typography type="left" style={{ color: '#0000FF' }}>12 Mei 2020</Typography>}
+                    primary={<Typography type="right" style={{ color: '#0000FF' }}>12 Mei 2020</Typography>}
       />
                             
                 </ListItem>
@@ -91,7 +91,7 @@ export default function RecipeReviewCard() {
                   <ListItemText
                     primary="Durasi perjalanan" />
         <ListItemText
-                    primary={<Typography type="left" style={{ color: '#0000FF' }}>20 Hari</Typography>}
+                    primary={<Typography type="right" style={{ color: '#0000FF' }}>20 Hari</Typography>}
       />
                             
                 </ListItem>
