@@ -7,13 +7,14 @@ import PhoneIcon from '@material-ui/icons/Phone';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import PersonPinIcon from '@material-ui/icons/PersonPin';
 // Component styles
-import styles from './styles.css';
-const useStyles = makeStyles({
-  root: {
-    flexGrow: 1,
-    
+const styles = {
+  stickToBottom: {
+    width: '100%',
+    position: 'fixed',
+    bottom: 0,
   },
-});
+};
+  
 
 export default function IconLabelTabs() {
   const classes = useStyles();
@@ -24,7 +25,7 @@ export default function IconLabelTabs() {
   };
 
   return (
-    <Paper square className={classes.root}>
+    <Paper square className={classes.stickToBottom.root}>
      <Yan> <Tabs
         value={value}
         onChange={handleChange}
