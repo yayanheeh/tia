@@ -79,7 +79,48 @@ export default function RecipeReviewCard() {
         <ListItemText
                     primary="Jakarta" />
                             
-                </ListItem>,
+                </ListItem>
+      
+      <ListItem>
+                  <ListItemIcon>
+                    <FolderIcon />
+                  </ListItemIcon>
+                  <ListItemText
+                    primary="Bearangkat dari" />
+        <ListItemText
+                    primary="Jakarta" />
+                            
+                </ListItem>
+      <ListItem>
+                  <ListItemIcon>
+                    <FolderIcon />
+                  </ListItemIcon>
+                  <ListItemText
+                    primary="Bearangkat dari" />
+        <ListItemText
+                    primary="Jakarta" />
+                            
+                </ListItem>
+      <ListItem>
+                  <ListItemIcon>
+                    <FolderIcon />
+                  </ListItemIcon>
+                  <ListItemText
+                    primary="Bearangkat dari" />
+        <ListItemText
+                    primary="Jakarta" />
+                            
+                </ListItem>
+      <ListItem>
+                  <ListItemIcon>
+                    <FolderIcon />
+                  </ListItemIcon>
+                  <ListItemText
+                    primary="Bearangkat dari" />
+        <ListItemText
+                    primary="Jakarta" />
+                            
+                </ListItem>
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
           This impressive paella is a perfect party dish and a fun meal to cook together with your
