@@ -75,20 +75,19 @@ class Dashboard extends Component {
              
             <Grid
               item
-              lg={3}
-              sm={6}
-              xl={3}
+            md={4}
               xs={12}
             >
-              <Progress className={classes.item} />
+              
+              
             </Grid>
             <Grid
               item
-              lg={3}
-              sm={6}
-              xl={3}
+              md={8}
               xs={12}
             >
+              <Progress className={classes.item} />
+            
               <Profit className={classes.item} />
             </Grid>
             <Grid
