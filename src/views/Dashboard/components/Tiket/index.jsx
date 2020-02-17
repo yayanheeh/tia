@@ -17,6 +17,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import FolderIcon from '@material-ui/icons/Folder';
 import FlightTakeoff from '@material-ui/icons/FlightTakeoff';
+import DateRange from '@material-ui/icons/DateRange';
 
 
 
@@ -123,7 +124,7 @@ export default function RecipeReviewCard() {
                 </ListItem>
       <ListItem>
                   <ListItemIcon>
-                    <FolderIcon />
+                    <DateRange />
                   </ListItemIcon>
                   <ListItemText
                     primary="Jadwal berangkat" />
