@@ -137,13 +137,7 @@ class Topbar extends Component {
                 <NotificationsIcon />
               </Badge>
             </IconButton>
-            <Hidden
-              smDown>
-            <Button color="inherit">Login</Button>
-  <Button color="inherit">Login</Button>
-              <Button color="inherit">Login</Button>
-              <Button color="inherit">Login</Button>
-            </Hidden>
+            
             
             <IconButton
               className={classes.signOutButton}
@@ -151,6 +145,14 @@ class Topbar extends Component {
             >
               <InputIcon />
             </IconButton>
+            
+            <Hidden
+              smDown>
+            <Button color="inherit">Login</Button>
+  <Button color="inherit">Login</Button>
+              <Button color="inherit">Login</Button>
+              <Button color="inherit">Login</Button>
+            </Hidden>
           </Toolbar>
         </div>
         <Popover
