@@ -1,7 +1,8 @@
 import React, { Component, Fragment } from 'react';
 import { Link } from 'react-router-dom';
+import Button from '@material-ui/core/Button';
 
-// Externals
+//Externals
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
@@ -61,6 +62,16 @@ class NotificationList extends Component {
         {notifications.length > 0 ? (
           <Fragment>
             <div className={classes.header}>
+              
+            
+            <Hidden
+              smDown>
+            <Button color="inherit">Login</Button>
+  <Button color="inherit">Login</Button>
+              <Button color="inherit">Login</Button>
+              <Button color="inherit">Login</Button>
+            </Hidden>
+              
               <Typography variant="h6">User Notifications</Typography>
               <Typography
                 className={classes.subtitle}
