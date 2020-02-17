@@ -1,46 +1,27 @@
+
+ 
+
+
+
+
+
+
 import React from 'react';
-import PropTypes from 'prop-types';
-import clsx from 'clsx';
+import PropTypes 
+import { render } from 'react-dom';
 import { makeStyles } from '@material-ui/styles';
 import { Typography, Link } from '@material-ui/core';
 
-const useStyles = makeStyles(theme => ({
-  root: {
-    padding: theme.spacing(4)
-  }
-}));
+const Footer = () => (
+  <footer className="footer">
+    <p>Some footer nonsense!</p>
+  </footer>
+);
 
-const Footer = props => {
-  const { className, ...rest } = props;
+const App = () => (
+  <div className="content">
+    <h1>Hi guys!</h1>
+  </div>
+);
 
-  const classes = useStyles();
-
-  return (
-    <div
-      {...rest}
-      className={clsx(classes.root, className)}
-    >
-      <Typography variant="body1">
-        &copy;{' '}
-        <Link
-          component="a"
-          href="https://devias.io/"
-          target="_blank"
-        >
-          Devias IO
-        </Link>
-        . 2019
-      </Typography>
-      <Typography variant="caption">
-        Created with love for the environment. By designers and developers who
-        love to work together in offices!
-      </Typography>
-    </div>
-  );
-};
-
-Footer.propTypes = {
-  className: PropTypes.string
-};
-
-export default Footer;
+render([<App key="1" />, <Footer key="2" />], document.getElementById("root"));
