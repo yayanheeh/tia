@@ -21,6 +21,7 @@ import DateRange from '@material-ui/icons/DateRange';
 import Store from '@material-ui/icons/Store';
 import DirectionsWalk from '@material-ui/icons/DirectionsWalk';
 import AccessAlarms from '@material-ui/icons/AccessAlarms';
+import StarBorder from '@material-ui/icons/StarBorder';
 
 
 
@@ -98,7 +99,7 @@ export default function RecipeReviewCard() {
                   <ListItemText
                     primary="Kelas hotel" />
         <ListItemText
-                    primary={<Typography type="secondary" style={{ align: 'left'  }}>Bintang 3</Typography>}
+                    primary={<Typography type="secondary" style={{ align: 'left'  }}><StarBorder/><StarBorder/><StarBorder/> </Typography>}
       />
                             
                 </ListItem>
