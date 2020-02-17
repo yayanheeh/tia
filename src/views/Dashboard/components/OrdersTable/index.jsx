@@ -52,7 +52,9 @@ export default function RecipeReviewCard() {
   };
 
   return (
-    <Card className={classes.root}>
+          <div className={classes.root}>
+
+
 
          
 
@@ -126,6 +128,6 @@ export default function RecipeReviewCard() {
       </CardActions>
       
       
-    </Card>
+    
   );
 }
