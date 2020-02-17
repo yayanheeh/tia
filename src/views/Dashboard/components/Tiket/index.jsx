@@ -71,16 +71,41 @@ export default function RecipeReviewCard() {
         subheader="September 14, 2016"
       />
       <ListItem>
+                  
+      
+      <ListItem>
                   <ListItemIcon>
                     <FolderIcon />
                   </ListItemIcon>
                   <ListItemText
-                    primary="Bearangkat dari" />
+                    primary="Jadwal berangkat" />
         <ListItemText
-                    primary="Jakarta" />
+                    primary={<Typography type="body2" style={{ color: '#0000FF' }}>12 Mei 2020</Typography>}
+      />
                             
                 </ListItem>
-      
+      <ListItem>
+                  <ListItemIcon>
+                    <FolderIcon />
+                  </ListItemIcon>
+                  <ListItemText
+                    primary="Durasi perjalanan" />
+        <ListItemText
+                    primary={<Typography type="body2" style={{ color: '#0000FF' }}>20 Hari</Typography>}
+      />
+                            
+                </ListItem>
+      <ListItem>
+                  <ListItemIcon>
+                    <FolderIcon />
+                  </ListItemIcon>
+                  <ListItemText
+                    primary="Kelas hotel" />
+        <ListItemText
+                    primary={<Typography type="body2" style={{ color: '#0000FF' }}>Bintang 3</Typography>}
+      />
+                            
+                </ListItem>
       <ListItem>
                   <ListItemIcon>
                     <FolderIcon />
@@ -97,29 +122,10 @@ export default function RecipeReviewCard() {
                     <FolderIcon />
                   </ListItemIcon>
                   <ListItemText
-                    primary="Bearangkat dari" />
+                    primary="Maskapai" />
         <ListItemText
-                    primary="Jakarta" />
-                            
-                </ListItem>
-      <ListItem>
-                  <ListItemIcon>
-                    <FolderIcon />
-                  </ListItemIcon>
-                  <ListItemText
-                    primary="Bearangkat dari" />
-        <ListItemText
-                    primary="Jakarta" />
-                            
-                </ListItem>
-      <ListItem>
-                  <ListItemIcon>
-                    <FolderIcon />
-                  </ListItemIcon>
-                  <ListItemText
-                    primary="Bearangkat dari" />
-        <ListItemText
-                    primary="Jakarta" />
+                    primary={<Typography type="body2" style={{ color: '#0000FF' }}>Saudi airlines</Typography>}
+      />
                             
                 </ListItem>
       <CardContent>
