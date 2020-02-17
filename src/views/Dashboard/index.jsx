@@ -22,6 +22,7 @@ import {
   DevicesChart,
   ProductList,
   Tiket,
+  Promo,
   OrdersTable
 } from './components';
 
