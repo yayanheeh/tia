@@ -9,17 +9,7 @@ import { withStyles } from '@material-ui/core';
 // Shared layouts
 import { Dashboard as DashboardLayout } from 'layouts';
 
-// Component styles
-const styles = theme => ({
-  root: {
-    padding: theme.spacing.unit * 4
-  },
-  iframe: {
-    width: '100%',
-    minHeight: '640px',
-    border: 0
-  }
-});
+
 
 class OrdersTable extends Component {
   render() {
@@ -28,11 +18,7 @@ class OrdersTable extends Component {
     return (
       <DashboardLayout title="Icons">
         <div className={classes.root}>
-          <iframe
-            className={classes.iframe}
-            src="https://material.io/tools/icons/?icon=accessibility&style=outline"
-            title="Material Design icons"
-          />
+          tessting
         </div>
       </DashboardLayout>
     );
