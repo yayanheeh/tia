@@ -146,13 +146,7 @@ class Topbar extends Component {
               <InputIcon />
             </IconButton>
             
-            <Hidden
-              smDown>
-            <Button color="inherit">Login</Button>
-  <Button color="inherit">Login</Button>
-              <Button color="inherit">Login</Button>
-              <Button color="inherit">Login</Button>
-            </Hidden>
+            
           </Toolbar>
         </div>
         <Popover
@@ -173,6 +167,14 @@ class Topbar extends Component {
             onSelect={this.handleCloseNotifications}
           />
         </Popover>
+        
+        <Hidden
+              smDown>
+            <Button color="inherit">Login</Button>
+  <Button color="inherit">Login</Button>
+              <Button color="inherit">Login</Button>
+              <Button color="inherit">Login</Button>
+            </Hidden>
       </Fragment>
     );
   }
