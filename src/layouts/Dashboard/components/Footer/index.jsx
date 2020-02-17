@@ -7,7 +7,7 @@ import PhoneIcon from '@material-ui/icons/Phone';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import PersonPinIcon from '@material-ui/icons/PersonPin';
 // Component styles
-const styles = {
+const useStyles = {
   stickToBottom: {
     width: '100%',
     position: 'fixed',
@@ -17,7 +17,7 @@ const styles = {
   
 
 export default function IconLabelTabs() {
-  const classes = styles ();
+  const classes = useStyles ();
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
