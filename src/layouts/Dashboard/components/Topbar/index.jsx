@@ -125,27 +125,13 @@ class Topbar extends Component {
               {title}
             </Typography>
             
-            
+            jjhuttfd
             <Hidden
               smDown>
-            <Typography
-              className={classes.title}
-              variant="h6"
-            >
-              Tentang kami
-            </Typography>
-            <Typography
-              className={classes.title}
-              variant="h6"
-            >
-              Pembelian
-            </Typography>
-            <Typography
-              className={classes.title}
-              variant="h6"
-            >
-              Hubungi kami
-            </Typography>
+            <Button color="inherit">Login</Button>
+  <Button color="inherit">Login</Button>
+              <Button color="inherit">Login</Button>
+              <Button color="inherit">Login</Button>
             </Hidden>
             <IconButton
               className={classes.notificationsButton}
