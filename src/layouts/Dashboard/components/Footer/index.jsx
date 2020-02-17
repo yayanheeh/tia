@@ -1,45 +1,36 @@
 import React from 'react';
-import Paper from '@material-ui/core/Paper';
 import { makeStyles } from '@material-ui/core/styles';
-import Tabs from '@material-ui/core/Tabs';
-import Tab from '@material-ui/core/Tab';
-import PhoneIcon from '@material-ui/icons/Phone';
+import BottomNavigation from '@material-ui/core/BottomNavigation';
+import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
+import RestoreIcon from '@material-ui/icons/Restore';
 import FavoriteIcon from '@material-ui/icons/Favorite';
-import PersonPinIcon from '@material-ui/icons/PersonPin';
-// Component styles
-const useStyles = {
-  stickToBottom: {
-    width: '100%',
-    position: 'fixed',
-    bottom: 0,
-  },
-};
-  
+import LocationOnIcon from '@material-ui/icons/LocationOn';
+import Container from '@material-ui/core/Container';
 
-export default function IconLabelTabs() {
-  const classes = useStyles ();
+const useStyles = makeStyles({
+  root: {
+    
+  },
+});
+
+export default function SimpleBottomNavigation() {
+  const classes = useStyles();
   const [value, setValue] = React.useState(0);
 
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
-
   return (
-    <Paper square className={classes.root}>
-     <stickToBottom>
-
- <Tabs
-        value={value}
-        onChange={handleChange}
-        variant="fullWidth"
-        indicatorColor="secondary"
-        textColor="secondary"
-        aria-label="icon label tabs example"
-      >
-        <Tab icon={<PhoneIcon />} label="RECENTS" />
-        <Tab icon={<FavoriteIcon />} label="FAVORITES" />
-        <Tab icon={<PersonPinIcon />} label="NEARBY" />
-      </Tabs></stickToBottom>
-    </Paper>
+    <BottomNavigation
+      value={value}
+      onChange={(event, newValue) => {
+        setValue(newValue);
+      }}
+      showLabels
+      className={classes.root}
+    >
+<Container fixed>
+      <BottomNavigationAction label="Recents" icon={<RestoreIcon />} />
+      <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
+      <BottomNavigationAction label="Nearby" icon={<LocationOnIcon />} />
+   </Container fixed>
+ </BottomNavigation>
   );
 }
