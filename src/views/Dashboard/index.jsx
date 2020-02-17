@@ -21,6 +21,7 @@ import {
   SalesChart,
   DevicesChart,
   ProductList,
+  Tiket,
   OrdersTable
 } from './components';
 
@@ -61,14 +62,22 @@ class Dashboard extends Component {
    </Grid>
             <Grid
               item
-              md={8}
+              md={4}
               xs={12}
             >
                   <OrdersTable className={classes.item} />
          
 
  </Grid>
-          
+   <Grid
+              item
+              md={4}
+              xs={12}
+            >
+                  <Tiket className={classes.item} />
+         
+
+ </Grid>       
 
 
 
