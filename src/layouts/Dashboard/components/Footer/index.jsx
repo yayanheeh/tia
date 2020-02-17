@@ -17,7 +17,7 @@ const styles = {
   
 
 export default function IconLabelTabs() {
-  const classes = ();
+  const classes = styles ();
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
