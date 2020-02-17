@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import { withRouter } from 'react-router-dom';
 import Hidden from '@material-ui/core/Hidden';
-import Button from '@material-ui/core/Button';
+
 
 // Externals
 import classNames from 'classnames';
@@ -125,14 +125,6 @@ class Topbar extends Component {
               {title}
             </Typography>
             
-            jjhuttfd
-            <Hidden
-              smDown>
-            <Button color="inherit">Login</Button>
-  <Button color="inherit">Login</Button>
-              <Button color="inherit">Login</Button>
-              <Button color="inherit">Login</Button>
-            </Hidden>
             <IconButton
               className={classes.notificationsButton}
               onClick={this.handleShowNotifications}
