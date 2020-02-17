@@ -51,41 +51,31 @@ export default function RecipeReviewCard() {
     setExpanded(!expanded);
   };
 
-  return (
-          <div className={classes.root}>
+  return (<Card className={classes.root}>
 
-
-
-         
-
- <Grid
-            container
-            spacing={3}
-          >
-
-  
-            <Grid
-              item
-              md={8}
-              xs={12}
-            >
-                  Tes1
-         
-
- </Grid>
           
 
+<div className={classes.root}>
 
 
-             
-            <Grid
+
+         
+
+ <Grid container spacing={3}>
+
+  
+            <Grid itemmd={8} xs={12} >
+                  Tes1
+         </Grid>
+           <Grid
               item
             md={4}
               xs={12}
             >
               Tes2
               
-            </Grid></Grid>
+            </Grid>
+</Grid></div>
 
       <CardHeader
         avatar={
@@ -127,7 +117,7 @@ export default function RecipeReviewCard() {
         </IconButton>
       </CardActions>
       
-      
+      </Card>
     
   );
 }
