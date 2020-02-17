@@ -26,12 +26,13 @@ export default function SimpleBottomNavigation() {
         setValue(newValue);
       }}
       showLabels
-      className={classes.root.stickToBottom}>
-    
+      className={classes.root}>
+      <AppBar position="fixed" color="primary" className={{top: "auto", bottom: 0}}>
+
       <BottomNavigationAction label="Recents" icon={<RestoreIcon />} />
       <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
       <BottomNavigationAction label="Nearby" icon={<LocationOnIcon />} />
-
+</AppBar>
 </BottomNavigation>
   );
 }
