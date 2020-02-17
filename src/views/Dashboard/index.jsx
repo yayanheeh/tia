@@ -62,7 +62,7 @@ class Dashboard extends Component {
    </Grid>
             <Grid
               item
-              md={4}
+              md={2}
               xs={12}
             >
                   <OrdersTable className={classes.item} />
@@ -71,7 +71,7 @@ class Dashboard extends Component {
  </Grid>
    <Grid
               item
-              md={4}
+              md={2}
               xs={12}
             >
                   <Tiket className={classes.item} />
