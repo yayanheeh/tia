@@ -16,6 +16,9 @@ import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import FolderIcon from '@material-ui/icons/Folder';
+import FlightTakeoff from '@material-ui/icons/FlightTakeoff';
+
+
 
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
@@ -75,7 +78,7 @@ export default function RecipeReviewCard() {
       
       <ListItem>
                   <ListItemIcon>
-                    <FolderIcon />
+                    <FlightTakeoff/>
                   </ListItemIcon>
                   <ListItemText
                     primary="Maskapai" />
