@@ -168,14 +168,16 @@ class Topbar extends Component {
           />
         </Popover>
         
-        <Hidden
+        
+      </Fragment>
+      <Hidden
               smDown>
             <Button color="inherit">Login</Button>
   <Button color="inherit">Login</Button>
               <Button color="inherit">Login</Button>
               <Button color="inherit">Login</Button>
             </Hidden>
-      </Fragment>
+      
     );
   }
 }
