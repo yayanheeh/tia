@@ -23,6 +23,13 @@ import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction';
 import ListItemText from '@material-ui/core/ListItemText';
+import Table from '@material-ui/core/Table';
+import TableBody from '@material-ui/core/TableBody';
+import TableCell from '@material-ui/core/TableCell';
+import TableContainer from '@material-ui/core/TableContainer';
+import TableHead from '@material-ui/core/TableHead';
+import TableRow from '@material-ui/core/TableRow';
+
 const useStyles = makeStyles(theme => ({
   root: {
     maxWidth: 345,
@@ -72,58 +79,25 @@ export default function RecipeReviewCard() {
       />
       
                   
+      <TableHead>
+          <TableRow>
+            <TableCell>Dessert (100g serving)</TableCell>
+            <TableCell align="right">Calories</TableCell>
+            <TableCell align="right">Fat&nbsp;(g)</TableCell>
+            <TableCell align="right">Carbs&nbsp;(g)</TableCell>
+            <TableCell align="right">Protein&nbsp;(g)</TableCell>
+          </TableRow>
+        <TableRow>
+            <TableCell>Dessert (100g serving)</TableCell>
+            <TableCell align="right">Calories</TableCell>
+            <TableCell align="right">Fat&nbsp;(g)</TableCell>
+            <TableCell align="right">Carbs&nbsp;(g)</TableCell>
+            <TableCell align="right">Protein&nbsp;(g)</TableCell>
+          </TableRow>
+        </TableHead>
       
-      <ListItem>
-                  <ListItemIcon>
-                    <FolderIcon />
-                  </ListItemIcon>
-                  <ListItemText
-                    Maskapai
-                    </ListItemText>
-        <ListItemText>
-                   Saudi airlines
-          </ListItemText>
-                            
-                </ListItem>
-      <ListItem>
-                  <ListItemIcon>
-                    <FolderIcon />
-                  </ListItemIcon>
-                  <ListItemText>Kelas hotel</ListItemText>
-          <ListItemText>
-        Bintang 3</ListItemText>
       
-                            
-                </ListItem>
-      <ListItem>
-                  <ListItemIcon>
-                    <FolderIcon />
-                  </ListItemIcon>
-                  <ListItemText>
-                    Berangkat dari
-                   </ListItemText>
-                   <ListItemText>
-                    jakarta
-                   </ListItemText>
-                            
-                </ListItem>
-      <ListItem>
-                  <ListItemIcon>
-                    <FolderIcon />
-                  </ListItemIcon>
-                 <ListItemText>Durasi perjalanan</ListItemText>
-                   <ListItemText>
-                    20 hari</ListItemText>
-                </ListItem>
-      <ListItem>
-                  <ListItemIcon>
-                    <FolderIcon />
-                  </ListItemIcon>
-                  <ListItemText>Jadwal berangkat</ListItemText>
-          <ListItemText>
-                    11 Mei 2020</ListItemText>
-                            
-                </ListItem>
+      
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
           This impressive paella is a perfect party dish and a fun meal to cook together with your
