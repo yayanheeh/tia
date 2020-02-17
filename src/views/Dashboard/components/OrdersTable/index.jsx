@@ -16,7 +16,7 @@ const styles = theme => ({
   },
   iframe: {
     width: '100%',
-    minHeight: '1000px',
+    minHeight: '500px',
     border: 0
   }
 });
