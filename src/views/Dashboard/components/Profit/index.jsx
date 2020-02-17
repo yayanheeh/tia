@@ -51,16 +51,18 @@ export default function MediaCard() {
       </CardActions>
       
      
-        <Grid item xs>tes
+   
+</Card>
+          
+    <Grid item xs>tes
             </Grid>
         <Grid item xs>
+
          tes1
         </Grid>
         <Grid item xs>
           tes2
         </Grid>
-    </Card>
-          
     
   );
 }
