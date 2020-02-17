@@ -22,7 +22,7 @@ export default function SimpleBottomNavigation() {
 
   return (
 <BottomNavigation className={classes.stickToBottom}>
-
+<br/><br/>
     <BottomNavigation
       value={value}
       onChange={(event, newValue) => {
