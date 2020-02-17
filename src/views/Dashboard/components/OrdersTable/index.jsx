@@ -53,6 +53,32 @@ export default function RecipeReviewCard() {
 
   return (
     <Card className={classes.root}>
+
+
+  
+            <Grid
+              item
+              md={8}
+              xs={12}
+            >
+                  Tes1
+         
+
+ </Grid>
+          
+
+
+
+             
+            <Grid
+              item
+            md={4}
+              xs={12}
+            >
+              Tes2
+              
+            </Grid>
+
       <CardHeader
         avatar={
           <Avatar aria-label="recipe" className={classes.avatar}>
