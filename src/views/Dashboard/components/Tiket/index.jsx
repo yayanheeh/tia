@@ -78,21 +78,21 @@ export default function RecipeReviewCard() {
                     <FolderIcon />
                   </ListItemIcon>
                   <ListItemText
-                    primary="Maskapai" />
-        <ListItemText
-                    primary={<Typography type="secondary" style={{ align: 'left'  }}>Saudi airlines</Typography>}
-      />
+                    Maskapai
+                    </ListItemText>
+        <ListItemText>
+                   Saudi airlines
+          </ListItemText>
                             
                 </ListItem>
       <ListItem>
                   <ListItemIcon>
                     <FolderIcon />
                   </ListItemIcon>
-                  <ListItemText
-                    primary="Kelas hotel" />
-        <ListItemText
-                    primary={<Typography type="secondary" style={{ align: 'left'  }}>Bintang 3</Typography>}
-      />
+                  <ListItemText>Kelas hotel</ListItemText>
+          <ListItemText>
+        Bintang 3</ListItemText>
+      
                             
                 </ListItem>
       <ListItem>
@@ -111,22 +111,17 @@ export default function RecipeReviewCard() {
                   <ListItemIcon>
                     <FolderIcon />
                   </ListItemIcon>
-                  <ListItemText
-                    primary="Durasi perjalanan" />
-        <ListItemText
-                    primary={<Typography type="secondary" style={{ align: 'left' }}>20 hari</Typography>}
-      />
-                            
+                 <ListItemText>Durasi perjalanan</ListItemText>
+                   <ListItemText>
+                    20 hari</ListItemText>
                 </ListItem>
       <ListItem>
                   <ListItemIcon>
                     <FolderIcon />
                   </ListItemIcon>
-                  <ListItemText
-                    primary="Jadwal berangkat" />
-        <ListItemText
-                    primary={<Typography type="secondary" style={{ align: 'left' }}>11 Mei 2020</Typography>}
-      />
+                  <ListItemText>Jadwal berangkat</ListItemText>
+          <ListItemText>
+                    11 Mei 2020</ListItemText>
                             
                 </ListItem>
       <CardContent>
