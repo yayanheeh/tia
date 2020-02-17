@@ -7,7 +7,7 @@ import PhoneIcon from '@material-ui/icons/Phone';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import PersonPinIcon from '@material-ui/icons/PersonPin';
 // Component styles
-import styles from './style';
+import styles from './styles.css';
 const useStyles = makeStyles({
   root: {
     flexGrow: 1,
