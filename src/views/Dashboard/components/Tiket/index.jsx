@@ -70,7 +70,7 @@ export default function RecipeReviewCard() {
         title="Shrimp and Chorizo Paella"
         subheader="September 14, 2016"
       />
-      <ListItem>
+      
                   
       
       <ListItem>
