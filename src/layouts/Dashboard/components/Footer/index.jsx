@@ -25,7 +25,7 @@ export default function IconLabelTabs() {
 
   return (
     <Paper square className={classes.root}>
-      <Tabs
+     <Yan> <Tabs
         value={value}
         onChange={handleChange}
         variant="fullWidth"
@@ -36,7 +36,7 @@ export default function IconLabelTabs() {
         <Tab icon={<PhoneIcon />} label="RECENTS" />
         <Tab icon={<FavoriteIcon />} label="FAVORITES" />
         <Tab icon={<PersonPinIcon />} label="NEARBY" />
-      </Tabs>
+      </Tabs></Yan>
     </Paper>
   );
 }
