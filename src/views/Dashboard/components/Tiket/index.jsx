@@ -19,6 +19,7 @@ import FolderIcon from '@material-ui/icons/Folder';
 import FlightTakeoff from '@material-ui/icons/FlightTakeoff';
 import DateRange from '@material-ui/icons/DateRange';
 import Store from '@material-ui/icons/Store';
+import DirectionsWalk from '@material-ui/icons/DirectionsWalk';
 
 
 
