@@ -9,10 +9,4 @@ const Footer = () => (
   </footer>
 );
 
-const App = () => (
-  <div className="content">
-    <h1>Hi guys!</h1>
-  </div>
-);
 
-render([<App key="1" />, <Footer key="2" />], document.getElementById("root"));
