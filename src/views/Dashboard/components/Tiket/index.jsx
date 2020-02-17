@@ -78,20 +78,9 @@ export default function RecipeReviewCard() {
                     <FolderIcon />
                   </ListItemIcon>
                   <ListItemText
-                    primary="Jadwal berangkat" />
+                    primary="Maskapai" />
         <ListItemText
-                    primary={<Typography type="secondary" style={{ align: 'left'  }}>12 Mei 2020</Typography>}
-      />
-                            
-                </ListItem>
-      <ListItem>
-                  <ListItemIcon>
-                    <FolderIcon />
-                  </ListItemIcon>
-                  <ListItemText
-                    primary="Durasi perjalanan" />
-        <ListItemText
-                    primary={<Typography type="secondary" style={{ align: 'left'  }}>20 Hari</Typography>}
+                    primary={<Typography type="secondary" style={{ align: 'left'  }}>Saudi airlines</Typography>}
       />
                             
                 </ListItem>
@@ -102,7 +91,7 @@ export default function RecipeReviewCard() {
                   <ListItemText
                     primary="Kelas hotel" />
         <ListItemText
-                    primary={<Typography type="secondary" style={{  align: 'left' }}>Bintang 3</Typography>}
+                    primary={<Typography type="secondary" style={{ align: 'left'  }}>Bintang 3</Typography>}
       />
                             
                 </ListItem>
@@ -111,9 +100,9 @@ export default function RecipeReviewCard() {
                     <FolderIcon />
                   </ListItemIcon>
                   <ListItemText
-                    primary="Bearangkat dari" />
+                    primary="Berangkat dari" />
         <ListItemText
-                    primary={<Typography type="secondary" style={{ align: 'left' }}>jakarta</Typography>}
+                    primary={<Typography type="secondary" style={{  align: 'left' }}>Jakarta</Typography>}
       />
                             
                 </ListItem>
@@ -122,9 +111,20 @@ export default function RecipeReviewCard() {
                     <FolderIcon />
                   </ListItemIcon>
                   <ListItemText
-                    primary="Maskapai" />
+                    primary="Durasi perjalanan" />
         <ListItemText
-                    primary={<Typography type="secondary" style={{ align: 'left' }}>Saudi airlines</Typography>}
+                    primary={<Typography type="secondary" style={{ align: 'left' }}>20 hari</Typography>}
+      />
+                            
+                </ListItem>
+      <ListItem>
+                  <ListItemIcon>
+                    <FolderIcon />
+                  </ListItemIcon>
+                  <ListItemText
+                    primary="Jadwal berangkat" />
+        <ListItemText
+                    primary={<Typography type="secondary" style={{ align: 'left' }}>11 Mei 2020</Typography>}
       />
                             
                 </ListItem>
