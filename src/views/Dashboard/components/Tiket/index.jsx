@@ -115,7 +115,7 @@ export default function RecipeReviewCard() {
                 </ListItem>
       <ListItem>
                   <ListItemIcon>
-                    <FolderIcon />
+                    <DirectionsWalk />
                   </ListItemIcon>
                   <ListItemText
                     primary="Durasi perjalanan" />
