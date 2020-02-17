@@ -99,11 +99,12 @@ export default function RecipeReviewCard() {
                   <ListItemIcon>
                     <FolderIcon />
                   </ListItemIcon>
-                  <ListItemText
-                    primary="Berangkat dari" />
-        <ListItemText
-                    primary={<Typography type="secondary" style={{  align: 'left' }}>Jakarta</Typography>}
-      />
+                  <ListItemText>
+                    Berangkat dari
+                   </ListItemText>
+                   <ListItemText>
+                    jakarta
+                   </ListItemText>
                             
                 </ListItem>
       <ListItem>
