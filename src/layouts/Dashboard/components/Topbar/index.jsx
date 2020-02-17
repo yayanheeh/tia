@@ -2,7 +2,6 @@ import React, { Component, Fragment } from 'react';
 import { withRouter } from 'react-router-dom';
 import Hidden from '@material-ui/core/Hidden';
 import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 
 // Externals
