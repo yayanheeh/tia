@@ -1,34 +1,42 @@
 import React from 'react';
+import Paper from '@material-ui/core/Paper';
 import { makeStyles } from '@material-ui/core/styles';
-import BottomNavigation from '@material-ui/core/BottomNavigation';
-import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
-import RestoreIcon from '@material-ui/icons/Restore';
+import Tabs from '@material-ui/core/Tabs';
+import Tab from '@material-ui/core/Tab';
+import PhoneIcon from '@material-ui/icons/Phone';
 import FavoriteIcon from '@material-ui/icons/Favorite';
-import LocationOnIcon from '@material-ui/icons/LocationOn';
+import PersonPinIcon from '@material-ui/icons/PersonPin';
 
 const useStyles = makeStyles({
   root: {
-   position: fixed,
-   width: 100,
+    flexGrow: 1,
+    maxWidth: 100,
+    position: fixed,
   },
 });
 
-export default function SimpleBottomNavigation() {
+export default function IconLabelTabs() {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
 
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
   return (
-    <BottomNavigation
-      value={value}
-      onChange={(event, newValue) => {
-        setValue(newValue);
-      }}
-      showLabels
-      className={classes.root}
-    >
-      <BottomNavigationAction label="Recents" icon={<RestoreIcon />} />
-      <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
-      <BottomNavigationAction label="Nearby" icon={<LocationOnIcon />} />
-    </BottomNavigation>
+    <Paper square className={classes.root}>
+      <Tabs
+        value={value}
+        onChange={handleChange}
+        variant="fullWidth"
+        indicatorColor="secondary"
+        textColor="secondary"
+        aria-label="icon label tabs example"
+      >
+        <Tab icon={<PhoneIcon />} label="RECENTS" />
+        <Tab icon={<FavoriteIcon />} label="FAVORITES" />
+        <Tab icon={<PersonPinIcon />} label="NEARBY" />
+      </Tabs>
+    </Paper>
   );
 }
