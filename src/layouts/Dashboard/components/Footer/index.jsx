@@ -1,36 +1,46 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import BottomNavigation from '@material-ui/core/BottomNavigation';
-import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
-import RestoreIcon from '@material-ui/icons/Restore';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import LocationOnIcon from '@material-ui/icons/LocationOn';
-import Container from '@material-ui/core/Container';
+import PropTypes from 'prop-types';
+import clsx from 'clsx';
+import { makeStyles } from '@material-ui/styles';
+import { Typography, Link } from '@material-ui/core';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
   root: {
-    
-  },
-});
+    padding: theme.spacing(4)
+  }
+}));
 
-export default function SimpleBottomNavigation() {
+const Footer = props => {
+  const { className, ...rest } = props;
+
   const classes = useStyles();
-  const [value, setValue] = React.useState(0);
 
   return (
-    <BottomNavigation
-      value={value}
-      onChange={(event, newValue) => {
-        setValue(newValue);
-      }}
-      showLabels
-      className={classes.root}
+    <div
+      {...rest}
+      className={clsx(classes.root, className)}
     >
-<Container fixed>
-      <BottomNavigationAction label="Recents" icon={<RestoreIcon />} />
-      <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
-      <BottomNavigationAction label="Nearby" icon={<LocationOnIcon />} />
-   </Container fixed>
- </BottomNavigation>
+      <Typography variant="body1">
+        &copy;{' '}
+        <Link
+          component="a"
+          href="https://devias.io/"
+          target="_blank"
+        >
+          Devias IO
+        </Link>
+        . 2019
+      </Typography>
+      <Typography variant="caption">
+        Created with love for the environment. By designers and developers who
+        love to work together in offices!
+      </Typography>
+    </div>
   );
-}
+};
+
+Footer.propTypes = {
+  className: PropTypes.string
+};
+
+export default Footer;
