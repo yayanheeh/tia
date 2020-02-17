@@ -1,185 +1,90 @@
 import React, { Component } from 'react';
 
-// Externals
-import classNames from 'classnames';
-import moment from 'moment';
-import PerfectScrollbar from 'react-perfect-scrollbar';
-import PropTypes from 'prop-types';
-
-// Material helpers
-import { withStyles } from '@material-ui/core';
-
-// Material components
-import {
-  Button,
-  CircularProgress,
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableRow,
-  Tooltip,
-  TableSortLabel
-} from '@material-ui/core';
-
-// Shared services
-import { getOrders } from 'services/order';
-
-// Shared components
-import {
-  Portlet,
-  PortletHeader,
-  PortletLabel,
-  PortletToolbar,
-  PortletContent,
-  Status
-} from 'components';
-
+import { withStyles, makeStyles } from '@material-ui/core/styles';
+import Table from '@material-ui/core/Table';
+import TableBody from '@material-ui/core/TableBody';
+import TableCell from '@material-ui/core/TableCell';
+import TableContainer from '@material-ui/core/TableContainer';
+import TableHead from '@material-ui/core/TableHead';
+import TableRow from '@material-ui/core/TableRow';
+import Paper from '@material-ui/core/Paper';
 // Component styles
 import styles from './styles';
 
-const statusColors = {
-  delivered: 'success',
-  pending: 'info',
-  refund: 'danger'
-};
 
-class OrdersTable extends Component {
-  signal = false;
 
-  state = {
-    isLoading: false,
-    limit: 10,
-    orders: [],
-    ordersTotal: 0
-  };
+const StyledTableCell = withStyles(theme => ({
+  head: {
+    backgroundColor: theme.palette.common.black,
+    color: theme.palette.common.white,
+  },
+  body: {
+    fontSize: 14,
+  },
+}))(TableCell);
 
-  async getOrders(limit) {
-    try {
-      this.setState({ isLoading: true });
+const StyledTableRow = withStyles(theme => ({
+  root: {
+    '&:nth-of-type(odd)': {
+      backgroundColor: theme.palette.background.default,
+    },
+  },
+}))(TableRow);
 
-      const { orders, ordersTotal } = await getOrders(limit);
-
-      if (this.signal) {
-        this.setState({
-          isLoading: false,
-          orders,
-          ordersTotal
-        });
-      }
-    } catch (error) {
-      if (this.signal) {
-        this.setState({
-          isLoading: false,
-          error
-        });
-      }
-    }
-  }
-
-  componentDidMount() {
-    this.signal = true;
-
-    const { limit } = this.state;
-
-    this.getOrders(limit);
-  }
-
-  componentWillUnmount() {
-    this.signal = false;
-  }
-
-  render() {
-    const { classes, className } = this.props;
-    const { isLoading, orders, ordersTotal } = this.state;
-
-    const rootClassName = classNames(classes.root, className);
-    const showOrders = !isLoading && orders.length > 0;
-
-    return (
-      <Portlet className={rootClassName}>
-        <PortletHeader noDivider>
-          <PortletLabel
-            subtitle={`${ordersTotal}`}
-            title="Paket Umroh Murah"
-          />
-<hr/>
-          
-        </PortletHeader>
-        <PerfectScrollbar>
-          <PortletContent
-            className={classes.portletContent}
-            noPadding
-          >
-            {isLoading && (
-              <div className={classes.progressWrapper}>
-                <CircularProgress />
-              </div>
-            )}
-            {showOrders && (
-              <Table>
-                <TableHead>
-                  <TableRow>
-                    <TableCell>Nama paket</TableCell>
-                    <TableCell align="left">Waktu keberangkatan</TableCell>
-                    <TableCell
-                      align="left"
-                      sortDirection="desc"
-                    >
-                      <Tooltip
-                        enterDelay={300}
-                        title="Berangkat dari"
-                      >
-                        <TableSortLabel
-                          active
-                          direction="desc"
-                        >
-                          Waktu perjalan
-                        </TableSortLabel>
-                      </Tooltip>
-                    </TableCell>
-                    <TableCell align="left">Pesawat</TableCell>
-                  </TableRow>
-                </TableHead>
-                <TableBody>
-                  {orders.map(order => (
-                    <TableRow
-                      className={classes.tableRow}
-                      hover
-                      key={order.id}
-                    >
-                      <TableCell>{order.id}</TableCell>
-                      <TableCell className={classes.customerCell}>
-                        {order.customer.name}
-                      </TableCell>
-                      <TableCell>
-                        {moment(order.createdAt).format('DD/MM/YYYY')}
-                      </TableCell>
-                      <TableCell>
-                        <div className={classes.statusWrapper}>
-                          <Status
-                            className={classes.status}
-                            color={statusColors[order.status]}
-                            size="sm"
-                          />
-                          {order.status}
-                        </div>
-                      </TableCell>
-                    </TableRow>
-                  ))}
-                </TableBody>
-              </Table>
-            )}
-          </PortletContent>
-        </PerfectScrollbar>
-      </Portlet>
-    );
-  }
+function createData(name, calories, fat, carbs, protein) {
+  return { name, calories, fat, carbs, protein };
 }
 
-OrdersTable.propTypes = {
-  className: PropTypes.string,
-  classes: PropTypes.object.isRequired
-};
+const rows = [
+  createData('Frozen yoghurt', 159, 6.0, 24, 4.0),
+  createData('Ice cream sandwich', 237, 9.0, 37, 4.3),
+  createData('Eclair', 262, 16.0, 24, 6.0),
+  createData('Cupcake', 305, 3.7, 67, 4.3),
+  createData('Gingerbread', 356, 16.0, 49, 3.9),
+];
+
+const useStyles = makeStyles({
+  table: {
+    minWidth: 700,
+  },
+});
+
+export default function CustomizedTables() {
+  const classes = useStyles();
+
+  return (
+    <TableContainer component={Paper}>
+      <Table className={classes.table} aria-label="customized table">
+        <TableHead>
+          <TableRow>
+            <StyledTableCell>Dessert (100g serving)</StyledTableCell>
+            <StyledTableCell align="right">Calories</StyledTableCell>
+            <StyledTableCell align="right">Fat&nbsp;(g)</StyledTableCell>
+            <StyledTableCell align="right">Carbs&nbsp;(g)</StyledTableCell>
+            <StyledTableCell align="right">Protein&nbsp;(g)</StyledTableCell>
+          </TableRow>
+        </TableHead>
+        <TableBody>
+          {rows.map(row => (
+            <StyledTableRow key={row.name}>
+              <StyledTableCell component="th" scope="row">
+                {row.name}
+              </StyledTableCell>
+              <StyledTableCell align="right">{row.calories}</StyledTableCell>
+              <StyledTableCell align="right">{row.fat}</StyledTableCell>
+              <StyledTableCell align="right">{row.carbs}</StyledTableCell>
+              <StyledTableCell align="right">{row.protein}</StyledTableCell>
+            </StyledTableRow>
+          ))}
+        </TableBody>
+      </Table>
+    </TableContainer>
+  );
+}
+ 
+  
+
+
+
 
 export default withStyles(styles)(OrdersTable);
