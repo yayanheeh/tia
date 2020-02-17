@@ -1,12 +1,8 @@
 import React, { Component } from 'react';
 
-// Externals
-import PropTypes from 'prop-types';
+// Component styles
+import styles from './styles';
 
-// Material helpers
-import { withStyles } from '@material-ui/core';
-
-// Shared layouts
 import { Dashboard as DashboardLayout } from 'layouts';
 
 
