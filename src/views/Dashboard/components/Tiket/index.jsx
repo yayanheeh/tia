@@ -20,6 +20,7 @@ import FlightTakeoff from '@material-ui/icons/FlightTakeoff';
 import DateRange from '@material-ui/icons/DateRange';
 import Store from '@material-ui/icons/Store';
 import DirectionsWalk from '@material-ui/icons/DirectionsWalk';
+import Hotel from '@material-ui/icons/Hotel';
 
 
 
@@ -103,7 +104,7 @@ export default function RecipeReviewCard() {
                 </ListItem>
       <ListItem>
                   <ListItemIcon>
-                    <FolderIcon />
+                    <Hotel />
                   </ListItemIcon>
                   <ListItemText>
                     Berangkat dari
