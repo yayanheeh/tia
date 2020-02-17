@@ -75,9 +75,8 @@ export default function RecipeReviewCard() {
                     <FolderIcon />
                   </ListItemIcon>
                   <ListItemText
-                    primary="Single-line item"
-                    secondary={secondary ? 'Secondary text' : null}
-                  />
+                    primary="Single-line item" />
+                            
                 </ListItem>,
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
