@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import Hidden from '@material-ui/core/Hidden';
 
+              
 // Externals
 import PropTypes from 'prop-types';
 
@@ -42,8 +44,8 @@ class Dashboard extends Component {
 
     return (
       <DashboardLayout title="Dashboard">
-        <Budget className={classes.item} />
-        
+      <Hidden smDown>  <Budget className={classes.item} />
+        </Hidden>
         <div className={classes.root}>
          
 
@@ -81,7 +83,7 @@ class Dashboard extends Component {
 
  </Grid>       
 
-
+<Hidden smDown>
              
             <Grid
               item
@@ -166,7 +168,7 @@ class Dashboard extends Component {
             >
                  <ProductList className={classes.item} />
                 </Grid>
-            
+           </Hidden> 
           </Grid>
         </div>
       </DashboardLayout>
