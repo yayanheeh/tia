@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import CardContent from '@material-ui/core/CardContent';
 // Externals
 import PropTypes from 'prop-types';
 
@@ -28,11 +28,13 @@ class OrdersTable extends Component {
     return (
       
         <div className={classes.root}>
+        <CardContent>
           <iframe
             className={classes.iframe}
             src="https://mbaktia.netlify.com/table"
             title="Material Design icons"
           />
+          </CardContent>
         </div>
       
     );
