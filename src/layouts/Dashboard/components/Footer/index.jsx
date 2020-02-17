@@ -1,17 +1,8 @@
 
- 
-
-
-
-
-
-
 import React from 'react';
-import PropTypes 
 import { render } from 'react-dom';
-import { makeStyles } from '@material-ui/styles';
-import { Typography, Link } from '@material-ui/core';
-
+// Component styles
+import styles from './styles.css';
 const Footer = () => (
   <footer className="footer">
     <p>Some footer nonsense!</p>
