@@ -1,4 +1,13 @@
-.footer {
+export default theme => ({
+  root: {
+    backgroundColor: theme.palette.common.white,
+    display: 'flex',
+    flexDirection: 'column',
+    height: '100%',
+    paddingLeft: theme.spacing.unit,
+    paddingRight: theme.spacing.unit
+  },
+  yan {
    position: fixed;
    left: 0;
    bottom: 0;
@@ -7,3 +16,9 @@
    color: white;
    text-align: center;
 }
+  
+});
+
+
+
+
