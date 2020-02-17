@@ -54,6 +54,12 @@ export default function RecipeReviewCard() {
   return (
     <Card className={classes.root}>
 
+         
+
+ <Grid
+            container
+            spacing={3}
+          >
 
   
             <Grid
@@ -77,7 +83,7 @@ export default function RecipeReviewCard() {
             >
               Tes2
               
-            </Grid>
+            </Grid></Grid>
 
       <CardHeader
         avatar={
