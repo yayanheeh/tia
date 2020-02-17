@@ -88,7 +88,8 @@ export default function RecipeReviewCard() {
                   <ListItemText
                     primary="Bearangkat dari" />
         <ListItemText
-                    primary="Jakarta" />
+                    primary={<Typography type="body2" style={{ color: '#0000FF' }}>jakarta</Typography>}
+      />
                             
                 </ListItem>
       <ListItem>
