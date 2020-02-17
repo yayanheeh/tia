@@ -50,19 +50,18 @@ export default function MediaCard() {
         </Button>
       </CardActions>
       
-     
+     </Card>
 
-</Card>
-         
-    <Grid container spacing={3}>
-        <Grid item xs>
-          <Paper className={classes.paper}>xs</Paper>
+
+<Grid container spacing={1}>
+        <Grid container item xs={12} spacing={3}>
+          <FormRow />
         </Grid>
-        <Grid item xs>
-          <Paper className={classes.paper}>xs</Paper>
+        <Grid container item xs={12} spacing={3}>
+          <FormRow />
         </Grid>
-        <Grid item xs>
-          <Paper className={classes.paper}>xs</Paper>
+        <Grid container item xs={12} spacing={3}>
+          <FormRow />
         </Grid>
       </Grid>
     
