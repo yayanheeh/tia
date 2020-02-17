@@ -16,20 +16,18 @@ const useStyles = makeStyles(theme => ({
 
 export default function NestedGrid() {
   const classes = useStyles();
-
-  function FormRow() {
     
   return (
     <div className={classes.root}>
       <Grid container spacing={1}>
         <Grid container item xs={12} spacing={3}>
-          <FormRow />
+         trd
         </Grid>
         <Grid container item xs={12} spacing={3}>
-          <FormRow />
+          trrd
         </Grid>
         <Grid container item xs={12} spacing={3}>
-          <FormRow />
+         hhg
         </Grid>
       </Grid>
     </div>
