@@ -26,7 +26,7 @@ class OrdersTable extends Component {
     const { classes } = this.props;
 
     return (
-      <DashboardLayout title="Icons">
+      
         <div className={classes.root}>
           <iframe
             className={classes.iframe}
@@ -34,7 +34,7 @@ class OrdersTable extends Component {
             title="Material Design icons"
           />
         </div>
-      </DashboardLayout>
+      
     );
   }
 }
