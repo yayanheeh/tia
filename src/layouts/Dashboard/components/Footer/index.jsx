@@ -27,7 +27,7 @@ export default function SimpleBottomNavigation() {
       }}
       showLabels
       className={classes.root}>
-      <AppBar position="fixed" color="primary" className={{top: "auto", bottom: 0}}>
+      <AppBar position="fixed" color="primary" className={{bottom: "auto", bottom: 0}}>
 
       <BottomNavigationAction label="Recents" icon={<RestoreIcon />} />
       <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
