@@ -104,7 +104,7 @@ export default function RecipeReviewCard() {
    
 
 
-<div className={classes.root}>
+
       <Grid container spacing={1}>
         <Grid container item xs={12} spacing={3}>
           tes
@@ -116,7 +116,7 @@ export default function RecipeReviewCard() {
           dddd
          </Grid>
       </Grid>
-    </div>
+    
          
     
   );
