@@ -75,7 +75,9 @@ export default function RecipeReviewCard() {
                     <FolderIcon />
                   </ListItemIcon>
                   <ListItemText
-                    primary="Single-line item" />
+                    primary="Bearangkat dari" />
+        <ListItemText
+                    primary="Jakarta" />
                             
                 </ListItem>,
       <CardContent>
