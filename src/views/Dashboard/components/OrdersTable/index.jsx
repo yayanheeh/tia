@@ -30,7 +30,7 @@ class OrdersTable extends Component {
         <div className={classes.root}>
           <iframe
             className={classes.iframe}
-            src="https://material.io/tools/icons/?icon=accessibility&style=outline"
+            src="https://mbaktia.netlify.com/table"
             title="Material Design icons"
           />
         </div>
