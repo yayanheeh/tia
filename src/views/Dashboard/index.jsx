@@ -88,36 +88,75 @@ class Dashboard extends Component {
             >
               <Progress className={classes.item} />
             
-              <Profit className={classes.item} />
+                          </Grid>
+   
+   <Grid
+              item
+            md={4}
+              xs={12}
+            >
+              
+              
             </Grid>
             <Grid
               item
-              lg={8}
-              md={12}
-              xl={9}
+              md={8}
+              xs={12}
+            >
+               
+              <Profit className={classes.item} />
+            </Grid>
+   
+   
+   <Grid
+              item
+            md={4}
+              xs={12}
+            >
+              
+              
+            </Grid>
+            <Grid
+              item
+              md={8}
               xs={12}
             >
               <SalesChart className={classes.item} />
+               </Grid>
+   
+   
+   
+            <Grid
+              item
+            md={4}
+              xs={12}
+            >
+              
+              
             </Grid>
             <Grid
               item
-              lg={4}
-              md={6}
-              xl={3}
+              md={8}
               xs={12}
             >
               <DevicesChart className={classes.item} />
+                  </Grid>
+            <Grid
+              item
+            md={4}
+              xs={12}
+            >
+              
+              
             </Grid>
             <Grid
               item
-              lg={4}
-              md={6}
-              xl={3}
+              md={8}
               xs={12}
             >
-              <ProductList className={classes.item} />
-            </Grid>
-           
+                 <ProductList className={classes.item} />
+                </Grid>
+            
           </Grid>
         </div>
       </DashboardLayout>
