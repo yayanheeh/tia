@@ -20,6 +20,8 @@ export default function SimpleBottomNavigation() {
   const [value, setValue] = React.useState(0);
 
   return (
+<BottomNavigation className={classes.stickToBottom}>
+
     <BottomNavigation
       value={value}
       onChange={(event, newValue) => {
@@ -27,12 +29,12 @@ export default function SimpleBottomNavigation() {
       }}
       showLabels
       className={classes.root}>
-      <AppBar position="fixed" color="primary" className={{bottom: "auto", bottom: 0}}>
-
+      
       <BottomNavigationAction label="Recents" icon={<RestoreIcon />} />
       <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
       <BottomNavigationAction label="Nearby" icon={<LocationOnIcon />} />
-</AppBar>
+
+</BottomNavigation>
 </BottomNavigation>
   );
 }
