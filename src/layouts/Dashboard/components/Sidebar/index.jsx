@@ -59,10 +59,10 @@ class Sidebar extends Component {
         </div>
         <Divider className={classes.logoDivider} />
         <div className={classes.profile}>
-         <img
-              alt="Brainalytica logo"
-              className={classes.logoImage}
-              src="/images/logos/brainalytica_logo.svg"
+              <Avatar
+              alt="Roman Kutepov"	            
+              className={classes.avatar}	         
+              src="/images/avatars/avatar_1.png"	             
             />
         </Link>
           <Typography
