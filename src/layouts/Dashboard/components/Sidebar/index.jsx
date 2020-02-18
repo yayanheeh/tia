@@ -80,10 +80,13 @@ class Sidebar extends Component {
           >
             083851070xxx
           </Typography>
-<foto className={classes.item} />
-        </div>
+</div>
 
-
+<CardMedia
+        className={classes.media}
+        image="images/avatars/avatar_1.png"	             
+        title="Paella dish"
+      />
 
         <Divider className={classes.profileDivider} />
         <List
