@@ -58,14 +58,6 @@ export default function SimpleBottomNavigation() {
         icon={<Favorites />}
         className={classes.content}
     />
-<BottomNavigationAction
-        component={Link}
-        to="/paduan"
-        label="Hubungi Kami"
-        value="Hubungi Kami"
-        icon={<Recents />}
-        className={classes.content}
-    />
 
       
 </BottomNavigation>
