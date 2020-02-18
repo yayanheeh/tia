@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import CardMedia from '@material-ui/core/CardMedia';
-
+import Card from '@material-ui/core/Card';
 // Externals
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
