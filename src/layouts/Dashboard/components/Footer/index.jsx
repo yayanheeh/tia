@@ -34,7 +34,14 @@ export default function SimpleBottomNavigation() {
       className={classes.root}>
       
 <BottomNavigationAction label="Home" value="dashboard" icon={<Home />} />
-   
+   <BottomNavigationAction
+        component={Link}
+        to="/tentangkami"
+        label="signael"
+        value="signyal"
+        icon={<FavoriteIcon />}
+        className={classes.content}
+    />
       <BottomNavigationAction label="Recents" icon={<RestoreIcon />} />
       <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
       <BottomNavigationAction label="Nearby" icon={<LocationOnIcon />} />
