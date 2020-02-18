@@ -1,5 +1,5 @@
-import React, { Component, Fragment } from 'react';
-import MetaTags from 'react-meta-tags';
+import React, { Component, MetaTags, Fragment } from 'react';
+
 
 // Externals
 import PropTypes from 'prop-types';
