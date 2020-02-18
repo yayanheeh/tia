@@ -7,6 +7,8 @@ import RestoreIcon from '@material-ui/icons/Restore';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import Home from '@material-ui/icons/Home';
+import { Link } from 'react-router-dom';
+
 
 const useStyles = makeStyles({
   stickToBottom: {
@@ -31,7 +33,7 @@ export default function SimpleBottomNavigation() {
       showLabels
       className={classes.root}>
       
-<BottomNavigationAction label="Home" icon={<Home />} />
+<BottomNavigationAction label="Home" value="dashboard" icon={<Home />} />
    
       <BottomNavigationAction label="Recents" icon={<RestoreIcon />} />
       <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
