@@ -61,9 +61,7 @@ class Sidebar extends Component {
         <div className={classes.profile}>
          <CardMedia
         className={classes.media}
-        image="https://cdn.pixabay.com/photo/2017/05/11/04/01/question-2302705_1280.jpg"
-        title="Paella dish"
-      />
+        image="https://cdn.pixabay.com/photo/2017/05/11/04/01/question-2302705_1280.jpg"/>
           </Link>
           <Typography
             className={classes.nameText}
