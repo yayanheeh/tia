@@ -7,7 +7,7 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 
 
-import Foto from 'foto';
+import foto from './foto';
 
 // Material helpers
 import { withStyles } from '@material-ui/core';
