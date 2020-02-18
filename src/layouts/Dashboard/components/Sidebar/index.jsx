@@ -80,9 +80,10 @@ class Sidebar extends Component {
           >
             083851070xxx
           </Typography>
+<foto className={classes.item} />
         </div>
 
-<foto className={classes.item} />
+
 
         <Divider className={classes.profileDivider} />
         <List
