@@ -14,6 +14,8 @@ import SignIn from './views/SignIn';
 import UnderDevelopment from './views/UnderDevelopment';
 import NotFound from './views/NotFound';
 import Tes from './views/Tes';
+import TentangKami from './views/TentangKami';
+import Paduan from './views/Paduan';
 
 
 export default class Routes extends Component {
@@ -80,6 +82,16 @@ export default class Routes extends Component {
           exact
           path="/not-found"
         />
+<Route
+          component={TentangKami}
+          exact
+          path="/tentangkami"
+        /><Route
+          component={Paduan}
+          exact
+          path="/paduan"
+        />
+
 <Route
           component={Tes}
           exact
