@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import CardMedia from '@material-ui/core/CardMedia';
 
 // Externals
 import classNames from 'classnames';
@@ -58,12 +59,11 @@ class Sidebar extends Component {
         </div>
         <Divider className={classes.logoDivider} />
         <div className={classes.profile}>
-          <Link to="/account">
-            <Avatar
-              alt=""
-              className={classes.avatar}
-              src="https://cdn.pixabay.com/photo/2017/05/11/04/01/question-2302705_1280.jpg"
-            />
+         <CardMedia
+        className={classes.media}
+        image="https://cdn.pixabay.com/photo/2017/05/11/04/01/question-2302705_1280.jpg"
+        title="Paella dish"
+      />
           </Link>
           <Typography
             className={classes.nameText}
