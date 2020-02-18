@@ -13,6 +13,8 @@ import SignUp from './views/SignUp';
 import SignIn from './views/SignIn';
 import UnderDevelopment from './views/UnderDevelopment';
 import NotFound from './views/NotFound';
+import Tes from './views/Tes';
+
 
 export default class Routes extends Component {
   render() {
@@ -77,6 +79,11 @@ export default class Routes extends Component {
           component={NotFound}
           exact
           path="/not-found"
+        />
+<Route
+          component={Tes}
+          exact
+          path="/tes"
         />
         <Redirect to="/not-found" />
       </Switch>
