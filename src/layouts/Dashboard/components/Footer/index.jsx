@@ -6,6 +6,10 @@ import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 import RestoreIcon from '@material-ui/icons/Restore';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
+import Book from '@material-ui/icons/Book';
+import Forum from '@material-ui/icons/Forum';
+
+
 import Home from '@material-ui/icons/Home';
 import { Link } from 'react-router-dom';
 
@@ -45,8 +49,8 @@ export default function SimpleBottomNavigation() {
 <BottomNavigationAction
         component={Link}
         to="/tentangkami"
-        label="Tentang Kami"
-        value="Tentang Kami"
+        label="Tentang"
+        value="Tentang"
         icon={<FavoriteIcon />}
         className={classes.content}
     />
@@ -55,10 +59,18 @@ export default function SimpleBottomNavigation() {
         to="/paduan"
         label="Paduan"
         value="Paduan"
-        icon={<LocationOnIcon />}
+        icon={<Book />}
         className={classes.content}
     />
 
+<BottomNavigationAction
+        component={Link}
+        to="/paduan"
+        label="Chat"
+        value="Chat"
+        icon={<Forum />}
+        className={classes.content}
+    />
       
 </BottomNavigation>
 </BottomNavigation>
