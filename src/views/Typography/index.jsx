@@ -1,4 +1,4 @@
-import React, { Component, MetaTags, Fragment } from 'react';
+import React, { Component, Fragment } from 'react';
 
 
 // Externals
@@ -45,15 +45,7 @@ class Typography extends Component {
       <DashboardLayout title="Typography">
         <div className={classes.root}>
 
-<div className="wrapper">
-          <MetaTags>
-            <title>Page 1</title>
-            <meta name="description" content="Some description." />
-            <meta property="og:title" content="Yayan myApp" />
-            <meta property="og:image" content="path/to/image.jpg" />
-          </MetaTags>
-          <div className="content"> Some Content </div>
-        </div>
+
           <Grid
             container
             spacing={4}
