@@ -55,7 +55,7 @@ export default function SimpleBottomNavigation() {
         to="/paduan"
         label="Paduan"
         value="Paduan"
-        icon={<Favorites />}
+        icon={<LocationOnIcon />}
         className={classes.content}
     />
 
