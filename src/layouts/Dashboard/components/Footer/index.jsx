@@ -33,19 +33,41 @@ export default function SimpleBottomNavigation() {
       showLabels
       className={classes.root}>
       
-<BottomNavigationAction label="Home" value="dashboard" icon={<Home />} />
-   <BottomNavigationAction
+ <BottomNavigationAction
+        component={Link}
+        to="/dashboard"
+        label="Home"
+        value="Home"
+        icon={<Home />}
+        className={classes.content}
+    />
+
+<BottomNavigationAction
         component={Link}
         to="/tentangkami"
-        label="signael"
-        value="signyal"
+        label="Tentang Kami"
+        value="Tentang Kami"
         icon={<FavoriteIcon />}
         className={classes.content}
     />
-      <BottomNavigationAction label="Recents" icon={<RestoreIcon />} />
-      <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
-      <BottomNavigationAction label="Nearby" icon={<LocationOnIcon />} />
+<BottomNavigationAction
+        component={Link}
+        to="/paduan"
+        label="Paduan"
+        value="Paduan"
+        icon={<Favorites />}
+        className={classes.content}
+    />
+<BottomNavigationAction
+        component={Link}
+        to="/paduan"
+        label="Hubungi Kami"
+        value="Hubungi Kami"
+        icon={<Recents />}
+        className={classes.content}
+    />
 
+      
 </BottomNavigation>
 </BottomNavigation>
   );
