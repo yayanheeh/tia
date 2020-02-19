@@ -60,7 +60,6 @@ class Sidebar extends Component {
             />
           </Link>
         </div>
-        <Divider className={classes.logoDivider} />
         
 
 
@@ -70,6 +69,21 @@ class Sidebar extends Component {
           component="div"
           disablePadding
         >
+
+<ListItem
+            activeClassName={classes.activeListItem}
+            className={classes.listItem}
+            component={NavLink}
+            to="/profil"
+          >
+            <ListItemIcon className={classes.listItemIcon}>
+              <DashboardIcon />
+            </ListItemIcon>
+            <ListItemText
+              classes={{ primary: classes.listItemText }}
+              primary="Home"
+            />
+          </ListItem>
           <ListItem
             activeClassName={classes.activeListItem}
             className={classes.listItem}
