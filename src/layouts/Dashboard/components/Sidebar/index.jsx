@@ -91,7 +91,7 @@ class Sidebar extends Component {
             to="/profil"
           >
             <ListItemIcon className={classes.listItemIcon}>
-              <DashboardIcon />
+              <AccountBoxIcon />
             </ListItemIcon>
             <ListItemText
               classes={{ primary: classes.listItemText }}
