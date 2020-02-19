@@ -64,24 +64,11 @@ class Dokumentasi extends Component {
           
 <h4>Dokumen Persyaratan Umroh</h4></Grid>
             
-          <List dense={dense}>
-              {generate(
-                <ListItem>
-                  <ListItemIcon>
-                    <FolderIcon />
-                  </ListItemIcon>
-                  <ListItemText
-                    primary="Pas foto dengan latar belakang putih 4 x 6 sebanyak 6 lembar"
-                    secondary={secondary ? 'Secondary text' : null}
-                  />
-                </ListItem>,
-              )}
-            </List>
+          
             
-
    <caption>
 Pas foto dengan latar belakang putih 4 x 6 sebanyak 6 lembar
-</caption>
+</caption><br/>
 <caption>Paspor asli yang masih berlaku dengan susunan jumlah nama 3 kata
 </caption>
 
