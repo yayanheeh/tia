@@ -2,6 +2,7 @@ import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import { Dashboard as DashboardLayout } from 'layouts';
+import Container from '@material-ui/core/Container';
 
 const useStyles = makeStyles({
   root: {
@@ -15,6 +16,8 @@ export default function Types() {
 
   return ( <DashboardLayout title="Typography">
     <div className={classes.root}>
+<Container maxWidth="sm">
+
       <Typography variant="h1" component="h2" gutterBottom>
         h1. Heading
       </Typography>
@@ -58,6 +61,8 @@ export default function Types() {
       <Typography variant="overline" display="block" gutterBottom>
         overline text
       </Typography>
+</Container>
+
     </div>
 
 </DashboardLayout>
