@@ -64,13 +64,13 @@ class Dokumentasi extends Component {
           
 <h4>Dokumen Persyaratan Umroh</h4>
             
-          
-            
+       <Typography variant="body2" gutterBottom>
+          Pas foto dengan latar belakang putih 4 x 6 sebanyak 6 lembar
+</Typography>
+            <Typography variant="body2" gutterBottom>
+       Paspor asli yang masih berlaku dengan susunan jumlah nama 3 kata
+</Typography>
   
-Pas foto dengan latar belakang putih 4 x 6 sebanyak 6 lembar
-<br/>
-Paspor asli yang masih berlaku dengan susunan jumlah nama 3 kata
-
 
         </div>
       </DashboardLayout>
