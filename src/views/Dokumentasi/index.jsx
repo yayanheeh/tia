@@ -18,49 +18,45 @@ export default function Types() {
     <div className={classes.root}>
 <Container maxWidth="sm">
 
-      <Typography variant="h1" component="h2" gutterBottom>
-        h1. Heading
-      </Typography>
-      <Typography variant="h2" gutterBottom>
-        h2. Heading
-      </Typography>
-      <Typography variant="h3" gutterBottom>
-        h3. Heading
-      </Typography>
+      
       <Typography variant="h4" gutterBottom>
-        h4. Heading
+        Dokumen Persyaratan Umroh
       </Typography>
-      <Typography variant="h5" gutterBottom>
-        h5. Heading
-      </Typography>
-      <Typography variant="h6" gutterBottom>
-        h6. Heading
-      </Typography>
-      <Typography variant="subtitle1" gutterBottom>
-        subtitle1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-      </Typography>
-      <Typography variant="subtitle2" gutterBottom>
-        subtitle2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-      </Typography>
+      
       <Typography variant="body1" gutterBottom>
-        body1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-        unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate numquam
-        dignissimos laborum fugiat deleniti? Eum quasi quidem quibusdam.
+            Pas foto dengan latar belakang putih 4 x 6 sebanyak 6 lembar   
       </Typography>
-      <Typography variant="body2" gutterBottom>
-        body2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
-        unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate numquam
-        dignissimos laborum fugiat deleniti? Eum quasi quidem quibusdam.
+
+      <Typography variant="body1" gutterBottom>
+            Paspor asli yang masih berlaku dengan susunan jumlah nama 3 kata   
       </Typography>
-      <Typography variant="button" display="block" gutterBottom>
-        button text
+<Typography variant="body1" gutterBottom>
+            Sertifikat Vaksin Meningitis (Kartu Kuning)   
       </Typography>
-      <Typography variant="caption" display="block" gutterBottom>
-        caption text
+<Typography variant="body1" gutterBottom>
+            Buku Nikah (untuk yang berangkat dengan Suami/Istri)   
       </Typography>
-      <Typography variant="overline" display="block" gutterBottom>
-        overline text
+<Typography variant="body1" gutterBottom>
+            Fotocopy KTP   
       </Typography>
+<Typography variant="body1" gutterBottom>
+            Kartu Keluarga baik yang asli juga fotocopy
+   
+      </Typography>
+<Typography variant="body1" gutterBottom>
+            Tiket Pesawat PP Indonesia-Saudi Arabia
+   
+      </Typography>
+<Typography variant="body1" gutterBottom>
+            Bukti transaksi/booking akomodasi (hotel & transportasi) selama di Arab Saudi   
+      </Typography>
+<Typography variant="body1" gutterBottom>
+            Visa Ibadah Umroh   
+      </Typography>
+<Typography variant="body1" gutterBottom>
+            Contact Person yang bertanggung jawab atas keberadaanmu di Arab Saudi   
+      </Typography>
+
 </Container>
 
     </div>
