@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import CardMedia from '@material-ui/core/CardMedia';
 import Card from '@material-ui/core/Card';
+
+import EmojiPeople from '@material-ui/icons/EmojiPeople';
+
 // Externals
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
@@ -105,7 +108,7 @@ class Sidebar extends Component {
             to="/visimisi"
           >
             <ListItemIcon className={classes.listItemIcon}>
-              <PeopleIcon />
+              <EmojiPeople />
             </ListItemIcon>
             <ListItemText
               classes={{ primary: classes.listItemText }}
