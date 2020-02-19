@@ -61,32 +61,9 @@ class Sidebar extends Component {
           </Link>
         </div>
         <Divider className={classes.logoDivider} />
-        <div className={classes.profile}>
-              <Avatar
-              alt="Roman Kutepov"	            
-              className={classes.avatar}	         
-              src="/images/avatars/avatar_1.png"	             
-        />
-       
-          <Typography
-            className={classes.nameText}
-            variant="h6"
-          >
-            Chat penjual
-          </Typography>
-          <Typography
-            className={classes.bioText}
-            variant="caption"
-          >
-            083851070xxx
-          </Typography>
-</div>
+        
 
-<CardMedia
-        className={classes.media}
-        image="images/avatars/avatar_1.png"	             
-        title="Paella dish"
-      />
+
 
         <Divider className={classes.profileDivider} />
         <List
@@ -97,56 +74,56 @@ class Sidebar extends Component {
             activeClassName={classes.activeListItem}
             className={classes.listItem}
             component={NavLink}
-            to="/dashboard"
+            to="/profil"
           >
             <ListItemIcon className={classes.listItemIcon}>
               <DashboardIcon />
             </ListItemIcon>
             <ListItemText
               classes={{ primary: classes.listItemText }}
-              primary="Dashboard"
+              primary="Profil"
             />
           </ListItem>
           <ListItem
             activeClassName={classes.activeListItem}
             className={classes.listItem}
             component={NavLink}
-            to="/users"
+            to="/visimisi"
           >
             <ListItemIcon className={classes.listItemIcon}>
               <PeopleIcon />
             </ListItemIcon>
             <ListItemText
               classes={{ primary: classes.listItemText }}
-              primary="Users"
+              primary="Visimisi"
             />
           </ListItem>
           <ListItem
             activeClassName={classes.activeListItem}
             className={classes.listItem}
             component={NavLink}
-            to="/products"
+            to="/paketumroh"
           >
             <ListItemIcon className={classes.listItemIcon}>
               <ShoppingBasketIcon />
             </ListItemIcon>
             <ListItemText
               classes={{ primary: classes.listItemText }}
-              primary="Products"
+              primary="Paket Umroh"
             />
           </ListItem>
           <ListItem
             activeClassName={classes.activeListItem}
             className={classes.listItem}
             component={NavLink}
-            to="/sign-in"
+            to="/Dokumentasi"
           >
             <ListItemIcon className={classes.listItemIcon}>
               <LockOpenIcon />
             </ListItemIcon>
             <ListItemText
               classes={{ primary: classes.listItemText }}
-              primary="Authentication"
+              primary="Dokumentasi Perjalanan"
             />
           </ListItem>
           <ListItem
