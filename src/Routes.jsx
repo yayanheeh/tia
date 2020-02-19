@@ -117,11 +117,7 @@ export default class Routes extends Component {
           exact
           path="/dokumentasi"
         />
-<Route
-          component={Video}
-          exact
-          path="/video"
-        />
+
 
 <Route
           component={Tes}
