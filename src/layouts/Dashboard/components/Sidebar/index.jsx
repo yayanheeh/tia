@@ -154,7 +154,7 @@ class Sidebar extends Component {
               Live Streaming
             </ListSubheader>
           }
-        >
+        </List>
 
           <ListItem
             activeClassName={classes.activeListItem}
