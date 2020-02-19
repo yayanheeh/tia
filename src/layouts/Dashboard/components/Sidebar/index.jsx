@@ -35,8 +35,10 @@ import {
   TextFields as TextFieldsIcon,
   ImageOutlined as ImageIcon,
   InfoOutlined as InfoIcon,
+  BookOutlined as BookIcon,
   AccountBoxOutlined as AccountBoxIcon,
   PublicOutlined as PublicIcon,
+
   SettingsOutlined as SettingsIcon
    
 } from '@material-ui/icons';
@@ -137,13 +139,24 @@ class Sidebar extends Component {
             to="/Dokumentasi"
           >
             <ListItemIcon className={classes.listItemIcon}>
-              <LockOpenIcon />
+              <BookIcon />
             </ListItemIcon>
             <ListItemText
               classes={{ primary: classes.listItemText }}
               primary="Dokumentasi Perjalanan"
             />
           </ListItem>
+<Divider className={classes.listDivider} />
+        <List
+          component="div"
+          disablePadding
+          subheader={
+            <ListSubheader className={classes.listSubheader}>
+              Live Streaming
+            </ListSubheader>
+          }
+        >
+
           <ListItem
             activeClassName={classes.activeListItem}
             className={classes.listItem}
