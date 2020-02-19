@@ -20,6 +20,8 @@ import Profil from './views/Profil';
 import Visimisi from './views/Visimisi';
 import Dokumentasi from './views/Dokumentasi';
 import PaketUmroh from './views/PaketUmroh';
+import Video from './views/Video';
+
 
 
 export default class Routes extends Component {
@@ -115,6 +117,11 @@ export default class Routes extends Component {
           component={Dokumentasi}
           exact
           path="/dokumentasi"
+        />
+<Route
+          component={Video}
+          exact
+          path="/video"
         />
 
 <Route
