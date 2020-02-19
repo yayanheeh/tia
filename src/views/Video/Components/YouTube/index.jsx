@@ -1,3 +1,11 @@
+
+import React, { Component } from 'react';
+
+// Component styles
+import style from './style';
+
+
+
 var YouTube = React.createClass({
   render: function() {
     var videoSrc = "https://www.youtube.com/embed/" + 
