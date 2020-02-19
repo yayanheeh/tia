@@ -36,7 +36,7 @@ import {
   ImageOutlined as ImageIcon,
   InfoOutlined as InfoIcon,
   AccountBoxOutlined as AccountBoxIcon,
-EmojiPeopleOutlined as EmojiPeopleIcon,
+  PublicOutlined as PublicIcon,
   SettingsOutlined as SettingsIcon
    
 } from '@material-ui/icons';
@@ -109,7 +109,7 @@ class Sidebar extends Component {
             to="/visimisi"
           >
             <ListItemIcon className={classes.listItemIcon}>
-              <EmojiPeopleIcon />
+              <PublicIcon/>
             </ListItemIcon>
             <ListItemText
               classes={{ primary: classes.listItemText }}
