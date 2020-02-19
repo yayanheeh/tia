@@ -16,7 +16,12 @@ import NotFound from './views/NotFound';
 import Tes from './views/Tes';
 import TentangKami from './views/TentangKami';
 import Paduan from './views/Paduan';
+import Profil from './views/Profil';
+import Visimisi from './views/Visimisi';
+import Dokumentasi from './views/Dokumentasi';
+import PaketUmroh from './views/PaketUmroh';
 
+import Paduan from './views/Paduan';
 
 export default class Routes extends Component {
   render() {
@@ -90,6 +95,27 @@ export default class Routes extends Component {
           component={Paduan}
           exact
           path="/paduan"
+        />
+
+
+<Route
+          component={Profil}
+          exact
+          path="/profil"
+        />
+<Route
+          component={Visimisi}
+          exact
+          path="/visimisi"
+        />
+<Route
+          component={PaketUmroh}
+          exact
+          path="/paketumroh"
+        /><Route
+          component={Dokumentasi}
+          exact
+          path="/dokumentasi"
         />
 
 <Route
