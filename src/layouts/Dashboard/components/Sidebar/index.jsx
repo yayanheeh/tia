@@ -109,7 +109,7 @@ class Sidebar extends Component {
             to="/visimisi"
           >
             <ListItemIcon className={classes.listItemIcon}>
-              <EmojiPeople />
+              <EmojiPeopleIcon />
             </ListItemIcon>
             <ListItemText
               classes={{ primary: classes.listItemText }}
