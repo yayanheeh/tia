@@ -35,7 +35,6 @@ import {
   TextFields as TextFieldsIcon,
   ImageOutlined as ImageIcon,
   InfoOutlined as InfoIcon,
-  BookOutlined as BookIcon,
   AccountBoxOutlined as AccountBoxIcon,
   PublicOutlined as PublicIcon,
 
@@ -139,7 +138,7 @@ class Sidebar extends Component {
             to="/Dokumentasi"
           >
             <ListItemIcon className={classes.listItemIcon}>
-              <BookIcon />
+              <PeopleIcon />
             </ListItemIcon>
             <ListItemText
               classes={{ primary: classes.listItemText }}
