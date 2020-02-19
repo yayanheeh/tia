@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
 
+import CardMedia from '@material-ui/core/CardMedia';
 
 
 // Externals
