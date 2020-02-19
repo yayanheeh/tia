@@ -61,8 +61,7 @@ class Dokumentasi extends Component {
         <div className={classes.root}>
 
 
-          <Grid
-            container>
+          
 <h4>Dokumen Persyaratan Umroh</h4></Grid>
             
           <List dense={dense}>
