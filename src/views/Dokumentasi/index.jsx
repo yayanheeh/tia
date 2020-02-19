@@ -48,32 +48,12 @@ class Dokumentasi extends Component {
 
 
           <Grid
-            container
-            spacing={4}
-          >
-            {Object.keys(variants).map((key, i) => (
-              <Fragment key={i}>
-                <Grid
-                  item
-                  sm={3}
-                  xs={12}
-                >
-                  <TypographyComponent variant="caption">
-                    {key}
-                  </TypographyComponent>
-                </Grid>
-                <Grid
-                  item
-                  sm={9}
-                  xs={12}
-                >
-                  <TypographyComponent variant={key}>
-                    {variants[key]}
-                  </TypographyComponent>
-                </Grid>
-              </Fragment>
-            ))}
-          </Grid>
+            container>
+<h4>Dokumen Persyaratan Umroh</h4></Grid>
+            
+          
+            
+   
         </div>
       </DashboardLayout>
     );
