@@ -21,7 +21,6 @@ import Visimisi from './views/Visimisi';
 import Dokumentasi from './views/Dokumentasi';
 import PaketUmroh from './views/PaketUmroh';
 
-import Paduan from './views/Paduan';
 
 export default class Routes extends Component {
   render() {
