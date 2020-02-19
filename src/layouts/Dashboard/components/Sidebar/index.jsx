@@ -36,8 +36,9 @@ import {
   ImageOutlined as ImageIcon,
   InfoOutlined as InfoIcon,
   AccountBoxOutlined as AccountBoxIcon,
+EmojiPeopleOutlined as EmojiPeopleIcon,
   SettingsOutlined as SettingsIcon
-   EmojiPeopleOutlined as EmojiPeopleIcon,
+   
 } from '@material-ui/icons';
 
 // Component styles
