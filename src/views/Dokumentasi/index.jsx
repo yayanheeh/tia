@@ -62,7 +62,7 @@ class Dokumentasi extends Component {
 
 
           
-<h4>Dokumen Persyaratan Umroh</h4></Grid>
+<h4>Dokumen Persyaratan Umroh</h4>
             
           
             
