@@ -53,7 +53,13 @@ class Dokumentasi extends Component {
             
           
             
-   
+
+   <caption>
+Pas foto dengan latar belakang putih 4 x 6 sebanyak 6 lembar
+</caption>
+<caption>Paspor asli yang masih berlaku dengan susunan jumlah nama 3 kata
+</caption>
+
         </div>
       </DashboardLayout>
     );
