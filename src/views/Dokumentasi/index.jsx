@@ -12,8 +12,6 @@ import IconButton from '@material-ui/core/IconButton';
 import FormGroup from '@material-ui/core/FormGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
-import Grid from '@material-ui/core/Grid';
-import Typography from '@material-ui/core/Typography';
 import FolderIcon from '@material-ui/icons/Folder';
 import DeleteIcon from '@material-ui/icons/Delete';
 
@@ -67,7 +65,19 @@ class Dokumentasi extends Component {
             container>
 <h4>Dokumen Persyaratan Umroh</h4></Grid>
             
-          
+          <List dense={dense}>
+              {generate(
+                <ListItem>
+                  <ListItemIcon>
+                    <FolderIcon />
+                  </ListItemIcon>
+                  <ListItemText
+                    primary="Pas foto dengan latar belakang putih 4 x 6 sebanyak 6 lembar"
+                    secondary={secondary ? 'Secondary text' : null}
+                  />
+                </ListItem>,
+              )}
+            </List>
             
 
    <caption>
