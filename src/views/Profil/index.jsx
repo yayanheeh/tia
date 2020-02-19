@@ -1,83 +1,87 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-const React = require('react')
-const PropTypes = require('prop-types')
-const div = React.createElement.bind(React, 'div')
-const iframe = React.createElement.bind(React, 'iframe')
+import React, { Component, Fragment } from 'react';
 
-const divStyle = {
-  position: 'relative',
-  height: 0,
-  overflow: 'hidden',
-  maxWidth: '100%'
-}
 
-const iframeStyle = {
-  position: 'absolute',
-  top: 0,
-  left: 0,
-  width: '100%',
-  height: '100%'
-}
 
-/*
- *  Turn `16:9` into `9 / 16` into `56.25%`
- *  Turn `4:3` into `3 / 4` into `75%`
- */
-const ratioToPercent = (ratio) => {
-  const [w, h] = ratio.split(':').map((num) => Number(num))
-  return `${(h / w) * 100}%`
-}
+// Externals
+import PropTypes from 'prop-types';
 
-/*
- *  Usage: <ResponsiveEmbed src='ace youtube video' ratio='4:3' />
- */
-const ResponsiveEmbed = (props) => {
-  const paddingBottom = ratioToPercent(props.ratio)
-  const style = Object.assign({}, divStyle, {paddingBottom})
-  const iframeProps = Object.assign({frameBorder: 0}, props, {style: iframeStyle})
-  delete iframeProps.ratio
-  return div({style},
-    iframe(iframeProps)
-  )
-}
+// Material helpers
+import { withStyles } from '@material-ui/core';
 
-ResponsiveEmbed.defaultProps = {
-  src: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-  ratio: '16:9'
-}
+// Material components
+import { Grid, Typography as TypographyComponent } from '@material-ui/core';
 
-ResponsiveEmbed.propTypes = {
-  src: PropTypes.string,
-  ratio: (props, propName, componentName) => {
-    if (!/\d+:\d+/.test(props[propName])) {
-      return new Error(
-        'Invalid ratio supplied to ResponsiveEmbed. Expected a string like "16:9" or any 2 numbers seperated by a colon'
-      )
-    }
+// Shared layouts
+import { Dashboard as DashboardLayout } from 'layouts';
+
+// Component styles
+const styles = theme => ({
+  root: {
+    padding: theme.spacing.unit * 4
+  }
+});
+
+const variants = {
+  h1: 'Nisi euismod ante senectus consequat phasellus ut',
+  h2: 'Nisi euismod ante senectus consequat phasellus ut',
+  h3: 'Nisi euismod ante senectus consequat phasellus ut',
+  h4: 'Nisi euismod ante senectus consequat phasellus ut',
+  h5: 'Nisi euismod ante senectus consequat phasellus ut',
+  h6: 'Nisi euismod ante senectus consequat phasellus ut',
+  subtitle1: 'Leo varius justo aptent arcu urna felis pede nisl',
+  subtitle2: 'Leo varius justo aptent arcu urna felis pede nisl',
+  body1:
+    'Justo proin curabitur dictumst semper auctor, consequat tempor, nostra aenean neque turpis nunc. Leo. Sapien aliquet facilisi turpis, elit facilisi praesent porta metus leo. Dignissim amet dis nec ac integer inceptos erat dis Turpis sodales ad torquent. Dolor, erat convallis.Laoreet velit a fames commodo tristique hendrerit sociosqu rhoncus vel sapien penatibus facilisis faucibus ad. Mus purus vehicula imperdiet tempor lectus, feugiat Sapien erat viverra netus potenti mattis purus turpis. Interdum curabitur potenti tristique. Porta velit dignissim tristique ultrices primis.',
+  body2:
+    'Justo proin curabitur dictumst semper auctor, consequat tempor, nostra aenean neque turpis nunc. Leo. Sapien aliquet facilisi turpis, elit facilisi praesent porta metus leo. Dignissim amet dis nec ac integer inceptos erat dis Turpis sodales ad torquent. Dolor, erat convallis.',
+  caption: 'Accumsan leo pretium conubia ullamcorper.',
+  button: 'Vivamus ultrices rutrum fames dictumst'
+};
+
+class Profil extends Component {
+  render() {
+    const { classes } = this.props;
+
+    return (
+      <DashboardLayout title="Typography">
+        <div className={classes.root}>
+
+
+          <Grid
+            container
+            spacing={4}
+          >
+            {Object.keys(variants).map((key, i) => (
+              <Fragment key={i}>
+                <Grid
+                  item
+                  sm={3}
+                  xs={12}
+                >
+                  <TypographyComponent variant="caption">
+                    {key}
+                  </TypographyComponent>
+                </Grid>
+                <Grid
+                  item
+                  sm={9}
+                  xs={12}
+                >
+                  <TypographyComponent variant={key}>
+                    {variants[key]}
+                  </TypographyComponent>
+                </Grid>
+              </Fragment>
+            ))}
+          </Grid>
+        </div>
+      </DashboardLayout>
+    );
   }
 }
 
-module.exports = ResponsiveEmbed
+Profil.propTypes = {
+  classes: PropTypes.object.isRequired
+};
 
-const useStyles = makeStyles({
-  root: {
-    maxWidth: 345,
-  },
-  media: {
-    height: 140,
-  },
-});
-
-export default function MediaCard() {
-  const classes = useStyles();
-
-  return (
-    <Card className={classes.root}>
-      <CardActionArea>
-        <ResponsiveEmbed src='https://www.youtube.com/embed/2yqz9zgoC-U' allowFullScreen />
-
-      </CardActions>
-    </Card>
-  );
-}
+export default withStyles(styles)(Profil);
