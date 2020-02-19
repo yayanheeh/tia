@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Youtube from '/';
 
 const videoIdA = 'XxVg_s8xAms';
 const videoIdB = '-DX3vJiqxm4';
