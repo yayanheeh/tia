@@ -129,7 +129,7 @@ class Topbar extends Component {
               {title}
             </Typography>
  
-<div>
+
             <IconButton
               className={classes.notificationsButton}
               onClick={this.handleShowNotifications}
@@ -145,11 +145,12 @@ class Topbar extends Component {
             
             
             
-           <ListItem>      
-<Link to="/Profil">Profil</Link>
+           <Butto>      
+<Link to="/Profil">Profil</Link></Butto>
+<Butto>
 <Link to="/Visimisi">Visimisi</Link>
 
-</ListItem>
+</Butto>
 
             
             <IconButton
@@ -158,7 +159,7 @@ class Topbar extends Component {
             >
               <InputIcon />
             </IconButton>
-            </div>
+            
             
           </Toolbar>
         </div>
