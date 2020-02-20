@@ -83,92 +83,37 @@ class Dashboard extends Component {
 
  </Grid>       
 
-<Hidden smDown>
-             
-            <Grid
-              item
-            md={4}
-              xs={12}
-            >
-              
-              
-            </Grid>
-            <Grid
-              item
-              md={8}
-              xs={12}
-            >
-              <Progress className={classes.item} />
-            
-                          </Grid>
    
-   <Grid
-              item
-            md={4}
-              xs={12}
-            >
-              
-              
-            </Grid>
-            <Grid
-              item
-              md={8}
-              xs={12}
-            >
-               
-              <Profit className={classes.item} />
-            </Grid>
    
    
    <Grid
               item
-            md={4}
+              md={4}
               xs={12}
             >
-              
-              
-            </Grid>
-            <Grid
+                  <OrdersTable className={classes.item} />
+         
+
+ </Grid>
+   <Grid
               item
-              md={8}
+              md={4}
               xs={12}
             >
-              <SalesChart className={classes.item} />
-               </Grid>
-   
-   
-   
-            <Grid
+                  <Tiket className={classes.item} />
+         
+
+ </Grid>       
+<Grid
               item
-            md={4}
+              md={4}
               xs={12}
             >
-              
-              
-            </Grid>
-            <Grid
-              item
-              md={8}
-              xs={12}
-            >
-              <DevicesChart className={classes.item} />
-                  </Grid>
-            <Grid
-              item
-            md={4}
-              xs={12}
-            >
-              
-              
-            </Grid>
-            <Grid
-              item
-              md={8}
-              xs={12}
-            >
-                 <ProductList className={classes.item} />
-                </Grid>
-           </Hidden> 
+                  <Promo className={classes.item} />
+         
+
+ </Grid>       
+
           </Grid>
         </div>
       </DashboardLayout>
