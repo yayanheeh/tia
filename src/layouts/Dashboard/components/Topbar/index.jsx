@@ -138,7 +138,12 @@ class Topbar extends Component {
               </Badge>
             </IconButton>
             
-            
+            <IconButton>
+              Tentang Kami
+            </IconButton>
+            <IconButton>
+              Hubungi kami
+            </IconButton>
             <IconButton
               className={classes.signOutButton}
               onClick={this.handleSignOut}
