@@ -147,11 +147,10 @@ class Topbar extends Component {
             
            <ListItem>      
 <Link to="/Profil">Profil</Link>
+<Link to="/Visimisi">Visimisi</Link>
+
 </ListItem>
-<ListItem>
-            <Link to="/Visimisi">Visimisi</Link>
-</ListItem>
-            
+
             
             <IconButton
               className={classes.signOutButton}
