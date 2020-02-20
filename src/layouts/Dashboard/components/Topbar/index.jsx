@@ -144,12 +144,11 @@ class Topbar extends Component {
               </Badge>
             </IconButton>
             
-            </br>
+            <br/>
             
-           <Link to="/Profil">Profil</Link>
-</br>
+<br/>
 <Link to="/Visimisi">Visimisi</Link>
-            </br>
+            <br/>
             <IconButton
               className={classes.signOutButton}
               onClick={this.handleSignOut}
