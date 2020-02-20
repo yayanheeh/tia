@@ -150,7 +150,7 @@ class Topbar extends Component {
 &nbsp;&nbsp;
 <Link to="/Visimisi">Tentang kami</Link>
             &nbsp;&nbsp;
-<Link to="/Profil">Hubungi Kami</Link>
+<Link to="/Profil">Hubungi kami</Link>
          
 &nbsp;
 
