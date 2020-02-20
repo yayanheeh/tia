@@ -145,12 +145,12 @@ class Topbar extends Component {
             
             
             
-           <Butto>      
-<Link to="/Profil">Profil</Link></Butto>
-<Butto>
+           <Button>      
+<Link to="/Profil">Profil</Link></Button>
+<Button>
 <Link to="/Visimisi">Visimisi</Link>
 
-</Butto>
+</Button>
 
             
             <IconButton
