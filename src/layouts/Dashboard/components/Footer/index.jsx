@@ -27,9 +27,9 @@ export default function SimpleBottomNavigation() {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
 
-  return (
+  return (  <Hidden smUp> 
 <BottomNavigation className={classes.stickToBottom}>
-<br/><br/><Hidden smUp> 
+<br/><br/>
     <BottomNavigation
       value={value}
       onChange={(event, newValue) => {
@@ -73,7 +73,7 @@ export default function SimpleBottomNavigation() {
         className={classes.content}
     />
       
-</BottomNavigation></Hidden>
 </BottomNavigation>
+</BottomNavigation></Hidden>
   );
 }
