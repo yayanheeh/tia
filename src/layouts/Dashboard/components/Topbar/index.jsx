@@ -14,6 +14,10 @@ import { withStyles } from '@material-ui/core';
 // Material components
 import {
   Badge,
+  List,
+  ListItem,
+  ListItemIcon,
+  ListItemText,
   IconButton,
   Popover,
   Toolbar,
@@ -124,10 +128,7 @@ class Topbar extends Component {
             >
               {title}
             </Typography>
-            
-<Link to="/Profil">Profil</Link>
-            <Link to="/Visimisi">Visimisi</Link>
-
+ 
 
             <IconButton
               className={classes.notificationsButton}
@@ -144,7 +145,12 @@ class Topbar extends Component {
             
             
             
-           
+           <ListItem>      
+<Link to="/Profil">Profil</Link>
+</ListItem>
+<ListItem>
+            <Link to="/Visimisi">Visimisi</Link>
+</ListItem>
             
             
             <IconButton
