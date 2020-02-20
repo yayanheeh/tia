@@ -146,7 +146,7 @@ class Topbar extends Component {
             
             </br>
             
-           <Link to="/Profil">Profil</Link></Button>
+           <Link to="/Profil">Profil</Link>
 </br>
 <Link to="/Visimisi">Visimisi</Link>
             </br>
