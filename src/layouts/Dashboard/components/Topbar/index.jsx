@@ -140,6 +140,20 @@ class Topbar extends Component {
             
             <Link to="/">Home</Link>
             <Link to="/">About</Link>
+            
+            <Switch>
+          <Route path="/dashboard">
+            <Dashboard />
+          </Route>
+          <Route path="/profil">
+            <Profil />
+          </Route>
+          <Route path="/visimisi">
+            <Visimisi />
+          </Route>
+        </Switch>
+            
+            
             <IconButton
               className={classes.signOutButton}
               onClick={this.handleSignOut}
