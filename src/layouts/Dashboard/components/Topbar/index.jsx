@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
+import { withRouter,Link, } from 'react-router-dom';
 import Hidden from '@material-ui/core/Hidden';
 
 
@@ -125,6 +125,10 @@ class Topbar extends Component {
               {title}
             </Typography>
             
+<Link to="/Profil">Profil</Link>
+            <Link to="/Visimisi">Visimisi</Link>
+
+
             <IconButton
               className={classes.notificationsButton}
               onClick={this.handleShowNotifications}
@@ -138,8 +142,7 @@ class Topbar extends Component {
               </Badge>
             </IconButton>
             
-            <Link to="/">Home</Link>
-            <Link to="/">About</Link>
+            
             
            
             
