@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import { withRouter,Link, } from 'react-router-dom';
+import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 import Hidden from '@material-ui/core/Hidden';
 
 
