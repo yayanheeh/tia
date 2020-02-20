@@ -144,12 +144,12 @@ class Topbar extends Component {
               </Badge>
             </IconButton>
            <Hidden smDown>   
-            &nbsp;
+            &nbsp;&nbsp;
             <Link to="/dashboard"><small>Home</small></Link>
          
-&nbsp;
+&nbsp;&nbsp;
 <Link to="/Visimisi">Tentang kami</Link>
-            &nbsp;
+            &nbsp;&nbsp;
 <Link to="/Profil">Hubungi Kami</Link>
          
 &nbsp;
