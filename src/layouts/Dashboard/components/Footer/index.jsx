@@ -8,6 +8,7 @@ import FavoriteIcon from '@material-ui/icons/Favorite';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import Book from '@material-ui/icons/Book';
 import Forum from '@material-ui/icons/Forum';
+import Hidden from '@material-ui/core/Hidden';
 
 
 import Home from '@material-ui/icons/Home';
@@ -28,7 +29,7 @@ export default function SimpleBottomNavigation() {
 
   return (
 <BottomNavigation className={classes.stickToBottom}>
-<br/><br/>
+<br/><br/><Hidden smUp> 
     <BottomNavigation
       value={value}
       onChange={(event, newValue) => {
@@ -72,7 +73,7 @@ export default function SimpleBottomNavigation() {
         className={classes.content}
     />
       
-</BottomNavigation>
+</BottomNavigation></Hidden>
 </BottomNavigation>
   );
 }
