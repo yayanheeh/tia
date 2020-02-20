@@ -143,19 +143,19 @@ class Topbar extends Component {
                 <NotificationsIcon />
               </Badge>
             </IconButton>
-            
+           <Hidden smDown>   
             &nbsp;
-            <Link to="/Profil"><small>Profil</small></Link>
+            <Link to="/Profil"><small>Home</small></Link>
          
 &nbsp;
-<Link to="/Visimisi"><small>Visimisi</small></Link>
+<Link to="/Visimisi"><small>Tentang Kami</small></Link>
             &nbsp;
-            <IconButton
-              className={classes.signOutButton}
-              onClick={this.handleSignOut}
-            >
-              <InputIcon />
-            </IconButton>
+<Link to="/Profil"><small>Hubungi Kami</small></Link>
+         
+&nbsp;
+
+</Hidden>
+            
             
             
           </Toolbar>
