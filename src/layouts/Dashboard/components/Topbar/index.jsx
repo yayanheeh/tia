@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import { withRouter } from 'react-router-dom';
+import { withRouter,Link, } from 'react-router-dom';
 import Hidden from '@material-ui/core/Hidden';
 
 
@@ -138,12 +138,8 @@ class Topbar extends Component {
               </Badge>
             </IconButton>
             
-            <IconButton>
-              Tentang Kami
-            </IconButton>
-            <IconButton>
-              Hubungi kami
-            </IconButton>
+            <Link to="/">Home</Link>
+            <Link to="/">About</Link>
             <IconButton
               className={classes.signOutButton}
               onClick={this.handleSignOut}
