@@ -144,19 +144,12 @@ class Topbar extends Component {
               </Badge>
             </IconButton>
             
+            </br>
             
-            
-           <Link href="#" onClick={preventDefault}>
-        Link
-      </Link>
-      <Link href="#" onClick={preventDefault} color="inherit">
-        {'color="inherit"'}
-      </Link>
-      <Link href="#" onClick={preventDefault} variant="body2">
-        {'variant="body2"'}
-      </Link>
-
-            
+           <Link to="/Profil">Profil</Link></Button>
+</br>
+<Link to="/Visimisi">Visimisi</Link>
+            </br>
             <IconButton
               className={classes.signOutButton}
               onClick={this.handleSignOut}
