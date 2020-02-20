@@ -1,8 +1,9 @@
 import React, { Component, Fragment } from 'react';
 import { withRouter,Link, } from 'react-router-dom';
 import Hidden from '@material-ui/core/Hidden';
+import Typography from '@material-ui/core/Typography';
 
-
+import { makeStyles } from '@material-ui/core/styles';
 // Externals
 import classNames from 'classnames';
 import compose from 'recompose/compose';
@@ -20,8 +21,8 @@ import {
   ListItemText,
   IconButton,
   Popover,
-  Toolbar,
-  Typography
+  Toolbar
+  
 } from '@material-ui/core';
 
 // Material icons
@@ -145,12 +146,15 @@ class Topbar extends Component {
             
             
             
-           <Button>      
-<Link to="/Profil">Profil</Link></Button>
-<Button>
-<Link to="/Visimisi">Visimisi</Link>
-
-</Button>
+           <Link href="#" onClick={preventDefault}>
+        Link
+      </Link>
+      <Link href="#" onClick={preventDefault} color="inherit">
+        {'color="inherit"'}
+      </Link>
+      <Link href="#" onClick={preventDefault} variant="body2">
+        {'variant="body2"'}
+      </Link>
 
             
             <IconButton
