@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import CardMedia from '@material-ui/core/CardMedia';
 import Card from '@material-ui/core/Card';
-
+// Material components
+import { Grid } from '@material-ui/core';
 
 // Externals
 import classNames from 'classnames';
@@ -17,7 +18,6 @@ import { withStyles } from '@material-ui/core';
 // Material components
 import {
   Avatar,
-  Grid,
   Divider,
   List,
   ListItem,
@@ -79,7 +79,7 @@ class Bawah extends Component {
               xs={12}
             >tes1
 </Grid>
-</Grid
+<Grid
               item
               lg={3}
               sm={6}
@@ -87,7 +87,7 @@ class Bawah extends Component {
               xs={12}
             >tes2
 </Grid>
-</Grid
+<Grid
               item
               lg={3}
               sm={6}
@@ -96,7 +96,7 @@ class Bawah extends Component {
             >tes3
 </Grid>
 
-</Grid
+<Grid
               item
               lg={3}
               sm={6}
