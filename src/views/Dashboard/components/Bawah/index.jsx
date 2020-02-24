@@ -9,7 +9,9 @@ import { Link } from 'react-router-dom';
 import ListItemText from '@material-ui/core/ListItemText';
 
 const styles = {
-    paperContainer: {     
+    paperContainer: { 
+        height: 300,
+        width: 1000,
         backgroundImage: `url(${"https://tiedinmedia.com/wp-content/uploads/2017/01/background-footer-dean.jpg"})`
     }
 };
@@ -30,7 +32,7 @@ export default function CenteredGrid() {
 
   return (
     <div className={classes.root}>
-      
+      <Box>
       <div style={styles.paperContainer}>
             
          <Grid container spacing={1}>
@@ -58,7 +60,7 @@ export default function CenteredGrid() {
           Social media<Divider/>  </Grid>
         <Grid item xs={3}>
           Kontak<Divider/>   </Grid>
-      </Grid></div>
+          </Grid></div></Box>
     </div>
   );
 }
