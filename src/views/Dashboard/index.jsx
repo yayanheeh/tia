@@ -115,11 +115,13 @@ class Dashboard extends Component {
 
  </Grid>       
 
-   <div>
-     <Footer className={classes.item} />
-   </div>
+   
    
           </Grid>
+          
+         
+     <Footer className={classes.item} />
+   
         </div>
       </DashboardLayout>
     );
