@@ -22,17 +22,17 @@ export default function CenteredGrid() {
 
   return (
     <div className={classes.root}>
-  <Box bgcolor="text.secondary" color="background.paper" p={2}>
+  <Box bgcolor="text.secondary" color="#eceff1" p={2}>
          <Grid container spacing={1}>
         
         <Grid item xs={3}>
-          Doc </Divider> </Grid>
+          Doc <Divider/> </Grid>
         <Grid item xs={3}>
-          Blog </Divider>   </Grid>
+          Blog <Divider/>   </Grid>
         <Grid item xs={3}>
-          Social media</Divider>  </Grid>
+          Social media<Divider/>  </Grid>
         <Grid item xs={3}>
-          Kontak</Divider>   </Grid>
+          Kontak<Divider/>   </Grid>
       </Grid></Box>
     </div>
   );
