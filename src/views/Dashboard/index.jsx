@@ -25,7 +25,7 @@ import {
   ProductList,
   Tiket,
   Promo,
-  Footer,
+  Bawah,
   OrdersTable
 } from './components';
 
@@ -120,7 +120,7 @@ class Dashboard extends Component {
           </Grid>
           
          
-     <Footer className={classes.item} />
+     <Bawah className={classes.item} />
    
         </div>
       </DashboardLayout>
