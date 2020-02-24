@@ -39,7 +39,9 @@ export default function CenteredGrid() {
         
         <Grid item xs={3}>
           Doc <Divider/> 
-            <ListItem button component={Link} to="/">
+            <font color="blue">
+            <ListItem button component={Link} to="/visimisi">
+
           Profil
         </ListItem>
            <ListItem button component={Link} to="/">
@@ -52,7 +54,7 @@ export default function CenteredGrid() {
            <ListItem button component={Link} to="/">
           Dokumen perjalanan
         </ListItem>
-           
+           </font>
            </Grid>
         <Grid item xs={3}>
           Blog <Divider/>   </Grid>
