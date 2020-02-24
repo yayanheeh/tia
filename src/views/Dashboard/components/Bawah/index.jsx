@@ -7,6 +7,14 @@ import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
 import { Link } from 'react-router-dom';
 import ListItemText from '@material-ui/core/ListItemText';
+
+const styles = {
+    paperContainer: {
+        height: 300,
+        backgroundImage: `url(${"https://cdn.pixabay.com/photo/2018/05/06/14/00/aviation-3378641_960_720.png"})`
+    }
+};
+
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
@@ -23,6 +31,9 @@ export default function CenteredGrid() {
 
   return (
     <div className={classes.root}>
+      
+      <div style={styles.paperContainer}>
+            tess</div>
   <Box bgcolor="text.secondary" color="white" p={2}>
          <Grid container spacing={1}>
         
