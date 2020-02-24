@@ -3,6 +3,9 @@ import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
+import Divider from '@material-ui/core/Divider';
+
+
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
@@ -23,13 +26,13 @@ export default function CenteredGrid() {
          <Grid container spacing={1}>
         
         <Grid item xs={3}>
-          Doc  </Grid>
+          Doc </Divider> </Grid>
         <Grid item xs={3}>
-          Blog   </Grid>
+          Blog </Divider>   </Grid>
         <Grid item xs={3}>
-          Social media </Grid>
+          Social media</Divider>  </Grid>
         <Grid item xs={3}>
-          Kontak  </Grid>
+          Kontak</Divider>   </Grid>
       </Grid></Box>
     </div>
   );
