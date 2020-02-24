@@ -9,7 +9,8 @@ import ListItemText from '@material-ui/core/ListItemText';
 import { Link, NavLink } from 'react-router-dom';
 
 
-
+// Component styles
+import styles from './styles';
 
 
 const styles = {
