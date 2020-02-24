@@ -13,13 +13,7 @@ import { Link, NavLink } from 'react-router-dom';
 import styles from './styles';
 
 
-const styles = {
-    paperContainer: { 
-        height: 300,
-        width: 1000,
-        backgroundImage: `url(${"https://tiedinmedia.com/wp-content/uploads/2017/01/background-footer-dean.jpg"})`
-    }
-};
+
 
 const useStyles = makeStyles(theme => ({
   root: {
