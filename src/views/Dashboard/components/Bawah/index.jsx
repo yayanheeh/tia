@@ -32,8 +32,7 @@ export default function CenteredGrid() {
 
   return (
     <div className={classes.root}>
-      <Box color="primary.main">…
-         <Grid container spacing={1}>
+      <Box bgcolor="text.disabled"><Grid container spacing={1}>
         
         <Grid item xs={3}>
           Doc <Divider/> 
