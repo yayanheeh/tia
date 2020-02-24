@@ -37,8 +37,8 @@ export default function CenteredGrid() {
      
           <Grid container spacing={1}>
         
-        <Grid item xs={3}>
-          Doc <Divider/> 
+        <Grid item xs={3}><br/>
+          Doc<Divider/> <br/>
             <font color="blue">
             <ListItem button component={Link} to="/visimisi">
 
@@ -56,12 +56,14 @@ export default function CenteredGrid() {
         </ListItem>
            </font>
            </Grid>
-        <Grid item xs={3}>
-          Blog <Divider/>   </Grid>
-        <Grid item xs={3}>
-          Social media<Divider/>  </Grid>
-        <Grid item xs={3}>
-          Kontak<Divider/>   </Grid>
+        <Grid item xs={3}><br/>
+          Blog <Divider/> 
+              <br/>
+              </Grid>
+        <Grid item xs={3}><br/>
+          Social media<Divider/> <br/> </Grid>
+        <Grid item xs={3}><br/>
+          Kontak<Divider/>  <br/> </Grid>
           </Grid></Box></div>
     </div>
   );
