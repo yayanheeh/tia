@@ -23,17 +23,13 @@ export default function CenteredGrid() {
          <Grid container spacing={1}>
         
         <Grid item xs={3}>
-          <Paper className={classes.paper}>xs=3</Paper>
-        </Grid>
+          Doc  </Grid>
         <Grid item xs={3}>
-          <Paper className={classes.paper}>xs=3</Paper>
-        </Grid>
+          Blog   </Grid>
         <Grid item xs={3}>
-          <Paper className={classes.paper}>xs=3</Paper>
-        </Grid>
+          Social media </Grid>
         <Grid item xs={3}>
-          <Paper className={classes.paper}>xs=3</Paper>
-        </Grid>
+          Kontak  </Grid>
       </Grid></Box>
     </div>
   );
