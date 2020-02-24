@@ -9,9 +9,8 @@ import { Link } from 'react-router-dom';
 import ListItemText from '@material-ui/core/ListItemText';
 
 const styles = {
-    paperContainer: {
-        height: 300,
-        backgroundImage: `url(${"https://cdn.pixabay.com/photo/2018/05/06/14/00/aviation-3378641_960_720.png"})`
+    paperContainer: {     
+        backgroundImage: `url(${"http://clipart-library.com/new_gallery/3-31687_contact-cities-background-for-footer.png"})`
     }
 };
 
@@ -33,8 +32,7 @@ export default function CenteredGrid() {
     <div className={classes.root}>
       
       <div style={styles.paperContainer}>
-            tess</div>
-  <Box bgcolor="text.secondary" color="white" p={2}>
+            
          <Grid container spacing={1}>
         
         <Grid item xs={3}>
@@ -60,7 +58,7 @@ export default function CenteredGrid() {
           Social media<Divider/>  </Grid>
         <Grid item xs={3}>
           Kontak<Divider/>   </Grid>
-      </Grid></Box>
+      </Grid></div>
     </div>
   );
 }
