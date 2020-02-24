@@ -25,8 +25,6 @@ import {
 // Shared components
 import { Paper } from 'components';
 
-// Component styles
-import styles from './styles';
 
 class Footer extends Component {
   render() {
