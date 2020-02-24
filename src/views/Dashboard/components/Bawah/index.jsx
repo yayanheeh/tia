@@ -5,7 +5,7 @@ import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
 import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
-import ListItemLink from '@material-ui/core/ListItemLink';
+import { Link } from 'react-router-dom';
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
@@ -27,21 +27,19 @@ export default function CenteredGrid() {
         
         <Grid item xs={3}>
           Doc <Divider/> 
-            <ListItemLink href="#simple-list">
+            <ListItem button component={Link} to="/">
           <ListItemText primary="Spam" />
-        </ListItemLink>
-           <ListItemLink href="#simple-list">
+        </ListItem>
+           <ListItem button component={Link} to="/">
           <ListItemText primary="Spam" />
-        </ListItemLink>
-           <ListItemLink href="#simple-list">
+        </ListItem>
+          
+          <ListItem button component={Link} to="/">
           <ListItemText primary="Spam" />
-        </ListItemLink>
-           <ListItemLink href="#simple-list">
+        </ListItem>
+           <ListItem button component={Link} to="/">
           <ListItemText primary="Spam" />
-        </ListItemLink>
-           <ListItemLink href="#simple-list">
-          <ListItemText primary="Spam" />
-        </ListItemLink>
+        </ListItem>
            
            </Grid>
         <Grid item xs={3}>
