@@ -40,17 +40,17 @@ export default function CenteredGrid() {
         <Grid item xs={3}>
           Doc <Divider/> 
             <ListItem button component={Link} to="/">
-          <ListItemText ="Profil" />
+          Profil
         </ListItem>
            <ListItem button component={Link} to="/">
-          <ListItemText ="Paket umroh" />
+          Paket umroh
         </ListItem>
           
           <ListItem button component={Link} to="/">
-          <ListItemText ="Syarat umroh" />
+          Syarat umroh
         </ListItem>
            <ListItem button component={Link} to="/">
-          <ListItemText ="Dokumen perjalanan" />
+          Dokumen perjalanan
         </ListItem>
            
            </Grid>
