@@ -16,8 +16,8 @@ import styles from './styles';
 
 
 
-export default function CenteredGrid() {
-  const classes = useStyles();
+export default function CenteredGrid()
+
 
   return (
     <div className={classes.root}>
