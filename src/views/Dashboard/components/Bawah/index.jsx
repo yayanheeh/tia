@@ -74,7 +74,7 @@ class Bawah extends Component {
             <Grid
               item
               lg={3}
-              sm={6}
+              sm={3}
               xl={3}
               xs={12}
             >tes1
@@ -82,7 +82,7 @@ class Bawah extends Component {
 <Grid
               item
               lg={3}
-              sm={6}
+              sm={3}
               xl={3}
               xs={12}
             >tes2
@@ -90,7 +90,7 @@ class Bawah extends Component {
 <Grid
               item
               lg={3}
-              sm={6}
+              sm={3}
               xl={3}
               xs={12}
             >tes3
@@ -99,7 +99,7 @@ class Bawah extends Component {
 <Grid
               item
               lg={3}
-              sm={6}
+              sm={3}
               xl={3}
               xs={12}
             >tes4
