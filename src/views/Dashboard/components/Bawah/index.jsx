@@ -10,7 +10,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 
 const styles = {
     paperContainer: {     
-        backgroundImage: `url(${"http://clipart-library.com/new_gallery/3-31687_contact-cities-background-for-footer.png"})`
+        backgroundImage: `url(${"https://tiedinmedia.com/wp-content/uploads/2017/01/background-footer-dean.jpg"})`
     }
 };
 
