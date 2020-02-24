@@ -8,4 +8,4 @@ export { default as SalesChart } from './SalesChart';
 export { default as Users } from './Users';
 export { default as Tiket } from './Tiket';
 export { default as Promo } from './Promo';
-export { default as Promo } from './Footer';
+export { default as Footer } from './Footer';
