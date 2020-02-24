@@ -42,7 +42,7 @@ export default function CenteredGrid() {
           <Grid container spacing={1}>
         
         <Grid item xs={3}><br/>
-          Doc<Divider/> <br/>
+          Doc<Divider/> <br/><b>
             <ListItem
             activeClassName={classes.activeListItem}
             className={classes.listItem}
@@ -102,7 +102,7 @@ export default function CenteredGrid() {
               classes={{ primary: classes.listItemText }}
               primary="Dokumentasi Perjalanan"
             />
-          </ListItem>
+          </ListItem></b>
 
            </Grid>
         <Grid item xs={3}><br/>
