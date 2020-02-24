@@ -77,7 +77,83 @@ class Bawah extends Component {
               sm={3}
               xl={3}
               xs={12}
-            >tes1
+            >
+        <List
+          component="div"
+          disablePadding
+        >
+ 
+<ListItem
+            activeClassName={classes.activeListItem}
+            className={classes.listItem}
+            component={NavLink}
+            to="/profil"
+          >
+            <ListItemIcon className={classes.listItemIcon}>
+              <DashboardIcon />
+            </ListItemIcon>
+            <ListItemText
+              classes={{ primary: classes.listItemText }}
+              primary="Home"
+            />
+          </ListItem>
+          <ListItem
+            activeClassName={classes.activeListItem}
+            className={classes.listItem}
+            component={NavLink}
+            to="/profil"
+          >
+            <ListItemIcon className={classes.listItemIcon}>
+              <AccountBoxIcon />
+            </ListItemIcon>
+            <ListItemText
+              classes={{ primary: classes.listItemText }}
+              primary="Profil"
+            />
+          </ListItem>
+          <ListItem
+            activeClassName={classes.activeListItem}
+            className={classes.listItem}
+            component={NavLink}
+            to="/visimisi"
+          >
+            <ListItemIcon className={classes.listItemIcon}>
+              <PublicIcon/>
+            </ListItemIcon>
+            <ListItemText
+              classes={{ primary: classes.listItemText }}
+              primary="Visimisi"
+            />
+          </ListItem>
+          <ListItem
+            activeClassName={classes.activeListItem}
+            className={classes.listItem}
+            component={NavLink}
+            to="/paketumroh"
+          >
+            <ListItemIcon className={classes.listItemIcon}>
+              <ShoppingBasketIcon />
+            </ListItemIcon>
+            <ListItemText
+              classes={{ primary: classes.listItemText }}
+              primary="Paket Umroh"
+            />
+          </ListItem>
+          <ListItem
+            activeClassName={classes.activeListItem}
+            className={classes.listItem}
+            component={NavLink}
+            to="/Dokumentasi"
+          >
+            <ListItemIcon className={classes.listItemIcon}>
+              <PeopleIcon />
+            </ListItemIcon>
+            <ListItemText
+              classes={{ primary: classes.listItemText }}
+              primary="Dokumentasi Perjalanan"
+            />
+          </ListItem></list>
+tes1
 </Grid>
 <Grid
               item
@@ -85,7 +161,84 @@ class Bawah extends Component {
               sm={3}
               xl={3}
               xs={12}
-            >tes2
+            >
+        <List
+          component="div"
+          disablePadding
+        >
+ 
+<ListItem
+            activeClassName={classes.activeListItem}
+            className={classes.listItem}
+            component={NavLink}
+            to="/profil"
+          >
+            <ListItemIcon className={classes.listItemIcon}>
+              <DashboardIcon />
+            </ListItemIcon>
+            <ListItemText
+              classes={{ primary: classes.listItemText }}
+              primary="Home"
+            />
+          </ListItem>
+          <ListItem
+            activeClassName={classes.activeListItem}
+            className={classes.listItem}
+            component={NavLink}
+            to="/profil"
+          >
+            <ListItemIcon className={classes.listItemIcon}>
+              <AccountBoxIcon />
+            </ListItemIcon>
+            <ListItemText
+              classes={{ primary: classes.listItemText }}
+              primary="Profil"
+            />
+          </ListItem>
+          <ListItem
+            activeClassName={classes.activeListItem}
+            className={classes.listItem}
+            component={NavLink}
+            to="/visimisi"
+          >
+            <ListItemIcon className={classes.listItemIcon}>
+              <PublicIcon/>
+            </ListItemIcon>
+            <ListItemText
+              classes={{ primary: classes.listItemText }}
+              primary="Visimisi"
+            />
+          </ListItem>
+          <ListItem
+            activeClassName={classes.activeListItem}
+            className={classes.listItem}
+            component={NavLink}
+            to="/paketumroh"
+          >
+            <ListItemIcon className={classes.listItemIcon}>
+              <ShoppingBasketIcon />
+            </ListItemIcon>
+            <ListItemText
+              classes={{ primary: classes.listItemText }}
+              primary="Paket Umroh"
+            />
+          </ListItem>
+          <ListItem
+            activeClassName={classes.activeListItem}
+            className={classes.listItem}
+            component={NavLink}
+            to="/Dokumentasi"
+          >
+            <ListItemIcon className={classes.listItemIcon}>
+              <PeopleIcon />
+            </ListItemIcon>
+            <ListItemText
+              classes={{ primary: classes.listItemText }}
+              primary="Dokumentasi Perjalanan"
+            />
+          </ListItem></List>
+
+tes2
 </Grid>
 <Grid
               item
@@ -93,7 +246,84 @@ class Bawah extends Component {
               sm={3}
               xl={3}
               xs={12}
-            >tes3
+            >
+
+        <List
+          component="div"
+          disablePadding
+        >
+ 
+<ListItem
+            activeClassName={classes.activeListItem}
+            className={classes.listItem}
+            component={NavLink}
+            to="/profil"
+          >
+            <ListItemIcon className={classes.listItemIcon}>
+              <DashboardIcon />
+            </ListItemIcon>
+            <ListItemText
+              classes={{ primary: classes.listItemText }}
+              primary="Home"
+            />
+          </ListItem>
+          <ListItem
+            activeClassName={classes.activeListItem}
+            className={classes.listItem}
+            component={NavLink}
+            to="/profil"
+          >
+            <ListItemIcon className={classes.listItemIcon}>
+              <AccountBoxIcon />
+            </ListItemIcon>
+            <ListItemText
+              classes={{ primary: classes.listItemText }}
+              primary="Profil"
+            />
+          </ListItem>
+          <ListItem
+            activeClassName={classes.activeListItem}
+            className={classes.listItem}
+            component={NavLink}
+            to="/visimisi"
+          >
+            <ListItemIcon className={classes.listItemIcon}>
+              <PublicIcon/>
+            </ListItemIcon>
+            <ListItemText
+              classes={{ primary: classes.listItemText }}
+              primary="Visimisi"
+            />
+          </ListItem>
+          <ListItem
+            activeClassName={classes.activeListItem}
+            className={classes.listItem}
+            component={NavLink}
+            to="/paketumroh"
+          >
+            <ListItemIcon className={classes.listItemIcon}>
+              <ShoppingBasketIcon />
+            </ListItemIcon>
+            <ListItemText
+              classes={{ primary: classes.listItemText }}
+              primary="Paket Umroh"
+            />
+          </ListItem>
+          <ListItem
+            activeClassName={classes.activeListItem}
+            className={classes.listItem}
+            component={NavLink}
+            to="/Dokumentasi"
+          >
+            <ListItemIcon className={classes.listItemIcon}>
+              <PeopleIcon />
+            </ListItemIcon>
+            <ListItemText
+              classes={{ primary: classes.listItemText }}
+              primary="Dokumentasi Perjalanan"
+            />
+          </ListItem></List>
+tes3
 </Grid>
 
 <Grid
@@ -102,7 +332,84 @@ class Bawah extends Component {
               sm={3}
               xl={3}
               xs={12}
-            >tes4
+            >
+
+        <List
+          component="div"
+          disablePadding
+        >
+ 
+<ListItem
+            activeClassName={classes.activeListItem}
+            className={classes.listItem}
+            component={NavLink}
+            to="/profil"
+          >
+            <ListItemIcon className={classes.listItemIcon}>
+              <DashboardIcon />
+            </ListItemIcon>
+            <ListItemText
+              classes={{ primary: classes.listItemText }}
+              primary="Home"
+            />
+          </ListItem>
+          <ListItem
+            activeClassName={classes.activeListItem}
+            className={classes.listItem}
+            component={NavLink}
+            to="/profil"
+          >
+            <ListItemIcon className={classes.listItemIcon}>
+              <AccountBoxIcon />
+            </ListItemIcon>
+            <ListItemText
+              classes={{ primary: classes.listItemText }}
+              primary="Profil"
+            />
+          </ListItem>
+          <ListItem
+            activeClassName={classes.activeListItem}
+            className={classes.listItem}
+            component={NavLink}
+            to="/visimisi"
+          >
+            <ListItemIcon className={classes.listItemIcon}>
+              <PublicIcon/>
+            </ListItemIcon>
+            <ListItemText
+              classes={{ primary: classes.listItemText }}
+              primary="Visimisi"
+            />
+          </ListItem>
+          <ListItem
+            activeClassName={classes.activeListItem}
+            className={classes.listItem}
+            component={NavLink}
+            to="/paketumroh"
+          >
+            <ListItemIcon className={classes.listItemIcon}>
+              <ShoppingBasketIcon />
+            </ListItemIcon>
+            <ListItemText
+              classes={{ primary: classes.listItemText }}
+              primary="Paket Umroh"
+            />
+          </ListItem>
+          <ListItem
+            activeClassName={classes.activeListItem}
+            className={classes.listItem}
+            component={NavLink}
+            to="/Dokumentasi"
+          >
+            <ListItemIcon className={classes.listItemIcon}>
+              <PeopleIcon />
+            </ListItemIcon>
+            <ListItemText
+              classes={{ primary: classes.listItemText }}
+              primary="Dokumentasi Perjalanan"
+            />
+          </ListItem></List>
+tes4
 </Grid></Grid>
         <Divider className={classes.profileDivider} />
         <List
