@@ -21,9 +21,7 @@ export default function CenteredGrid()
 
   return (
     <div className={classes.root}>
-   <div style={{ width: '100%' }}>
-      <Box display="flex" flexDirection="row" p={1} m={1} bgcolor="background.paper">
-     
+   
           <Grid container spacing={1}>
         
         <Grid item xs={3}><br/>
@@ -98,7 +96,7 @@ export default function CenteredGrid()
           Social media<Divider/> <br/> </Grid>
         <Grid item xs={3}><br/>
           Kontak<Divider/>  <br/> </Grid>
-          </Grid></Box></div>
+          </Grid>
     </div>
   );
 }
