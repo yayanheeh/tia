@@ -5,8 +5,12 @@ import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
 import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
-import { Link } from 'react-router-dom';
 import ListItemText from '@material-ui/core/ListItemText';
+import { Link, NavLink } from 'react-router-dom';
+
+
+
+
 
 const styles = {
     paperContainer: { 
@@ -39,22 +43,67 @@ export default function CenteredGrid() {
         
         <Grid item xs={3}><br/>
           Doc<Divider/> <br/>
-            <font color="blue">
-            <ListItem button component={Link} to="/visimisi">
+            <ListItem
+            activeClassName={classes.activeListItem}
+            className={classes.listItem}
+            component={NavLink}
+            to="/profil"
+          >
+            
+            <ListItemText
+              classes={{ primary: classes.listItemText }}
+              primary="Home"
+            />
+          </ListItem>
+          <ListItem
+            activeClassName={classes.activeListItem}
+            className={classes.listItem}
+            component={NavLink}
+            to="/profil"
+          >
+            
+            <ListItemText
+              classes={{ primary: classes.listItemText }}
+              primary="Profil"
+            />
+          </ListItem>
+          <ListItem
+            activeClassName={classes.activeListItem}
+            className={classes.listItem}
+            component={NavLink}
+            to="/visimisi"
+          >
+            <ListItemText
+              classes={{ primary: classes.listItemText }}
+              primary="Visimisi"
+            />
+          </ListItem>
+          <ListItem
+            activeClassName={classes.activeListItem}
+            className={classes.listItem}
+            component={NavLink}
+            to="/paketumroh"
+          >
+            
+            <ListItemText
+              classes={{ primary: classes.listItemText }}
+              primary="Paket Umroh"
+            />
+          </ListItem>
+          <ListItem
+            activeClassName={classes.activeListItem}
+            className={classes.listItem}
+            component={NavLink}
+            to="/Dokumentasi"
+          >
+            
+            
+            <ListItemText
+              classes={{ primary: classes.listItemText }}
+              primary="Dokumentasi Perjalanan"
+            />
+          </ListItem>
 
-          Profil
-        </ListItem>
-           <ListItem button component={Link} to="/">
-          Paket umroh
-        </ListItem>
-          
-          <ListItem button component={Link} to="/">
-          Syarat umroh
-        </ListItem>
-           <ListItem button component={Link} to="/">
-          Dokumen perjalanan
-        </ListItem>
-           </font>
            </Grid>
         <Grid item xs={3}><br/>
           Blog <Divider/> 
