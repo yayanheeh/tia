@@ -78,10 +78,7 @@ class Bawah extends Component {
               xl={3}
               xs={12}
             >
-        <List
-          component="div"
-          disablePadding
-        >
+        
  
 <ListItem
             activeClassName={classes.activeListItem}
@@ -152,7 +149,7 @@ class Bawah extends Component {
               classes={{ primary: classes.listItemText }}
               primary="Dokumentasi Perjalanan"
             />
-          </ListItem></list>
+          </ListItem>
 tes1
 </Grid>
 <Grid
