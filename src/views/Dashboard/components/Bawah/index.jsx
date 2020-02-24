@@ -23,10 +23,11 @@ export default function LabelBottomNavigation() {
 
   return (
     <BottomNavigation value={value} onChange={handleChange} className={classes.root}>
-      <BottomNavigationAction label="Recents" value="recents" icon={<RestoreIcon />} />
-      <BottomNavigationAction label="Favorites" value="favorites" icon={<FavoriteIcon />} />
-      <BottomNavigationAction label="Nearby" value="nearby" icon={<LocationOnIcon />} />
-      <BottomNavigationAction label="Folder" value="folder" icon={<FolderIcon />} />
+      <BottomNavigationAction>Blog</BottomNavigationAction>
+ <BottomNavigationAction>Doc</BottomNavigationAction>
+      <BottomNavigationAction>Social Media</BottomNavigationAction>
+      <BottomNavigationAction>Kontak</BottomNavigationAction>
+    
     </BottomNavigation>
   );
 }
