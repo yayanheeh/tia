@@ -32,7 +32,13 @@ export default function CenteredGrid() {
 
   return (
     <div className={classes.root}>
-      <Box boxShadow={0}><Grid container spacing={1}>
+      <Box
+        boxShadow={0}
+        bgcolor="background.paper"
+        m={1}
+        p={1}
+        style={{ width: '8rem', height: '5rem' }}
+      ><Grid container spacing={1}>
         
         <Grid item xs={3}>
           Doc <Divider/> 
