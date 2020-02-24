@@ -32,12 +32,10 @@ export default function CenteredGrid() {
 
   return (
     <div className={classes.root}>
-      <Box
-        boxShadow={0}
-        bgcolor="background.paper"
-
-        style={{ width: '8rem', height: '5rem' }}
-      ><Grid container spacing={1}>
+   <div style={{ width: '100%' }}>
+      <Box display="flex" flexDirection="row" p={1} m={1} bgcolor="background.paper">
+     
+          <Grid container spacing={1}>
         
         <Grid item xs={3}>
           Doc <Divider/> 
@@ -62,7 +60,7 @@ export default function CenteredGrid() {
           Social media<Divider/>  </Grid>
         <Grid item xs={3}>
           Kontak<Divider/>   </Grid>
-          </Grid></Box>
+          </Grid></Box></div>
     </div>
   );
 }
