@@ -32,9 +32,7 @@ export default function CenteredGrid() {
 
   return (
     <div className={classes.root}>
-      <Box>
-      <div style={styles.paperContainer}>
-            
+      <Box color="primary.main">…
          <Grid container spacing={1}>
         
         <Grid item xs={3}>
@@ -60,7 +58,7 @@ export default function CenteredGrid() {
           Social media<Divider/>  </Grid>
         <Grid item xs={3}>
           Kontak<Divider/>   </Grid>
-          </Grid></div></Box>
+          </Grid></Box>
     </div>
   );
 }
