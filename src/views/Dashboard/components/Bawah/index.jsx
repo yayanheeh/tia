@@ -17,6 +17,7 @@ import { withStyles } from '@material-ui/core';
 // Material components
 import {
   Avatar,
+  Grid,
   Divider,
   List,
   ListItem,
@@ -66,9 +67,43 @@ class Bawah extends Component {
           </Link>
         </div>
         
+<Grid
+            container
+            spacing={1}
+          >
+            <Grid
+              item
+              lg={3}
+              sm={6}
+              xl={3}
+              xs={12}
+            >tes1
+</Grid>
+</Grid
+              item
+              lg={3}
+              sm={6}
+              xl={3}
+              xs={12}
+            >tes2
+</Grid>
+</Grid
+              item
+              lg={3}
+              sm={6}
+              xl={3}
+              xs={12}
+            >tes3
+</Grid>
 
-
-
+</Grid
+              item
+              lg={3}
+              sm={6}
+              xl={3}
+              xs={12}
+            >tes4
+</Grid></Grid>
         <Divider className={classes.profileDivider} />
         <List
           component="div"
