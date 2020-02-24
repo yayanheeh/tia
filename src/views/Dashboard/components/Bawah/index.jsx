@@ -35,8 +35,7 @@ export default function CenteredGrid() {
       <Box
         boxShadow={0}
         bgcolor="background.paper"
-        m={1}
-        p={1}
+
         style={{ width: '8rem', height: '5rem' }}
       ><Grid container spacing={1}>
         
