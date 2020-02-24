@@ -20,7 +20,7 @@ import Profil from './views/Profil';
 import Visimisi from './views/Visimisi';
 import Dokumentasi from './views/Dokumentasi';
 import PaketUmroh from './views/PaketUmroh';
-
+import Footer from './views/Footer';
 
 
 export default class Routes extends Component {
@@ -112,7 +112,13 @@ export default class Routes extends Component {
           component={PaketUmroh}
           exact
           path="/paketumroh"
-        /><Route
+        />
+        <Route
+          component={Footer}
+          exact
+          path="/footer"
+        />
+        <Route
           component={Dokumentasi}
           exact
           path="/dokumentasi"
