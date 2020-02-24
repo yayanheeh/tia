@@ -7,7 +7,8 @@ import IconButton from '@material-ui/core/IconButton';
 import StarBorderIcon from '@material-ui/icons/StarBorder';
 
 
-import tileData from './tileData';
+import {titleData } from './titleData';
+
 
 const useStyles = makeStyles(theme => ({
   root: {
