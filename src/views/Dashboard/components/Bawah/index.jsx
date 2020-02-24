@@ -4,7 +4,7 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
 import Divider from '@material-ui/core/Divider';
-
+import ListItem from '@material-ui/core/ListItem';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -22,11 +22,28 @@ export default function CenteredGrid() {
 
   return (
     <div className={classes.root}>
-  <Box bgcolor="text.secondary" color="#eceff1" p={2}>
+  <Box bgcolor="text.secondary" color="white" p={2}>
          <Grid container spacing={1}>
         
         <Grid item xs={3}>
-          Doc <Divider/> </Grid>
+          Doc <Divider/> 
+            <ListItemLink href="#simple-list">
+          <ListItemText primary="Spam" />
+        </ListItemLink>
+           <ListItemLink href="#simple-list">
+          <ListItemText primary="Spam" />
+        </ListItemLink>
+           <ListItemLink href="#simple-list">
+          <ListItemText primary="Spam" />
+        </ListItemLink>
+           <ListItemLink href="#simple-list">
+          <ListItemText primary="Spam" />
+        </ListItemLink>
+           <ListItemLink href="#simple-list">
+          <ListItemText primary="Spam" />
+        </ListItemLink>
+           
+           </Grid>
         <Grid item xs={3}>
           Blog <Divider/>   </Grid>
         <Grid item xs={3}>
