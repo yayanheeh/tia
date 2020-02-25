@@ -126,7 +126,7 @@ class Topbar extends Component {
               {title}
             </Typography>
            
-            <Search className={classes.item} /> 
+           &emsp;&emsp;&emsp;&emsp; <Search className={classes.item} /> 
             
             <IconButton
               className={classes.notificationsButton}
