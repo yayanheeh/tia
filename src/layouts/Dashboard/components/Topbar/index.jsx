@@ -1,6 +1,26 @@
 import React, { Component, Fragment } from 'react';
 import { withRouter } from 'react-router-dom';
 
+import InputBase from '@material-ui/core/InputBase';
+const useStyles = makeStyles(theme => ({
+  root: {
+    padding: '2px 4px',
+    display: 'flex',
+    alignItems: 'center',
+    width: 400,
+  },
+  input: {
+    marginLeft: theme.spacing(1),
+    flex: 1,
+  },
+  iconButton: {
+    padding: 10,
+  },
+  divider: {
+    height: 28,
+    margin: 4,
+  },
+}));
 
 // Externals
 import classNames from 'classnames';
@@ -25,6 +45,7 @@ import {
   Close as CloseIcon,
   NotificationsOutlined as NotificationsIcon,
   Input as InputIcon
+  Search as SearchIcon
 } from '@material-ui/icons';
 
 // Shared services
