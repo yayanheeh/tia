@@ -1,5 +1,5 @@
 import React from 'react';
-import Metta from './components';
+import { Metta } from './components';
 
 class Profil extends React.Component {
   render() {
