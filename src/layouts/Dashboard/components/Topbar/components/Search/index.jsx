@@ -160,7 +160,9 @@ export default function PrimarySearchAppBar() {
   );
 
   return (
-    
+    <AppBar position="static">
+       
+      
       
        <Toolbar>
         
@@ -180,7 +182,7 @@ export default function PrimarySearchAppBar() {
         
             
           </Toolbar>
-       
+       </AppBar>
      
       
     
