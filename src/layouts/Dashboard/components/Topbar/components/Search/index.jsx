@@ -171,19 +171,21 @@ export default function PrimarySearchAppBar() {
 <div className={classes.search}>
             
             <InputBase
-              placeholder="Search…"
+              placeholder="Search pencarian"
               classes={{
                 root: classes.inputRoot,
                 input: classes.inputInput,
               }}
               inputProps={{ 'aria-label': 'search' }}
             />
-          </div>
-      <div className={classes.searchIcon}>
+  <div className={classes.searchIcon}>
               
       
         <SearchIcon />
             </div>
+  
+          </div>
+      
             
           </Toolbar>
        
