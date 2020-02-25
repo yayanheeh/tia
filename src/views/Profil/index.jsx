@@ -1,105 +1,25 @@
-import React, { Component, Fragment } from 'react';
+import React from 'react';
+import MetaTags from '../../../src/index';
 
-
-// Custom components
-import { react-meta-tags } from './components';
-
-class Component1 extends React.Component {
+class Profil extends React.Component {
   render() {
     return (
-        <div class="wrapper">
-          <MetaTags>
-            <title>Page 1</title>
-            <meta id="meta-description" name="description" content="Some description." />
-            <meta id="og-title" property="og:title" content="MyApp" />
-            <meta id="og-image" property="og:image" content="path/to/image.jpg" />
-          </MetaTags>
-          <div class="content"> Some Content </div>
+      <div className="page1">
+        <MetaTags>
+          <title>React Meta Tags | Page1</title>
+          <link rel="canonical" href="/page1" />
+          <meta name="description" content="React meta tags handles document meta/head tags in isomorphic react with ease." />
+          <meta property="og:title" content="MyApp-Page1" />
+          <meta itemProp="test" content="Page1" />
+        </MetaTags>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
         </div>
-      )
+      </div>
+    )
   }
 }
 
-// Externals
-import PropTypes from 'prop-types';
-
-// Material helpers
-import { withStyles } from '@material-ui/core';
-
-// Material components
-import { Grid, Typography as TypographyComponent } from '@material-ui/core';
-
-// Shared layouts
-import { Dashboard as DashboardLayout } from 'layouts';
-
-// Component styles
-const styles = theme => ({
-  root: {
-    padding: theme.spacing.unit * 4
-  }
-});
-
-const variants = {
-  h1: 'Nisi euismod ante senectus consequat phasellus ut',
-  h2: 'Nisi euismod ante senectus consequat phasellus ut',
-  h3: 'Nisi euismod ante senectus consequat phasellus ut',
-  h4: 'Nisi euismod ante senectus consequat phasellus ut',
-  h5: 'Nisi euismod ante senectus consequat phasellus ut',
-  h6: 'Nisi euismod ante senectus consequat phasellus ut',
-  subtitle1: 'Leo varius justo aptent arcu urna felis pede nisl',
-  subtitle2: 'Leo varius justo aptent arcu urna felis pede nisl',
-  body1:
-    'Justo proin curabitur dictumst semper auctor, consequat tempor, nostra aenean neque turpis nunc. Leo. Sapien aliquet facilisi turpis, elit facilisi praesent porta metus leo. Dignissim amet dis nec ac integer inceptos erat dis Turpis sodales ad torquent. Dolor, erat convallis.Laoreet velit a fames commodo tristique hendrerit sociosqu rhoncus vel sapien penatibus facilisis faucibus ad. Mus purus vehicula imperdiet tempor lectus, feugiat Sapien erat viverra netus potenti mattis purus turpis. Interdum curabitur potenti tristique. Porta velit dignissim tristique ultrices primis.',
-  body2:
-    'Justo proin curabitur dictumst semper auctor, consequat tempor, nostra aenean neque turpis nunc. Leo. Sapien aliquet facilisi turpis, elit facilisi praesent porta metus leo. Dignissim amet dis nec ac integer inceptos erat dis Turpis sodales ad torquent. Dolor, erat convallis.',
-  caption: 'Accumsan leo pretium conubia ullamcorper.',
-  button: 'Vivamus ultrices rutrum fames dictumst'
-};
-
-class Profil extends Component {
-  render() {
-    const { classes } = this.props;
-
-    return (
-      <DashboardLayout title="Typography">
-        <div className={classes.root}>
-
-
-          <Grid
-            container
-            spacing={4}
-          >
-            {Object.keys(variants).map((key, i) => (
-              <Fragment key={i}>
-                <Grid
-                  item
-                  sm={3}
-                  xs={12}
-                >
-                  <TypographyComponent variant="caption">
-                    {key}
-                  </TypographyComponent>
-                </Grid>
-                <Grid
-                  item
-                  sm={9}
-                  xs={12}
-                >
-                  <TypographyComponent variant={key}>
-                    {variants[key]}
-                  </TypographyComponent>
-                </Grid>
-              </Fragment>
-            ))}
-          </Grid>
-        </div>
-      </DashboardLayout>
-    );
-  }
-}
-
-Profil.propTypes = {
-  classes: PropTypes.object.isRequired
-};
-
-export default withStyles(styles)(Profil);
+export default Profil;
