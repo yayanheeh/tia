@@ -162,7 +162,7 @@ export default function PrimarySearchAppBar() {
   return (
     
       
-       
+       <Toolbar>
         
 <div className={classes.search}>
             <div className={classes.searchIcon}>
@@ -179,7 +179,7 @@ export default function PrimarySearchAppBar() {
           </div>
         
             
-          
+          </Toolbar>
        
      
       
