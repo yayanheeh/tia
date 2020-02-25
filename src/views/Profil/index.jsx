@@ -1,7 +1,7 @@
 import React from 'react';
 import MetaTags from './components/Meta';
 
-class Profil extends React.Component {
+class Component1 extends React.Component {
   render() {
     return (
         <div className="wrapper">
