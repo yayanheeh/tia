@@ -66,7 +66,10 @@ class Bawah extends Component {
               xl={3}
               xs={12}
             >
-        <b>Docs</b><br/>
+        <ListSubheader className={classes.listSubheader}>
+              Docs
+            </ListSubheader>
+
 <Divider/>
  
 <ListItem
@@ -148,7 +151,10 @@ class Bawah extends Component {
               xl={3}
               xs={12}
             >
-  <b> Blog</b><br/>
+  <ListSubheader className={classes.listSubheader}>
+              Blog
+            </ListSubheader>
+
 <Divider/>
 
         <List
@@ -236,7 +242,10 @@ class Bawah extends Component {
               xl={3}
               xs={12}
             >
-<b>Media social</b><br/>
+<ListSubheader className={classes.listSubheader}>
+              Media social
+            </ListSubheader>
+
 <Divider/>
         <List
           component="div"
@@ -323,7 +332,9 @@ class Bawah extends Component {
               xl={3}
               xs={12}
             >
-<b>Kontak</b><br/>
+<ListSubheader className={classes.listSubheader}>
+              Kontak
+            </ListSubheader>
 
 <Divider/>
 
