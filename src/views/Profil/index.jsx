@@ -1,7 +1,8 @@
 import React, { Component, Fragment } from 'react';
 
 
-import MetaTags from 'react-meta-tags';
+// Custom components
+import { react-meta-tags } from './components';
 
 class Component1 extends React.Component {
   render() {
