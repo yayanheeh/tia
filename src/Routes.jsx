@@ -20,6 +20,7 @@ import Profil from './views/Profil';
 import Visimisi from './views/Visimisi';
 import Dokumentasi from './views/Dokumentasi';
 import PaketUmroh from './views/PaketUmroh';
+import Tia from './views/Tia';
 
 
 
@@ -121,7 +122,11 @@ export default class Routes extends Component {
           path="/dokumentasi"
         />
 
-
+<Route
+          component={Tia}
+          exact
+          path="/tia"
+        />
 
 <Route
           component={Tes}
