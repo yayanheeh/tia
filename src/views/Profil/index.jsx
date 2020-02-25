@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { MetaTags } from './components';
+import { MetaTags } from './components/Meta';
 
 class Profil extends React.Component {
   render() {
