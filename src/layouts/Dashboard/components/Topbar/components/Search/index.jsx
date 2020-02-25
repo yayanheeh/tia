@@ -161,10 +161,10 @@ export default function PrimarySearchAppBar() {
 
   return (
     
-      <AppBar position="static">
+      
        
-          
-          <div className={classes.search}>
+        
+<div className={classes.search}>
             <div className={classes.searchIcon}>
               <SearchIcon />
             </div>
@@ -177,13 +177,12 @@ export default function PrimarySearchAppBar() {
               inputProps={{ 'aria-label': 'search' }}
             />
           </div>
-          </div>
+        
             
           
        
-      </AppBar>
-      {renderMobileMenu}
-      {renderMenu}
+     
+      
     
   );
 }
