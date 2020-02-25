@@ -126,7 +126,9 @@ class Topbar extends Component {
               {title}
             </Typography>
            
-          &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;  &emsp;&emsp;&emsp;&emsp; <div class="st-search-container"></div>
+          &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;  &emsp;&emsp;&emsp;&emsp; <form>
+  <input type="text" class="st-default-search-input" />
+</form>
             
             <IconButton
               className={classes.notificationsButton}
