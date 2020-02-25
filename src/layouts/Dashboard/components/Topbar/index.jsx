@@ -126,10 +126,10 @@ class Topbar extends Component {
               {title}
             </Typography>
            
-          &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;  &emsp;&emsp;&emsp;&emsp; <form>
+           &emsp;&emsp;&emsp;&emsp; <form>
   <input type="text" class="st-default-search-input" />
-</form>
-            
+</form> 
+               &emsp;&emsp;   <Header className={classes.item} /> 
             <IconButton
               className={classes.notificationsButton}
               onClick={this.handleShowNotifications}
