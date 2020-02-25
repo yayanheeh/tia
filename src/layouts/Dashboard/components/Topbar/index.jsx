@@ -33,7 +33,7 @@ import {
 import { getNotifications } from 'services/notification';
 
 // Custom components
-import { NotificationList } from './components';
+import { NotificationList,Search } from './components';
 
 // Component styles
 import styles from './styles';
@@ -125,7 +125,8 @@ class Topbar extends Component {
             >
               {title}
             </Typography>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="gcse-search"></div>
+           
+            <Search className={classes.item} /> 
             
             <IconButton
               className={classes.notificationsButton}
