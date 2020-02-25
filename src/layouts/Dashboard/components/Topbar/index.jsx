@@ -169,8 +169,10 @@ class Topbar extends Component {
             onSelect={this.handleCloseNotifications}
           />
         </Popover>
+        
+        <Header className={classes.item} /> 
+      
       </Fragment>
-      <Header className={classes.item} /> 
        
       
     );
