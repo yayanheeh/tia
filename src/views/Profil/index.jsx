@@ -5,7 +5,7 @@ import { MetaTags } from './components/Meta';
 class Profil extends React.Component {
   render() {
     return (
-      <div className="page1">
+      <div className="Profil">
         <MetaTags>
           <title>React Meta Tags | Page1</title>
           <link rel="canonical" href="/page1" />
