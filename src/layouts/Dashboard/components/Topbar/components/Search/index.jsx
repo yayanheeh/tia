@@ -177,13 +177,13 @@ export default function PrimarySearchAppBar() {
               inputProps={{ 'aria-label': 'search' }}
             />
           </div>
-          
+          </div>
             
           
        
       </AppBar>
       {renderMobileMenu}
       {renderMenu}
-    </div>
+    
   );
 }
