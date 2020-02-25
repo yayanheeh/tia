@@ -44,7 +44,7 @@ import {
   Menu as MenuIcon,
   Close as CloseIcon,
   NotificationsOutlined as NotificationsIcon,
-  Input as InputIcon
+  Input as InputIcon,
   Search as SearchIcon
 } from '@material-ui/icons';
 
