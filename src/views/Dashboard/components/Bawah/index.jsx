@@ -54,18 +54,6 @@ class Bawah extends Component {
 
     return (
       <nav className={rootClassName}>
-        <div className={classes.logoWrapper}>
-          <Link
-            className={classes.logoLink}
-            to="/"
-          >
-            <img
-              alt="Brainalytica logo"
-              className={classes.logoImage}
-              src="/images/logos/brainalytica_logo.svg"
-            />
-          </Link>
-        </div>
         
 <Grid
             container
@@ -78,7 +66,7 @@ class Bawah extends Component {
               xl={3}
               xs={12}
             >
-        Docs
+        <b>Docs</b><br/>
 <Divider/>
  
 <ListItem
@@ -160,7 +148,7 @@ class Bawah extends Component {
               xl={3}
               xs={12}
             >
-Blog
+  <b> Blog</b><br/>
 <Divider/>
 
         <List
@@ -248,7 +236,7 @@ Blog
               xl={3}
               xs={12}
             >
-Media social
+<b>Media social</b><br/>
 <Divider/>
         <List
           component="div"
@@ -335,7 +323,7 @@ Media social
               xl={3}
               xs={12}
             >
-Kontak
+<b>Kontak</b><br/>
 
 <Divider/>
 
