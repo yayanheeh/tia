@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { Component } from 'react';
+
 import { MetaTags } from './components';
 
 class Profil extends React.Component {
