@@ -1,5 +1,5 @@
 import React from 'react';
-import MetaTags from '../../../src/index';
+import Metta from './components';
 
 class Profil extends React.Component {
   render() {
