@@ -20,7 +20,7 @@ import Profil from './views/Profil';
 import Visimisi from './views/Visimisi';
 import Dokumentasi from './views/Dokumentasi';
 import PaketUmroh from './views/PaketUmroh';
-import Foto from './views/Foto';
+
 
 
 
@@ -121,11 +121,7 @@ export default class Routes extends Component {
           path="/dokumentasi"
         />
 
-<Route
-          component={Foto}
-          exact
-          path="/foto"
-        />
+
 
 <Route
           component={Tes}
