@@ -126,7 +126,8 @@ export default class Routes extends Component {
           exact
           path="/tes"
         />
-        <Redirect to="/not-found" />
+        <Route exact path='*' component={NotFound} />
+          
       </Switch>
     );
   }
