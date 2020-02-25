@@ -428,24 +428,12 @@ class Bawah extends Component {
           disablePadding
           subheader={
             <ListSubheader className={classes.listSubheader}>
-              Support
+              © 2020
             </ListSubheader>
           }
         >
-          <ListItem
-            className={classes.listItem}
-            component="a"
-            href="https://devias.io/contact-us"
-            target="_blank"
-          >
-            <ListItemIcon className={classes.listItemIcon}>
-              <InfoIcon />
-            </ListItemIcon>
-            <ListItemText
-              classes={{ primary: classes.listItemText }}
-              primary="Customer support"
-            />
-          </ListItem>
+          
+            
         </List>
       </nav>
     );
