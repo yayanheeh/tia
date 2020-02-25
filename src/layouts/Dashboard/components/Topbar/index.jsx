@@ -148,8 +148,7 @@ class Topbar extends Component {
             </IconButton>
           </Toolbar>
           
-           <Header className={classes.item} /> 
-       
+           
         </div>
         
         <Popover
@@ -171,6 +170,9 @@ class Topbar extends Component {
           />
         </Popover>
       </Fragment>
+      <Header className={classes.item} /> 
+       
+      
     );
   }
 }
