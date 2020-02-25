@@ -1,5 +1,5 @@
 import React from 'react';
-import { MetaTags } from './components/Meta';
+import { MetaTags } from './components';
 
 class Profil extends React.Component {
   render() {
@@ -7,7 +7,7 @@ class Profil extends React.Component {
       <div className="page1">
         <MetaTags>
           <title>React Meta Tags | Page1</title>
-          <link rel="canonical" href="/page1" />
+          <link rel="canonical" href="/profil" />
           <meta name="description" content="React meta tags handles document meta/head tags in isomorphic react with ease." />
           <meta property="og:title" content="MyApp-Page1" />
           <meta itemProp="test" content="Page1" />
