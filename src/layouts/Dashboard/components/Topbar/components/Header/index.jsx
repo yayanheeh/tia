@@ -19,7 +19,7 @@ export default function CenteredTabs() {
   };
 
   return (
-    <Paper className={classes.root}>
+   
       <Tabs
         value={value}
         onChange={handleChange}
@@ -31,6 +31,6 @@ export default function CenteredTabs() {
         <Tab label="Item Two" />
         <Tab label="Item Three" />
       </Tabs>
-    </Paper>
+    
   );
 }
