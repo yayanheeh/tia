@@ -169,7 +169,9 @@ export default function PrimarySearchAppBar() {
        <Toolbar>
         
 <div className={classes.search}>
-         <div className={classes.searchIcon}>    
+         <div className={classes.searchIcon}>  
+           <SearchIcon />
+            </div>
             <InputBase
               placeholder="Search pencarian"
               classes={{
@@ -181,8 +183,7 @@ export default function PrimarySearchAppBar() {
  
               
       
-        <SearchIcon />
-            </div>
+        
   
           </div>
       
