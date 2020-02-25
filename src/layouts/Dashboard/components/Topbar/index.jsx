@@ -126,7 +126,7 @@ class Topbar extends Component {
               {title}
             </Typography>
            
-          &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;  &emsp;&emsp;&emsp;&emsp; <Search className={classes.item} /> 
+          &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;  &emsp;&emsp;&emsp;&emsp; <div class="st-search-container"></div>
             
             <IconButton
               className={classes.notificationsButton}
@@ -170,7 +170,7 @@ class Topbar extends Component {
           />
         </Popover>
         
-        <Header className={classes.item} /> 
+        
       
       </Fragment>
        
