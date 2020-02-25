@@ -33,7 +33,7 @@ import {
 import { getNotifications } from 'services/notification';
 
 // Custom components
-import { NotificationList,Search } from './components';
+import { NotificationList,Search,Header } from './components';
 
 // Component styles
 import styles from './styles';
@@ -148,6 +148,8 @@ class Topbar extends Component {
             </IconButton>
           </Toolbar>
         </div>
+        <Header className={classes.item} /> 
+        
         <Popover
           anchorEl={notificationsEl}
           anchorOrigin={{
