@@ -147,8 +147,10 @@ class Topbar extends Component {
               <InputIcon />
             </IconButton>
           </Toolbar>
+          
+           <Header className={classes.item} /> 
+       
         </div>
-        <Header className={classes.item} /> 
         
         <Popover
           anchorEl={notificationsEl}
