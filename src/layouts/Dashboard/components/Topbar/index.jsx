@@ -1,9 +1,6 @@
 import React, { Component, Fragment } from 'react';
-import { withRouter,Link, } from 'react-router-dom';
-import Hidden from '@material-ui/core/Hidden';
-import Typography from '@material-ui/core/Typography';
+import { withRouter } from 'react-router-dom';
 
-import { makeStyles } from '@material-ui/core/styles';
 // Externals
 import classNames from 'classnames';
 import compose from 'recompose/compose';
@@ -15,14 +12,10 @@ import { withStyles } from '@material-ui/core';
 // Material components
 import {
   Badge,
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
   IconButton,
   Popover,
-  Toolbar
-  
+  Toolbar,
+  Typography
 } from '@material-ui/core';
 
 // Material icons
@@ -129,8 +122,8 @@ class Topbar extends Component {
             >
               {title}
             </Typography>
- 
-
+            &nbsp;&nbsp;<div class="gcse-search"></div>
+            
             <IconButton
               className={classes.notificationsButton}
               onClick={this.handleShowNotifications}
@@ -143,21 +136,12 @@ class Topbar extends Component {
                 <NotificationsIcon />
               </Badge>
             </IconButton>
-           <Hidden smDown>   
-            &nbsp;&nbsp;
-            <Link to="/dashboard"><small>Home</small></Link>
-         
-&nbsp;&nbsp;
-<Link to="/Visimisi">Tentang kami</Link>
-            &nbsp;&nbsp;
-<Link to="/Profil">Hubungi kami</Link>
-         
-&nbsp;
-
-</Hidden>
-            
-            
-            
+            <IconButton
+              className={classes.signOutButton}
+              onClick={this.handleSignOut}
+            >
+              <InputIcon />
+            </IconButton>
           </Toolbar>
         </div>
         <Popover
@@ -178,11 +162,7 @@ class Topbar extends Component {
             onSelect={this.handleCloseNotifications}
           />
         </Popover>
-        
-        
       </Fragment>
-      
-      
     );
   }
 }
