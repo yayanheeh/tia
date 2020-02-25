@@ -122,7 +122,7 @@ class Topbar extends Component {
             >
               {title}
             </Typography>
-            &nbsp;&nbsp;<div class="gcse-search"></div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="gcse-search"></div>
             
             <IconButton
               className={classes.notificationsButton}
