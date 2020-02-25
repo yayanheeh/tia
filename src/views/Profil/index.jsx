@@ -7,11 +7,11 @@ class Profil extends React.Component {
     return (
       <div className="Profil">
         <MetaTags>
-          <title>React Meta Tags | Page1</title>
+          <title>React Meta Tags | yayan</title>
           <link rel="canonical" href="/page1" />
           <meta name="description" content="React meta tags handles document meta/head tags in isomorphic react with ease." />
           <meta property="og:title" content="MyApp-Page1" />
-          <meta itemProp="test" content="Page1" />
+          <meta itemProp="test" content="Profil" />
         </MetaTags>
         <div>
           <p>
