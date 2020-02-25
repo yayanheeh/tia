@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 
-import React from 'react';
+
 import MetaTags from 'react-meta-tags';
 
 class Component1 extends React.Component {
