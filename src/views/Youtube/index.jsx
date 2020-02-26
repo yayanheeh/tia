@@ -1,4 +1,9 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+
+// Custom components
+import { iframe } from './components';
+
 
 // Externals
 import PropTypes from 'prop-types';
@@ -13,11 +18,7 @@ import { Dashboard as DashboardLayout } from 'layouts';
 const styles = theme => ({
   root: {
     padding: theme.spacing.unit * 4
-  },
-  iframe: {
-    width: '100%',
-    minHeight: '640px',
-    border: 0
+  }
   }
 });
 
