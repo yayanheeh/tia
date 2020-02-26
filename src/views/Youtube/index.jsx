@@ -16,7 +16,7 @@ import { Dashboard as DashboardLayout } from 'layouts';
 
 // Custom components
 import {
-  iframe
+ Iframe
 } from './components';
 
 // Component styles
