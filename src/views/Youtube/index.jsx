@@ -29,11 +29,16 @@ class Youtube extends Component {
     return (
       <DashboardLayout title="Icons">
         <div className={classes.root}>
-          <iframe
-            className={classes.iframe}
-            src="https://material.io/tools/icons/?icon=accessibility&style=outline"
-            title="Material Design icons"
-          />
+          <Iframe
+				url="http://www.youtube.com/embed/xDMP3i36naA"
+				width="450px"
+				height="450px"
+				id="myId"
+				className="myClassname"
+				display="initial"
+				position="relative"
+				allowFullScreen
+			/>
         </div>
       </DashboardLayout>
     );
