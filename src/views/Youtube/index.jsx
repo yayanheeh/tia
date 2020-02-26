@@ -2,7 +2,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import YouTube from '../';
+import YouTube from '/';
 
 // Custom components
 import {
