@@ -81,7 +81,7 @@ class Bawah extends Component {
             
             <ListItemText
               classes={{ primary: classes.listItemText }}
-              primary="Tentang Kami"
+              primary="Paket Umroh"
             />
           </ListItem>
           <ListItem
@@ -93,7 +93,7 @@ class Bawah extends Component {
             
             <ListItemText
               classes={{ primary: classes.listItemText }}
-              primary="Cara Pembayaran"
+              primary="Tentang Kami"
             />
           </ListItem>
           <ListItem
@@ -105,7 +105,7 @@ class Bawah extends Component {
             
             <ListItemText
               classes={{ primary: classes.listItemText }}
-              primary="Paket Umroh"
+              primary="Cara Pembayaran"
             />
           </ListItem>
           <ListItem
@@ -114,12 +114,10 @@ class Bawah extends Component {
             component={NavLink}
             to="/paketumroh"
           >
-            <ListItemIcon className={classes.listItemIcon}>
-              <ShoppingBasketIcon />
-            </ListItemIcon>
+            
             <ListItemText
               classes={{ primary: classes.listItemText }}
-              primary="Paket Umroh"
+              primary="Dokumen Kelengkapan"
             />
           </ListItem>
           <ListItem
