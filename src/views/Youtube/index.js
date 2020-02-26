@@ -2,7 +2,7 @@ import React, { PureComponent } from "react"
 import ReactDOM from "react-dom"
 import Iframe from "./iframe.js"
 
-class Demo extends PureComponent {
+class Youtube extends PureComponent {
 	render() {
 		return (
 			<Iframe
@@ -19,4 +19,4 @@ class Demo extends PureComponent {
 	}
 }
 
-ReactDOM.render(<Demo />, document.body)
+ReactDOM.render(<Youtube />, document.body)
