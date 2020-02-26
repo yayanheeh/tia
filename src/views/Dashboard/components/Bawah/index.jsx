@@ -78,12 +78,10 @@ class Bawah extends Component {
             component={NavLink}
             to="/profil"
           >
-            <ListItemIcon className={classes.listItemIcon}>
-              <DashboardIcon />
-            </ListItemIcon>
+            
             <ListItemText
               classes={{ primary: classes.listItemText }}
-              primary="Home"
+              primary="Tentang Kami"
             />
           </ListItem>
           <ListItem
@@ -92,12 +90,10 @@ class Bawah extends Component {
             component={NavLink}
             to="/profil"
           >
-            <ListItemIcon className={classes.listItemIcon}>
-              <AccountBoxIcon />
-            </ListItemIcon>
+            
             <ListItemText
               classes={{ primary: classes.listItemText }}
-              primary="Profil"
+              primary="Cara Pembayaran"
             />
           </ListItem>
           <ListItem
@@ -106,12 +102,10 @@ class Bawah extends Component {
             component={NavLink}
             to="/visimisi"
           >
-            <ListItemIcon className={classes.listItemIcon}>
-              <PublicIcon/>
-            </ListItemIcon>
+            
             <ListItemText
               classes={{ primary: classes.listItemText }}
-              primary="Visimisi"
+              primary="Paket Umroh"
             />
           </ListItem>
           <ListItem
@@ -134,12 +128,10 @@ class Bawah extends Component {
             component={NavLink}
             to="/Dokumentasi"
           >
-            <ListItemIcon className={classes.listItemIcon}>
-              <PeopleIcon />
-            </ListItemIcon>
+            
             <ListItemText
               classes={{ primary: classes.listItemText }}
-              primary="Dokumentasi Perjalanan"
+              primary="Syarat dan Ketentuan"
             />
           </ListItem>
 
