@@ -1,7 +1,7 @@
-import React, { Component,PureComponent } from 'react';
+import React from 'react';
 
 import ReactDOM from "react-dom"
-import Iframe from "./iframe.js"
+import Iframe from "./iframe"
 
 // Externals
 import PropTypes from 'prop-types';
