@@ -20,7 +20,7 @@ import Profil from './views/Profil';
 import Visimisi from './views/Visimisi';
 import Dokumentasi from './views/Dokumentasi';
 import PaketUmroh from './views/PaketUmroh';
-import video from './views/video';
+import Youtube from './views/Youtube';
 
 
 
@@ -121,9 +121,9 @@ export default class Routes extends Component {
           path="/dokumentasi"
         />
 <Route
-          component={video}
+          component={Youtube}
           exact
-          path="/video"
+          path="/youtube"
         />
 <Route
           component={Tes}
