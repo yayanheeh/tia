@@ -21,8 +21,6 @@ import Visimisi from './views/Visimisi';
 import Dokumentasi from './views/Dokumentasi';
 import PaketUmroh from './views/PaketUmroh';
 
-import Aku from './views/Aku';
-
 
 
 export default class Routes extends Component {
@@ -121,12 +119,6 @@ export default class Routes extends Component {
           exact
           path="/dokumentasi"
         />
-<Route
-          component={Aku}
-          exact
-          path="/aku"
-        />
-
 
 <Route
           component={Tes}
