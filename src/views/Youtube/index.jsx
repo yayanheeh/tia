@@ -1,92 +1,67 @@
-import React, { Component } from 'react';
-import Hidden from '@material-ui/core/Hidden';
 
-              
-// Externals
-import PropTypes from 'prop-types';
 
-// Material helpers
-import { withStyles } from '@material-ui/core';
-
-// Material components
-import { Grid } from '@material-ui/core';
-
-// Shared layouts
-import { Dashboard as DashboardLayout } from 'layouts';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import YouTube from '../';
 
 // Custom components
 import {
  Iframe
 } from './components';
 
-// Component styles
-const styles = theme => ({
-  root: {
-    padding: theme.spacing.unit * 4
-  },
-  item: {
-    height: '100%'
+
+const videoIdA = 'XxVg_s8xAms';
+const videoIdB = '-DX3vJiqxm4';
+
+class Example extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      videoId: videoIdA,
+      player: null,
+    };
+
+    this.onReady = this.onReady.bind(this);
+    this.onChangeVideo = this.onChangeVideo.bind(this);
+    this.onPlayVideo = this.onPlayVideo.bind(this);
+    this.onPauseVideo = this.onPauseVideo.bind(this);
   }
-});
 
-class Youtbe extends Component {
+  onReady(event) {
+    console.log(`YouTube Player object for videoId: "${this.state.videoId}" has been saved to state.`); // eslint-disable-line
+    this.setState({
+      player: event.target,
+    });
+  }
+
+  onPlayVideo() {
+    this.state.player.playVideo();
+  }
+
+  onPauseVideo() {
+    this.state.player.pauseVideo();
+  }
+
+  onChangeVideo() {
+    this.setState({
+      videoId: this.state.videoId === videoIdA ? videoIdB : videoIdA,
+    });
+  }
+
   render() {
-    const { classes } = this.props;
-
     return (
-      <DashboardLayout title="Dashboard">
-      
-        <div className={classes.root}>
-         
-
- <Grid
-            container
-            spacing={3}
-          >
-
-            
-            <Grid
-              item
-              md={4}
-              xs={12}
-            >
-                  <Iframe
-				url="http://www.youtube.com/embed/xDMP3i36naA"
-				width="450px"
-				height="450px"
-				id="myId"
-				className="myClassname"
-				display="initial"
-				position="relative"
-				allowFullScreen
-			/>
-
- </Grid>
-   
-   
-          </Grid>
-          
-         
-     
-   
-        </div>
-
-
-      </DashboardLayout>
+      <div>
+        <YouTube videoId={this.state.videoId} onReady={this.onReady} />
+        <button onClick={this.onPlayVideo}>Play</button>
+        <button onClick={this.onPauseVideo}>Pause</button>
+        <button onClick={this.onChangeVideo}>Change Video</button>
+      </div>
     );
   }
 }
 
-Youtube.propTypes = {
-  classes: PropTypes.object.isRequired
-};
-
-export default withStyles(styles)(Youtube);
-
-
-
-
-
+ReactDOM.render(<Example />, document.getElementById('root'));
 
 
 
