@@ -38,7 +38,7 @@ class Icons extends Component {
 <div>
 
 
-<!-- standard Accordions example -->
+
 <div class="accordion">
   <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
   <label class="accordion-header" for="accordion-1">
