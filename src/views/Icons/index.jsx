@@ -34,6 +34,33 @@ class Icons extends Component {
             title="Material Design icons"
           />
         </div>
+
+<div>
+
+
+<!-- standard Accordions example -->
+<div class="accordion">
+  <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
+  <label class="accordion-header" for="accordion-1">
+    <i class="icon icon-arrow-right mr-1"></i>
+    Title
+  </label>
+  <div class="accordion-body">
+    <!-- Accordions content -->
+  </div>
+</div>
+
+<div class="accordion">
+  <input type="radio" id="accordion-1" name="accordion-radio" hidden>
+  <label class="accordion-header" for="accordion-1">
+    Title
+  </label>
+  <div class="accordion-body">
+    <!-- Accordions content -->
+  </div>
+</div>
+
+</div>
       </DashboardLayout>
     );
   }
