@@ -46,8 +46,7 @@ class Icons extends Component {
     Title
   </label>
   <div class="accordion-body">
-    <!-- Accordions content -->
-  </div>
+      </div>
 </div>
 
 <div class="accordion">
@@ -56,7 +55,7 @@ class Icons extends Component {
     Title
   </label>
   <div class="accordion-body">
-    <!-- Accordions content -->
+  
   </div>
 </div>
 
