@@ -16,7 +16,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Tooltip from '@material-ui/core/Tooltip';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
-
+import './home.css';
 const lightColor = 'rgba(255, 255, 255, 0.7)';
 
 const styles = theme => ({
