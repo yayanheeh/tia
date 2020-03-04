@@ -46,7 +46,7 @@ function Icons(props) {
 
   return (
     <React.Fragment>
-   Yo
+  
       
       <AppBar title="My AppBar" style={{ backgroundColor: '#608657'}} position="sticky" elevation={0}>
         <Toolbar>
