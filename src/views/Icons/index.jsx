@@ -6,7 +6,8 @@ import GridListTileBar from '@material-ui/core/GridListTileBar';
 import ListSubheader from '@material-ui/core/ListSubheader';
 import IconButton from '@material-ui/core/IconButton';
 import InfoIcon from '@material-ui/icons/Info';
-import './titleData.js';
+import tileData from './tileData';
+
 const useStyles = makeStyles(theme => ({
   root: {
     display: 'flex',
@@ -24,23 +25,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-/**
- * The example data is structured as follows:
- *
- * import image from 'path/to/image.jpg';
- * [etc...]
- *
- * const tileData = [
- *   {
- *     img: image,
- *     title: 'Image',
- *     author: 'author',
- *   },
- *   {
- *     [etc...]
- *   },
- * ];
- */
+
 export default function TitlebarGridList() {
   const classes = useStyles();
 
