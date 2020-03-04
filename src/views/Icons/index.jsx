@@ -37,6 +37,12 @@ export default function HideAppBar(props) {
   return (
     <React.Fragment>
       <CssBaseline />
+
+   <AppBar>
+        <Toolbar>
+          <Typography variant="h6">yanto see button</Typography>
+        </Toolbar>
+      </AppBar>
       <HideOnScroll {...props}>
         <AppBar>
           <Toolbar>
