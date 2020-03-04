@@ -1,68 +1,137 @@
-
 import React from 'react';
 import PropTypes from 'prop-types';
 import AppBar from '@material-ui/core/AppBar';
+import Avatar from '@material-ui/core/Avatar';
+import Button from '@material-ui/core/Button';
+import Grid from '@material-ui/core/Grid';
+import HelpIcon from '@material-ui/icons/Help';
+import Hidden from '@material-ui/core/Hidden';
+import IconButton from '@material-ui/core/IconButton';
+import Link from '@material-ui/core/Link';
+import MenuIcon from '@material-ui/icons/Menu';
+import NotificationsIcon from '@material-ui/icons/Notifications';
+import Tab from '@material-ui/core/Tab';
+import Tabs from '@material-ui/core/Tabs';
 import Toolbar from '@material-ui/core/Toolbar';
+import Tooltip from '@material-ui/core/Tooltip';
 import Typography from '@material-ui/core/Typography';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import useScrollTrigger from '@material-ui/core/useScrollTrigger';
-import Box from '@material-ui/core/Box';
-import Container from '@material-ui/core/Container';
-import Slide from '@material-ui/core/Slide';
+import { withStyles } from '@material-ui/core/styles';
 
-function HideOnScroll(props) {
-  const { children, window } = props;
-  // Note that you normally won't need to set the window ref as useScrollTrigger
-  // will default to window.
-  // This is only being set here because the demo is in an iframe.
-  const trigger = useScrollTrigger({ target: window ? window() : undefined });
+const lightColor = 'rgba(255, 255, 255, 0.7)';
 
-  return (
-    <Slide appear={false} direction="down" in={!trigger}>
-      {children}
-    </Slide>
-  );
-}
+const styles = theme => ({
+  secondaryBar: {
+    zIndex: 0,
+  },
+  menuButton: {
+    marginLeft: -theme.spacing(1),
+  },
+  iconButtonAvatar: {
+    padding: 4,
+  },
+  link: {
+    textDecoration: 'none',
+    color: lightColor,
+    '&:hover': {
+      color: theme.palette.common.white,
+    },
+  },
+  button: {
+    borderColor: lightColor,
+  },
+});
 
-HideOnScroll.propTypes = {
-  children: PropTypes.element.isRequired,
-  /**
-   * Injected by the documentation to work in an iframe.
-   * You won't need it on your project.
-   */
-  window: PropTypes.func,
-};
+function Icons(props) {
+  const { classes, onDrawerToggle } = props;
 
-export default function HideAppBar(props) {
   return (
     <React.Fragment>
-      <CssBaseline />
-
-   <AppBar>
+      <AppBar color="primary" position="sticky" elevation={0}>
         <Toolbar>
-          <Typography variant="h6">yanto see button</Typography>
+          <Grid container spacing={1} alignItems="center">
+            <Hidden smUp>
+              <Grid item>
+                <IconButton
+                  color="inherit"
+                  aria-label="open drawer"
+                  onClick={onDrawerToggle}
+                  className={classes.menuButton}
+                >
+                  <MenuIcon />
+                </IconButton>
+              </Grid>
+            </Hidden>
+            <Grid item xs />
+            <Grid item>
+              <Link className={classes.link} href="#" variant="body2">
+                Go to docs
+              </Link>
+            </Grid>
+            <Grid item>
+              <Tooltip title="Alerts • No alerts">
+                <IconButton color="inherit">
+                  <NotificationsIcon />
+                </IconButton>
+              </Tooltip>
+            </Grid>
+            <Grid item>
+              <IconButton color="inherit" className={classes.iconButtonAvatar}>
+                <Avatar src="/static/images/avatar/1.jpg" alt="My Avatar" />
+              </IconButton>
+            </Grid>
+          </Grid>
         </Toolbar>
       </AppBar>
-      <HideOnScroll {...props}>
-        
-          <Toolbar>
-            <Typography variant="h6">Scroll to Hide App Bar</Typography>
-          </Toolbar>
-        
-      </HideOnScroll>
-      <Toolbar />
-      <Container>
-        <Box my={2}>
-          {[...new Array(12)]
-            .map(
-              () => `Cras mattis consectetur purus sit amet fermentum.
-Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-Praesent commodo cursus magna, vel scelerisque nisl consectetur et.`,
-            )
-            .join('\n')}
-        </Box>
-      </Container>
+      <AppBar
+        component="div"
+        className={classes.secondaryBar}
+        color="primary"
+        position="static"
+        elevation={0}
+      >
+        <Toolbar>
+          <Grid container alignItems="center" spacing={1}>
+            <Grid item xs>
+              <Typography color="inherit" variant="h5" component="h1">
+                Authentication
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Button className={classes.button} variant="outlined" color="inherit" size="small">
+                Web setup
+              </Button>
+            </Grid>
+            <Grid item>
+              <Tooltip title="Help">
+                <IconButton color="inherit">
+                  <HelpIcon />
+                </IconButton>
+              </Tooltip>
+            </Grid>
+          </Grid>
+        </Toolbar>
+      </AppBar>
+      <AppBar
+        component="div"
+        className={classes.secondaryBar}
+        color="primary"
+        position="static"
+        elevation={0}
+      >
+        <Tabs value={0} textColor="inherit">
+          <Tab textColor="inherit" label="Users" />
+          <Tab textColor="inherit" label="Sign-in method" />
+          <Tab textColor="inherit" label="Templates" />
+          <Tab textColor="inherit" label="Usage" />
+        </Tabs>
+      </AppBar>
     </React.Fragment>
   );
 }
+
+Icons.propTypes = {
+  classes: PropTypes.object.isRequired,
+  onDrawerToggle: PropTypes.func.isRequired,
+};
+
+export default withStyles(styles)(Icons);
