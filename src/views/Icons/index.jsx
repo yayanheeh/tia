@@ -35,13 +35,7 @@ export default function TitlebarGridList() {
         <GridListTile key="Subheader" cols={2} style={{ height: 'auto' }}>
           <ListSubheader component="div">December</ListSubheader>
         </GridListTile>
-        {tileData.map(tile => (
-          <GridListTile key={tile.img}>
-            <img src={tile.img} alt={tile.title} />
-            <GridListTileBar
-              title={tile.title}
-              subtitle={<span>by: {tile.author}</span>}
-              actionIcon={
+        tes
                 <IconButton aria-label={`info about ${tile.title}`} className={classes.icon}>
                   <InfoIcon />
                 </IconButton>
